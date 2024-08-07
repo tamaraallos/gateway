@@ -1,0 +1,14 @@
+Content-Type: multipart/mixed; boundary="===============6746487900908033292=="
+MIME-Version: 1.0
+To: janeDoe@email.com
+From: admin@email.com
+Subject: test
+Date: Wed, 8 Jul 2024 00:00:00 -0000
+
+--===============6746487900908033292==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello this is a test email
+--===============6746487900908033292==--

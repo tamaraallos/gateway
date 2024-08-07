@@ -1,0 +1,35 @@
+{
+    "to": "janeDoe@email.com",
+    "subject": "test",
+    "from": "admin@email.com",
+    "date": "Mon, 08 Jul 2024 00:00:00 -0000",
+    "body": "Hello this is a test email"
+}
+{
+    "to": "johnDoe@email.com",
+    "subject": "important email",
+    "from": "janeDoe@email.com",
+    "date": "Tue, 09 Jul 2024 12:01:20 -0000",
+    "body": "Hi Jane, I hope you are well. Where is my report? Thanks"
+}
+{
+    "to": "smix@email.com",
+    "subject": "coding challenges",
+    "from": "doetest@email.com",
+    "date": "Sat, 06 Jul 2024 04:20:05 -0000",
+    "body": "Hey today daily challenges is cancelled. Sorry."
+}
+{
+    "to": "janeDoe@email.com",
+    "subject": "test",
+    "from": "admin@email.com",
+    "date": "Mon, 08 Jul 2024 00:00:00 -0000",
+    "body": "Hello this is a test email"
+}
+{
+    "to": "daniel@email.com",
+    "subject": "just email",
+    "from": "somehow@email.com",
+    "date": "Wed, 10 Jul 2024 18:16:34 -0000",
+    "body": "just another email testing words, stuff, hi no yes, bye. afternoon."
+}
