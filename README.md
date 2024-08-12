@@ -20,3 +20,6 @@ For Bad Security Inc (BSI) - Proof of Concept
 4. Created a main.py
     - This is where I will be calling the functions and building the CLI
     - I created a .env file where I store my path names. (used in main)
+5. Generated new emails, deleted old emails stored in the email folder.
+6. Created two new log files (one for email archives and another storing emails names)
+

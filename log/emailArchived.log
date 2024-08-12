@@ -1,0 +1,28 @@
+{
+    "to": "daniel@email.com",
+    "subject": "just email",
+    "from": "somehow@email.com",
+    "date": "Wed, 10 Jul 2024 18:16:34 -0000",
+    "body": "just another email testing words, stuff, hi no yes, bye. afternoon."
+}
+{
+    "to": "Jane.Doe@gmail.com",
+    "subject": "Admin Meeting",
+    "from": "adminBadSecurityInc@gmail.com",
+    "date": "Wed, 10 Jul 2024 12:32:34 -0000",
+    "body": "Hey Jane, this is the admin from BSI. I just wanted to have a quick chat. Send me a calander invite when free. Thanks admin."
+}
+{
+    "to": "adminBadSecurityInc@gmail.com",
+    "subject": "Admin Meeting",
+    "from": "Jane.Doe@gmail.com",
+    "date": "Wed, 10 Jul 2024 12:37:34 -0000",
+    "body": "Hey Jane, this is the admin from BSI. I just wanted to have a quick chat. Send me a calander invite when free. Thanks admin."
+}
+{
+    "to": "John.Doe@gmail.com",
+    "subject": "Admin Meeting",
+    "from": "Jane.Doe@gmail.com",
+    "date": "Wed, 10 Jul 2024 12:39:34 -0000",
+    "body": "Hey John, how is it going? I just wanted to send you a message to see if you got a message from admin? They asked me for a meeting. I was wondering if this was to do with the software we were working on? Thanks Jane."
+}
