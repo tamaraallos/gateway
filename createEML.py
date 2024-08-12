@@ -2,6 +2,9 @@ import os
 from email import generator
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from dotenv import load_dotenv
+
+load_dotenv(".env")
 
 # this script generates an email in .eml format (this is for testing purposes)
 # uses MIME - multiplepurpose Internet Mail Extnesion - support transfer of text and text attatchments
@@ -29,11 +32,10 @@ def generate_email(to_address, from_address, subject, date, body):
 email = generate_email(to_address, from_address, subject, date, body)
 
 # save email to my file
-dire = "C:\\Users\\Tamara\\Desktop\\BSI\\gateway\\emails"
+dire = os.getenv("EMAIL_FOLDER")
 
 
 # format email file name to be 'emailN' n being number of email generated
-
 existing_file = []
 
 # loop through all the files in the dire

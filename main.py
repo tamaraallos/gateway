@@ -2,6 +2,7 @@ from email_processor import process_all_emails
 from log_search import search_log
 import os
 from dotenv import load_dotenv
+
 load_dotenv(".env")
 
 # Mine Tamara's folder info 
