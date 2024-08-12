@@ -22,4 +22,4 @@ For Bad Security Inc (BSI) - Proof of Concept
     - I created a .env file where I store my path names. (used in main)
 5. Generated new emails, deleted old emails stored in the email folder.
 6. Created two new log files (one for email archives and another storing emails names)
-
+7. Created a Checks folder (I will upload my dkim, dmarc, and spf check files later)
