@@ -16,3 +16,7 @@ For Bad Security Inc (BSI) - Proof of Concept
         -  processed_email_storage: Stores *email name* to a different log file
         - load_emails_processed: loads emails that have been processed and adds them to a set (allows   no dupes)
         - process_all_emails: function that calls new functions created. Logs emails only if haven't already
+3. Moved search_log function into a seperate file called log_search.py
+4. Created a main.py
+    - This is where I will be calling the functions and building the CLI
+    - I created a .env file where I store my path names. (used in main)
