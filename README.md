@@ -28,3 +28,8 @@ For Bad Security Inc (BSI) - Proof of Concept
 
 # Day 3 - Tamara Allos
 1. Uploaded DKIM check
+2. Added spf_check
+
+
+### Note - To All
+You need to set up a .env if u want it to work
