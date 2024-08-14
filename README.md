@@ -24,3 +24,7 @@ For Bad Security Inc (BSI) - Proof of Concept
 6. Created two new log files (one for email archives and another storing emails names)
 7. Created a Checks folder (I will upload my dkim, dmarc, and spf check files later)
 8. Uploaded the dmarc_check file and refactored the code partially.
+
+
+# Day 3 - Tamara Allos
+1. Uploaded DKIM check

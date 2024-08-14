@@ -16,6 +16,7 @@ def dmarc_check(domain):
                 return text_record.strip('"')
             return None
     except Exception as e:
+        print(f"Error occured: {e}")
         return None
 
 
