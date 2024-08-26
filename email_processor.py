@@ -12,19 +12,20 @@ def parse_email(file_path):
             message = BytesParser(policy=policy.default).parse(file)
 
         # retrieve data from the parsed email
-        email_data = {
+        email_data = { 
             'to': message['to'],
             'subject': message['subject'],
             'from': message['from'],
             'date': message['date'],
+            'action status': message['X-Action-Status'],
             'body': message.get_body(preferencelist=('plain', 'html')).get_content()
         }
 
-        print(f'{file_path} has been successfully parsed!') # testing purposes
+        #print(f'{file_path} has been successfully parsed!') # testing purposes
         return email_data
     # error handling - throw error if code in try doesn't work
     except Exception as e:
-        print(f"failed to parse email from the {file_path}: {e}")
+        #print(f"failed to parse email from the {file_path}: {e}")
         return None
 
 # function stores email content in a log file
@@ -41,7 +42,7 @@ def log_email(log_file_path, email_content):
 def processed_email_storage(log_file_path, email_file_name):
     with open(log_file_path, 'a') as log_file:
         log_file.write(email_file_name + '\n') # write name of email into file
-        print(f"file name successfully written to process email log file: {email_file_name}") # for testing
+        #print(f"file name successfully written to process email log file: {email_file_name}") # for testing
 
 # function load emails that are already processed
 def load_emails_processed(log_file_path):
@@ -59,16 +60,14 @@ def process_and_log_email(email_file, log_archive_path, log_email_processed_path
     log_email(log_archive_path, email_details) # writes emails to archive email.log file
     processed_email_storage(log_email_processed_path, os.path.basename(email_file)) # logs email name to processed email log file
 
-
 # automate processing of all emails in the email dire
 def process_all_emails(email_dire, log_archive_path, log_email_processed_path):
     emails_processed = load_emails_processed(log_email_processed_path) # load emails that have been processed
     
     # list all files within the email dire
     for email_file in os.listdir(email_dire):
-        if email_file.startswith("email") and email_file.endswith(".eml"):
-            if email_file not in emails_processed: # check if already processed
-                email_file_path = os.path.join(email_dire, email_file) # joins email dire with email name to construct a path
-                process_and_log_email(email_file_path, log_archive_path,log_email_processed_path) # parse, and log email
-            else:
-                print(f"already processed email thats being skipped: {email_file}")
+        if email_file.endswith(".eml") and email_file  not in emails_processed: # check if already processed
+            email_file_path = os.path.join(email_dire, email_file) # joins email dire with email name to construct a path
+            process_and_log_email(email_file_path, log_archive_path,log_email_processed_path) # parse, and log email
+        #else:
+            #print(f"already processed email thats being skipped: {email_file}")
