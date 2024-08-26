@@ -1,13 +1,13 @@
 # gateway
 For Bad Security Inc (BSI) - Proof of Concept
 
-# Day 1 - Tamara Allos
+# Week 1- Tamara Allos
 1. Created an Email Parser
 2. Write emails into a .log file
 3. Search through .log file with a any string
 4. Generate script for creating .eml emails
 
-# day 2 - Tamara Allos
+# Week 2 - Tamara Allos
 1. Updated the email generator. This is so it follows a consistent naming convention (emailN - n being number of emails already created)
 2. Updated email_parser file:
    - Changed email_parser name to email_processor
@@ -26,9 +26,24 @@ For Bad Security Inc (BSI) - Proof of Concept
 8. Uploaded the dmarc_check file and refactored the code partially.
 
 
-# Day 3 - Tamara Allos
+# Week 3 - Tamara Allos
 1. Uploaded DKIM check
 2. Added spf_check
+3. Forgot to document the rest
+
+# Week 4 - Tamara Allos
+1. Uploaded DKIM check
+2. Added spf_check
+
+# Week 3 - 5 Changes - Tamara Allos
+1. Worked on refactoring a lot of the code:
+    - email generator (createEML.py script I created)
+    - Email parser
+    - Main - add a CLI for users
+    - Log search made more complex
+    - added ASCII art
+    - email handler - listens in a folder for new emails
+
 
 
 ### Note - To All
