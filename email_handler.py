@@ -8,9 +8,6 @@ def on_created_email(event, email_dire, log_archive_path, log_email_processed_pa
     if event.src_path.endswith(".eml"): # only process .eml files
          #print(f"new mail detected: {event.src_path}") # testing purposes
         process_all_emails(email_dire, log_archive_path, log_email_processed_path)
-        # testing purpioses
-        # email_name = event.src_path[event.src_path.find('/', event.src_path.find('/') + 1) + 1 : event.src_path.find('.eml')]
-        # print(f"Successfully logged email: {email_name}")  # testing purposes
 
 
 # creates and return a file system event handler 
