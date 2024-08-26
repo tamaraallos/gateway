@@ -1,23 +1,31 @@
+from cryptography.fernet import Fernet
 import os
 from email import generator
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from dotenv import load_dotenv
-
 load_dotenv(".env")
+
 
 # this script generates an email in .eml format (this is for testing purposes)
 # uses MIME - multiplepurpose Internet Mail Extnesion - support transfer of text and text attatchments
 
+# generate encryption key
+key = Fernet.generate_key()
+cipher_suite = Fernet(key)
+
 # variables: create test email content - follow this structure please
-to_address = "John.Doe@gmail.com" 
-from_address = "Jane.Doe@gmail.com"
-subject = "Admin Meeting"
-date = "Thursday, 10 Jul 2024 12:39:34 -0000"
-body = "Hey John, how is it going? I just wanted to send you a message to see if you got a message from admin? They asked me for a meeting. I was wondering if this was to do with the software we were working on? Thanks Jane."
+to_address = "dassdadassd@gmail.com" 
+from_address = "meadsdsasd@gmail.com"
+subject = "test"
+date = "Monday, 12 Jul 2024 12:39:34 -0000"
+body = "test"
+action_status = "pending" 
+
+# encrypt_body = cipher_suite.encrypt(body.encode())
 
 # pass in email content into parameters to create an email
-def generate_email(to_address, from_address, subject, date, body):
+def generate_email(to_address, from_address, subject, date, body, action_status):
     # constructs email message
     msg = MIMEMultipart() # create new message object
     # sets email headers
@@ -26,14 +34,14 @@ def generate_email(to_address, from_address, subject, date, body):
     msg["Subject"] = subject
     msg["Date"] = date
     msg.attach(MIMEText(body, 'plain')) # MIME represents textual data (attatched plain text body to email)
+    msg['X-Action-Status'] = action_status
     return msg
 
 # generate the email
-email = generate_email(to_address, from_address, subject, date, body)
+email = generate_email(to_address, from_address, subject, date, body, action_status)
 
-# save email to my file
+# save email to my 'email' folder
 dire = os.getenv("EMAIL_FOLDER")
-
 
 # format email file name to be 'emailN' n being number of email generated
 existing_file = []
