@@ -46,5 +46,14 @@ For Bad Security Inc (BSI) - Proof of Concept
 
 
 
-### Note - To All
+### Note - To All - From Tamara
 You need to set up a .env if u want it to work
+
+## New note - To All - From Tamara
+You need to also add in a password for .env. I added a random password 'test'. It uses that to validate whatever the users input into the prompt. If correct they will proceed else try again.
+
+### What needs to be done
+1. Integrate peoples code within mine - I will help for that
+2. I need to remove some of my test comments later
+3. I need to move around some print statements for it a better
+
