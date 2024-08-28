@@ -44,7 +44,10 @@ For Bad Security Inc (BSI) - Proof of Concept
     - added ASCII art
     - email handler - listens in a folder for new emails
 
+# Week 3 - 5 Changes - Bhuvan Virmani
 
+Created a DLP check script that reads all .eml files in a directory and scans them for any sensitive information regex. 
+The function is called from a main file after the code is executed it outputs the sensitive information and the file name where it was found. 
 
 ### Note - To All - From Tamara
 You need to set up a .env if u want it to work
