@@ -47,10 +47,12 @@ For Bad Security Inc (BSI) - Proof of Concept
 # Week 5 Changes - Tamara Allos
 1. Worked on refactoring the code:
     - Fixed and implemented a better Folder Structure
-    - Code reviewed teammates PR's
+    - Code reviewed teammates PR's - Kens
     - Modified changes to teammates codes
-    - Integrated teammates code (spam and phishing) within the email_parser function
-    - Wrote comments/instructions for how team mates should integrated their code.
+    - Integrated teammates (Kens) code (spam and phishing) within the email_parser function
+    - Wrote comments/instructions for how team mates should integrated their code. - To All
+    - Code reviewed teammates PR's - Bhuvan
+    - Modified changes to teammates (Bhuvan) code file: Removed unecessary function/code clean up
 
 
 ### Note - To All - From Tamara
