@@ -11,9 +11,9 @@ DLP_PATTERNS = {
 }
 
 #Check content against DLP patterns
-def check_dlp(content, patterns):
+def check_dlp(content):
     findings = {}
-    for name, pattern in patterns.items():
+    for name, pattern in DLP_PATTERNS.items():
         matches = re.findall(pattern, content)
         if matches:
             findings[name] = matches
