@@ -44,6 +44,15 @@ For Bad Security Inc (BSI) - Proof of Concept
     - added ASCII art
     - email handler - listens in a folder for new emails
 
+# Week 5 Changes - Tamara Allos
+1. Worked on refactoring the code:
+    - Fixed and implemented a better Folder Structure
+    - Code reviewed teammates PR's
+    - Modified changes to teammates codes
+    - Integrated teammates code (spam and phishing) within the email_parser function
+    - Wrote comments/instructions for how team mates should integrated their code.
+
+
 
 
 ### Note - To All - From Tamara
