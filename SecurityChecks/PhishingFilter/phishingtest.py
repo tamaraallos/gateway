@@ -31,11 +31,12 @@ def load_phishing_links(file_path: str) -> List[str]:
         return []
 
 # Function to extract the domain name from an email address.
-def extract_domain(email: str) -> str:
-    try:
-        return email.split('@')[1]
-    except IndexError:
-        return ""
+def extract_domain(email_address: str) -> str:
+    if '@' in email_address:
+        domain = email_address.split('@')[-1]
+    else:
+        domain = ''
+    return domain
 
 # Function to extract all the links from an email message. Returns a list of links present.
 def extract_links_from_email(email_message) -> List[str]:
