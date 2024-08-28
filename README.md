@@ -44,7 +44,9 @@ For Bad Security Inc (BSI) - Proof of Concept
     - added ASCII art
     - email handler - listens in a folder for new emails
 
-
+# Week 3 - 5 - Bhuvan Virmani
+1. Worked on creating DLP checks which read all the emails in a directory and check for any regex sensitive information. 
+If any sensitive data is found in the emails it returns the info and the file name and marks the email as blocked. 
 
 ### Note - To All - From Tamara
 You need to set up a .env if u want it to work
