@@ -1,0 +1,109 @@
+2024-08-24 18:05:53,787 - INFO - Result for C:\Users\User\gateway\email1safe.eml: Safe
+2024-08-24 18:05:54,036 - INFO - Detected Balance Sheet in the content!
+2024-08-24 18:05:54,036 - INFO - Detected Confidential Plan in the content!
+2024-08-24 18:06:32,365 - INFO - Moved file to C:\Users\User\gateway\Approval needed
+2024-08-24 18:06:32,365 - INFO - Result for C:\Users\User\gateway\email3unsafe.eml: Unsafe
+2024-08-24 18:06:32,740 - INFO - Result for C:\Users\User\gateway\email4unsafe.eml: Safe
+2024-08-24 18:06:33,013 - INFO - Detected Tax File Number in the content!
+2024-08-24 18:06:33,013 - INFO - Detected Credit Card Number in the content!
+2024-08-24 18:06:33,013 - INFO - Detected Confidential Plan in the content!
+2024-08-24 18:06:37,967 - INFO - Moved file to C:\Users\User\gateway\Approval needed
+2024-08-24 18:06:37,967 - INFO - Result for C:\Users\User\gateway\emaila.eml: Unsafe
+2024-08-24 18:06:38,322 - INFO - Result for C:\Users\User\gateway\emailsafe2.eml: Safe
+2024-08-24 18:06:38,558 - INFO - Detected Credit Card Number in the content!
+2024-08-24 18:06:38,558 - INFO - Detected Confidential Plan in the content!
+2024-08-24 18:06:39,022 - INFO - Moved file to C:\Users\User\gateway\Approval needed
+2024-08-24 18:06:39,022 - INFO - Result for C:\Users\User\gateway\inter.eml: Unsafe
+2024-08-24 18:06:39,378 - INFO - Result for C:\Users\User\gateway\test_email.eml: Safe
+2024-08-24 19:14:02,437 - INFO - Email encrypted and saved to C:\Users\User\gateway\Approval needed\Sent\emaila.eml
+2024-08-24 19:14:02,437 - INFO - Original email file C:\Users\User\gateway\Approval needed\emaila.eml has been removed after sending.
+2024-08-25 02:09:06,190 - INFO - Processing email: C:\Users\User\gateway\email3unsafe.eml
+2024-08-25 02:09:06,196 - WARNING - Unsafe email detected: C:\Users\User\gateway\email3unsafe.eml. Sensitive data found: Balance Sheet
+2024-08-25 02:09:06,197 - INFO - Email C:\Users\User\gateway\email3unsafe.eml moved to 'Approval needed' due to detected sensitive data: Balance Sheet
+2024-08-25 02:09:06,197 - INFO - Processing email: C:\Users\User\gateway\email4unsafe.eml
+2024-08-25 02:09:06,202 - WARNING - Unsafe email detected: C:\Users\User\gateway\email4unsafe.eml. Sensitive data found: Tax File Number
+2024-08-25 02:09:06,203 - INFO - Email C:\Users\User\gateway\email4unsafe.eml moved to 'Approval needed' due to detected sensitive data: Tax File Number
+2024-08-25 02:09:06,203 - INFO - Processing email: C:\Users\User\gateway\inter.eml
+2024-08-25 02:09:06,210 - WARNING - Unsafe email detected: C:\Users\User\gateway\inter.eml. Sensitive data found: Credit Card Number, Confidential Plan
+2024-08-25 02:09:06,210 - INFO - Email C:\Users\User\gateway\inter.eml moved to 'Approval needed' due to detected sensitive data: Credit Card Number, Confidential Plan
+2024-08-25 02:09:35,330 - INFO - Processing email: C:\Users\User\gateway\email1safe.eml
+2024-08-25 02:09:35,335 - INFO - Email C:\Users\User\gateway\email1safe.eml is safe. Encrypting and sending...
+2024-08-25 02:09:35,336 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\email1safe.eml
+2024-08-25 02:09:35,336 - INFO - Original email file C:\Users\User\gateway\email1safe.eml has been removed after sending.
+2024-08-25 02:09:35,336 - INFO - Processing email: C:\Users\User\gateway\email3unsafe.eml
+2024-08-25 02:09:35,336 - WARNING - Unsafe email detected: C:\Users\User\gateway\email3unsafe.eml. Sensitive data found: Balance Sheet
+2024-08-25 02:09:35,337 - INFO - Email C:\Users\User\gateway\email3unsafe.eml moved to 'Approval needed' due to detected sensitive data: Balance Sheet
+2024-08-25 02:09:35,337 - INFO - Processing email: C:\Users\User\gateway\email4unsafe.eml
+2024-08-25 02:09:35,337 - WARNING - Unsafe email detected: C:\Users\User\gateway\email4unsafe.eml. Sensitive data found: Tax File Number
+2024-08-25 02:09:35,338 - INFO - Email C:\Users\User\gateway\email4unsafe.eml moved to 'Approval needed' due to detected sensitive data: Tax File Number
+2024-08-25 02:09:35,338 - INFO - Processing email: C:\Users\User\gateway\emailsafe2.eml
+2024-08-25 02:09:35,339 - INFO - Email C:\Users\User\gateway\emailsafe2.eml is safe. Encrypting and sending...
+2024-08-25 02:09:35,340 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\emailsafe2.eml
+2024-08-25 02:09:35,340 - INFO - Original email file C:\Users\User\gateway\emailsafe2.eml has been removed after sending.
+2024-08-25 02:09:35,340 - INFO - Processing email: C:\Users\User\gateway\inter.eml
+2024-08-25 02:09:35,340 - WARNING - Unsafe email detected: C:\Users\User\gateway\inter.eml. Sensitive data found: Credit Card Number, Confidential Plan
+2024-08-25 02:09:35,340 - INFO - Email C:\Users\User\gateway\inter.eml moved to 'Approval needed' due to detected sensitive data: Credit Card Number, Confidential Plan
+2024-08-25 02:09:35,340 - INFO - Processing email: C:\Users\User\gateway\test_email.eml
+2024-08-25 02:09:35,349 - INFO - Email C:\Users\User\gateway\test_email.eml is safe. Encrypting and sending...
+2024-08-25 02:09:35,350 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\test_email.eml
+2024-08-25 02:09:35,351 - INFO - Original email file C:\Users\User\gateway\test_email.eml has been removed after sending.
+2024-08-25 02:09:58,848 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\email3unsafe.eml
+2024-08-25 02:09:58,848 - INFO - Original email file C:\Users\User\gateway\Approval needed\email3unsafe.eml has been removed after sending.
+2024-08-28 03:29:54,715 - INFO - New email detected: C:\Users\User\gateway\email3unsafe.eml
+2024-08-28 03:29:54,715 - INFO - Processing email: C:\Users\User\gateway\email3unsafe.eml
+2024-08-28 03:29:54,715 - WARNING - Unsafe email detected: C:\Users\User\gateway\email3unsafe.eml. Sensitive data found: Balance Sheet
+2024-08-28 03:29:54,716 - INFO - Email C:\Users\User\gateway\email3unsafe.eml moved to 'Approval needed' due to detected sensitive data: Balance Sheet
+2024-08-28 03:29:54,717 - INFO - New email detected: C:\Users\User\gateway\emailsafe2.eml
+2024-08-28 03:29:54,717 - INFO - Processing email: C:\Users\User\gateway\emailsafe2.eml
+2024-08-28 03:29:54,723 - INFO - Email C:\Users\User\gateway\emailsafe2.eml is safe. Encrypting and sending...
+2024-08-28 03:29:54,724 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\emailsafe2.eml
+2024-08-28 03:29:54,724 - INFO - SENT | From: sender@example.com | To: recipient@example.com | Date: Unknown | Path: C:\Users\User\gateway\Sent\emailsafe2.eml
+2024-08-28 03:29:54,725 - INFO - Original email file C:\Users\User\gateway\emailsafe2.eml has been removed after sending.
+2024-08-28 03:29:54,725 - INFO - New email detected: C:\Users\User\gateway\test_email.eml
+2024-08-28 03:29:54,725 - INFO - Processing email: C:\Users\User\gateway\test_email.eml
+2024-08-28 03:29:54,732 - INFO - Email C:\Users\User\gateway\test_email.eml is safe. Encrypting and sending...
+2024-08-28 03:29:54,734 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\test_email.eml
+2024-08-28 03:29:54,735 - INFO - SENT | From: Unknown | To: Unknown | Date: Unknown | Path: C:\Users\User\gateway\Sent\test_email.eml
+2024-08-28 03:29:54,735 - INFO - Original email file C:\Users\User\gateway\test_email.eml has been removed after sending.
+2024-08-28 03:29:54,735 - INFO - New email detected: C:\Users\User\gateway\email1safe.eml
+2024-08-28 03:29:54,735 - INFO - Processing email: C:\Users\User\gateway\email1safe.eml
+2024-08-28 03:29:54,741 - INFO - Email C:\Users\User\gateway\email1safe.eml is safe. Encrypting and sending...
+2024-08-28 03:29:54,742 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\email1safe.eml
+2024-08-28 03:29:54,743 - INFO - SENT | From: sender@example.com | To: recipient@example.com | Date: Unknown | Path: C:\Users\User\gateway\Sent\email1safe.eml
+2024-08-28 03:29:54,743 - INFO - Original email file C:\Users\User\gateway\email1safe.eml has been removed after sending.
+2024-08-28 03:39:37,698 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\email4unsafe.eml
+2024-08-28 03:39:37,698 - INFO - ACTION: ALLOW | Type: Sent | From: sender@example.com | To: recipient@example.com | Date: Unknown | Subject: Tax Details | Path: C:\Users\User\gateway\Sent\email4unsafe.eml
+2024-08-28 03:39:37,699 - INFO - Original email file C:\Users\User\gateway\Approval needed\email4unsafe.eml has been removed after sending.
+2024-08-28 03:45:11,548 - INFO - New email detected: C:\Users\User\gateway\email3unsafe.eml
+2024-08-28 03:45:11,548 - INFO - Processing email: C:\Users\User\gateway\email3unsafe.eml
+2024-08-28 03:45:11,548 - WARNING - Unsafe email detected: C:\Users\User\gateway\email3unsafe.eml. Sensitive data found: Balance Sheet
+2024-08-28 03:45:11,549 - INFO - Email C:\Users\User\gateway\email3unsafe.eml moved to 'Approval needed' due to detected sensitive data: Balance Sheet
+2024-08-28 03:45:11,549 - ERROR - Failed to log email details for C:\Users\User\gateway\email3unsafe.eml: [Errno 2] No such file or directory: 'C:\\Users\\User\\gateway\\email3unsafe.eml'
+2024-08-28 03:45:11,550 - INFO - New email detected: C:\Users\User\gateway\inter.eml
+2024-08-28 03:45:11,550 - INFO - Processing email: C:\Users\User\gateway\inter.eml
+2024-08-28 03:45:11,559 - WARNING - Unsafe email detected: C:\Users\User\gateway\inter.eml. Sensitive data found: Credit Card Number, Confidential Plan
+2024-08-28 03:45:11,601 - INFO - Email C:\Users\User\gateway\inter.eml moved to 'Approval needed' due to detected sensitive data: Credit Card Number, Confidential Plan
+2024-08-28 03:45:11,601 - ERROR - Failed to log email details for C:\Users\User\gateway\inter.eml: [Errno 2] No such file or directory: 'C:\\Users\\User\\gateway\\inter.eml'
+2024-08-28 03:45:18,614 - INFO - New email detected: C:\Users\User\gateway\email1safe.eml
+2024-08-28 03:45:18,614 - INFO - Processing email: C:\Users\User\gateway\email1safe.eml
+2024-08-28 03:45:18,623 - INFO - Email C:\Users\User\gateway\email1safe.eml is safe. Encrypting and sending...
+2024-08-28 03:45:18,624 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\email1safe.eml
+2024-08-28 03:45:18,625 - INFO - ACTION: ALLOW | Type: Sent | From: sender@example.com | To: recipient@example.com | Date: Unknown | Subject: Project Update | Path: C:\Users\User\gateway\Sent\email1safe.eml
+2024-08-28 03:45:18,625 - INFO - Original email file C:\Users\User\gateway\email1safe.eml has been removed after sending.
+2024-08-28 03:45:18,626 - INFO - New email detected: C:\Users\User\gateway\email4unsafe.eml
+2024-08-28 03:45:18,626 - INFO - Processing email: C:\Users\User\gateway\email4unsafe.eml
+2024-08-28 03:45:18,627 - WARNING - Unsafe email detected: C:\Users\User\gateway\email4unsafe.eml. Sensitive data found: Tax File Number
+2024-08-28 03:45:18,627 - INFO - Email C:\Users\User\gateway\email4unsafe.eml moved to 'Approval needed' due to detected sensitive data: Tax File Number
+2024-08-28 03:45:18,628 - ERROR - Failed to log email details for C:\Users\User\gateway\email4unsafe.eml: [Errno 2] No such file or directory: 'C:\\Users\\User\\gateway\\email4unsafe.eml'
+2024-08-28 03:45:18,628 - INFO - New email detected: C:\Users\User\gateway\emailsafe2.eml
+2024-08-28 03:45:18,628 - INFO - Processing email: C:\Users\User\gateway\emailsafe2.eml
+2024-08-28 03:45:18,628 - INFO - Email C:\Users\User\gateway\emailsafe2.eml is safe. Encrypting and sending...
+2024-08-28 03:45:18,629 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\emailsafe2.eml
+2024-08-28 03:45:18,629 - INFO - ACTION: ALLOW | Type: Sent | From: sender@example.com | To: recipient@example.com | Date: Unknown | Subject: Meeting Schedule | Path: C:\Users\User\gateway\Sent\emailsafe2.eml
+2024-08-28 03:45:18,630 - INFO - Original email file C:\Users\User\gateway\emailsafe2.eml has been removed after sending.
+2024-08-28 03:45:18,630 - INFO - New email detected: C:\Users\User\gateway\test_email.eml
+2024-08-28 03:45:18,630 - INFO - Processing email: C:\Users\User\gateway\test_email.eml
+2024-08-28 03:45:18,634 - INFO - Email C:\Users\User\gateway\test_email.eml is safe. Encrypting and sending...
+2024-08-28 03:45:18,635 - INFO - Email encrypted and saved to C:\Users\User\gateway\Sent\test_email.eml
+2024-08-28 03:45:18,636 - INFO - ACTION: ALLOW | Type: Sent | From: Unknown | To: Unknown | Date: Unknown | Subject: Unknown | Path: C:\Users\User\gateway\Sent\test_email.eml
+2024-08-28 03:45:18,637 - INFO - Original email file C:\Users\User\gateway\test_email.eml has been removed after sending.
