@@ -13,9 +13,9 @@ For Bad Security Inc (BSI) - Proof of Concept
    - Changed email_parser name to email_processor
    - removed the search_log
    - Added additional functionalities for automation. This includes:
-        -  processed_email_storage: Stores *email name* to a different log file
-        - load_emails_processed: loads emails that have been processed and adds them to a set (allows   no dupes)
-        - process_all_emails: function that calls new functions created. Logs emails only if haven't already
+   - processed_email_storage: Stores *email name* to a different log file
+   - load_emails_processed: loads emails that have been processed and adds them to a set (allows no dupes)
+   - process_all_emails: function that calls new functions created. Logs emails only if haven't already
 3. Moved search_log function into a seperate file called log_search.py
 4. Created a main.py
     - This is where I will be calling the functions and building the CLI
@@ -44,9 +44,14 @@ For Bad Security Inc (BSI) - Proof of Concept
     - added ASCII art
     - email handler - listens in a folder for new emails
 
-# Week 3 - 5 - Bhuvan Virmani
-1. Worked on creating DLP checks which read all the emails in a directory and check for any regex sensitive information. 
-If any sensitive data is found in the emails it returns the info and the file name and marks the email as blocked. 
+# Week 5 Changes - Tamara Allos
+1. Worked on refactoring the code:
+    - Fixed and implemented a better Folder Structure
+    - Code reviewed teammates PR's
+    - Modified changes to teammates codes
+    - Integrated teammates code (spam and phishing) within the email_parser function
+    - Wrote comments/instructions for how team mates should integrated their code.
+
 
 ### Note - To All - From Tamara
 You need to set up a .env if u want it to work

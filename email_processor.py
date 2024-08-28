@@ -2,10 +2,28 @@ from email import policy
 from email.parser import BytesParser
 import json
 import os
+from SecurityChecks.PhishingFilter.phishingtest import (is_phishing_email, load_phishing_domains, load_phishing_links)
+from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
+
+# note to all
+# apply integeration of other code checks.
+# if something returns false it needs to modify
+# type to be equal to type = spam, spoof, phishing, etc
+# action status needs to be blocked.
+# is true do nothing
+## SEE HOW I DID IT LINE 44 - 58
 
 # function parses email and returns extracted content
 def parse_email(file_path):
     try: # using try and catch block
+
+        # phishing - reading phishing files
+        phishing_domains = load_phishing_domains('SecurityChecks/PhishingFilter/phishing_domains.txt')
+        phishing_links = load_phishing_links('SecurityChecks/PhishingFilter/phishing_links.txt')
+
+        # spam - reading spam files
+        spam_keywords = load_spam_keywords('SecurityChecks/SpamFilter/spam_keywords.txt')
+
         # open then parse email
         with open(file_path, 'rb') as file: #open file in read binary 
             # using default policy for parsing the email msgs - policies define how aspects of email msgs are handled
@@ -18,8 +36,29 @@ def parse_email(file_path):
             'from': message['from'],
             'date': message['date'],
             'action status': message['X-Action-Status'],
+            'type': message['X-Type'],
             'body': message.get_body(preferencelist=('plain', 'html')).get_content()
         }
+
+        # Phishing check
+        if is_phishing_email(message, phishing_domains, phishing_links):
+            print("Phishing detected. Updating email status.") # for testing purposes
+            email_data['action status'] = 'blocked'
+            email_data['type'] = 'phishing'
+        else:
+            print("No phishing detected.")
+
+        # Spam Check
+        if is_spam(email_data['body'], spam_keywords): 
+            print("spam detected. Updating email stat") # for testing purposes
+            email_data['action status'] = 'blocked'
+            email_data['type'] = 'spam'
+        else:
+            print("no spam detected")
+
+        #   READ LINE 8 to 14 FOR INTEGRATION
+        # integrate yours here...
+
 
         #print(f'{file_path} has been successfully parsed!') # testing purposes
         return email_data
