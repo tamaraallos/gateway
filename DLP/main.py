@@ -12,7 +12,7 @@ def dlp_check_emails(email_folder_path, dlp_patterns):
             file_path = os.path.join(email_folder_path, filename)
             if os.path.isfile(file_path):
                 # IMP: Call your custom email parsing function here
-                email_content = your_email_parsing_function(file_path)
+                email_content = email_parsing_function(file_path)
                 findings = check_dlp(email_content, dlp_patterns)
                 if findings:
                     results.append((filename, findings))
