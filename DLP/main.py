@@ -1,5 +1,5 @@
-
-from dlp_patterns import check_dlp, DLP_PATTERNS
+from email_processor import parse_email;
+from dlp_patterns import check_dlp, DLP_PATTERNS;
 import os;
 
 EMAIL_FOLDER_PATH = 'D:\EmailSecurity-main\EmailSecurity-main\emails'#path/to/email/folder
@@ -11,13 +11,15 @@ def dlp_check_emails(email_folder_path, dlp_patterns):
         if filename.lower().endswith('.eml'):
             file_path = os.path.join(email_folder_path, filename)
             if os.path.isfile(file_path):
-                # IMP: Call your custom email parsing function here
-                email_content = email_parsing_function(file_path)
-                findings = check_dlp(email_content, dlp_patterns)
-                if findings:
-                    results.append((filename, findings))
+                # Use your custom email parsing function
+                email_data = parse_email(file_path)
+                if email_data:
+                    # Extract the email body for DLP checks
+                    email_body = email_data['body']
+                    findings = check_dlp(email_body, dlp_patterns)
+                    if findings:
+                        results.append((filename, findings))
     return results
-
 
 def main():
     # Perform DLP checks on parsed emails in the specified folder
@@ -29,7 +31,7 @@ def main():
         for email, findings in dlp_results:
             print(f"Email: {email}")
             for pattern, matches in findings.items():
-                print(f"  {pattern}: {', '.join(matches)}")
+                print(f"Potential match:  {pattern}: {', '.join(matches)}")
     else:
         print("No DLP violations found.")
 
