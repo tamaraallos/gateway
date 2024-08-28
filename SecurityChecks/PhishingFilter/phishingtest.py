@@ -3,7 +3,6 @@ from urllib.parse import urlparse
 from email.utils import parseaddr
 from typing import List
 
-
 # Function to load phishing domains from a given file. Returns a set of phishing domains.
 def load_phishing_domains(file_path: str) -> List[str]:
     try:
