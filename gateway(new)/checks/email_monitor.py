@@ -1,5 +1,4 @@
 import os
-import time
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 import subprocess
@@ -16,7 +15,6 @@ class EmailMonitorHandler(FileSystemEventHandler):
             # Add code to notify the admin of a new email
 
 def monitor_directory(directory):
-    print(f"Starting email monitoring on {directory}")
     event_handler = EmailMonitorHandler()
     observer = Observer()
     observer.schedule(event_handler, directory, recursive=False)
@@ -29,4 +27,5 @@ def monitor_directory(directory):
     observer.join()
 
 if __name__ == "__main__":
+    print(f"Starting email monitoring on {EMAILS_DIR}")
     monitor_directory(EMAILS_DIR)

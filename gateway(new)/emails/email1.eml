@@ -1,0 +1,14 @@
+Content-Type: multipart/mixed; boundary="===============7352289547185712931=="
+MIME-Version: 1.0
+To: daniel@email.com
+From: somehow@email.com
+Subject: just email
+Date: Thursday, 10 Jul 2024 18:16:34 -0000
+
+--===============7352289547185712931==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+just another email testing words, stuff, hi no yes, bye. afternoon.
+--===============7352289547185712931==--
