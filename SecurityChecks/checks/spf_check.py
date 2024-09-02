@@ -1,32 +1,34 @@
 import spf
+import socket
 
 # SPF - Sender Policy Framework
 # Type of authetnication method
 # Identifies mail servers that are allowed to send an email
 
-# I can also use spf.check2. It would need 2 variables instead of 3.
-# I will use 2 if the status code is uneeded, will revise later
+# function gets ip from domain
+def get_ip_from_domain(domain):
+    ip_address = socket.gethostbyname(domain)
+    return ip_address
 
-def spf_check(ip, domain, sender):
-    try:
-        result, status_code, explanation = spf.check(ip, domain, sender)
-        return result, status_code, explanation
-    except Exception as e:
-        return None, str(e)
+def spf_check(domain, sender):
+    ip_address = get_ip_from_domain(domain)
+    _, status_code, _ = spf.check(ip_address, domain, sender)
+    return status_code
+
+# if spf status code is not 250, it fails
+def check_spf_status_code(domain, sender):
+    status_code = spf_check(domain, sender)
+    if status_code == 250:
+        return True
+    else:
+        return False 
 
 
-# example
-ip_address = '173.194.0.0'  
+# BELOW IS AN EXAMPLE FOR TESTING PURPOSES
+# IT NEEDS TO BE DELETED AFTER TESTING.
 domain = 'gmail.com'
 sender_email = 'user@gmail.com'
 
-result, status_code, explanation = spf_check(ip_address, domain, sender_email)
-print(f"SPF check result: {result}")
-print(f"status code: {status_code}")
-print(f"Explanation: {explanation}")
+status_code = check_spf_status_code(domain, sender_email)
 
-
-# results can equal to: pass(authorised), fail(not authorised), softfail(not authorised but not denied), 
-# neutral(no indication of either), tempError, permError
-# status code: 250 (request action completed successfully), 550(request action not taken)
-
+print(f"spf status code: {status_code}")
