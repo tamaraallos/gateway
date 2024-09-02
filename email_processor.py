@@ -47,7 +47,7 @@ def parse_email(file_path):
             email_data['action status'] = 'blocked'
             email_data['type'] = 'phishing'
         else:
-            print("No phishing detected.")
+            print("No phishing detected.") # delete later for testing
 
         # Spam Check
         if is_spam(email_data['body'], spam_keywords): 
@@ -55,7 +55,7 @@ def parse_email(file_path):
             email_data['action status'] = 'blocked'
             email_data['type'] = 'spam'
         else:
-            print("no spam detected")
+            print("no spam detected") # delete later for testing
 
         #   READ LINE 8 to 14 FOR INTEGRATION
         # integrate yours here...
@@ -67,7 +67,7 @@ def parse_email(file_path):
             email_data['action_status'] = 'blocked'
             email_data['type'] = 'DLP Violation'
         else:
-            print("No DLP Voilations detected.")
+            print("No DLP Voilations detected.") # delete later for testing
 
 
         #print(f'{file_path} has been successfully parsed!') # testing purposes
