@@ -93,6 +93,12 @@ def processed_email_storage(log_file_path, email_file_name):
         log_file.write(email_file_name + '\n') # write name of email into file
         #print(f"file name successfully written to process email log file: {email_file_name}") # for testing
 
+# functions reads log file and prints each line
+def print_log_file(log_file_path):
+    with open(log_file_path, 'r') as log_file:
+        for line in log_file:
+            print(line.strip())
+
 # function load emails that are already processed
 def load_emails_processed(log_file_path):
     emails_processedd = set() # initialise set object (using set for no dupes)
