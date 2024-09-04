@@ -8,6 +8,7 @@ from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
 from SecurityChecks.DLP.dlp_patterns import check_dlp
 from SecurityChecks.Encryption.encryption import encrypt_email
 from SecurityChecks.SensitiveInfo.sensitive_info import check_email_sensitivity
+from SecurityChecks.Spoofing.spoofing import spoofing
 # note to all
 # apply integeration of other code checks.
 # if something returns false it needs to modify
@@ -82,11 +83,20 @@ def parse_email(file_path):
         else:
             print("No Sensitive Information detected.") # delete later for testing
         
+        #Spoofing
+        if spoofing(email_data["body"]):
+            print(f"Spoofing indicators found in {email_data['body']}")
+            email_data['action_status'] = 'blocked'
+            email_data['type'] = 'Spoofing Detected'
+        else:
+            print("No Sppofing indicators found")
+
         #Encryption
         if email_data['action status'] != 'pending':
             encrypt_email(file_path)
             email_data['action status'] = 'allowed'
             move_to_sent_folder(file_path)
+            email_data['type'] = 'Encrypted and sent'
         elif email_data['action status'] == 'blocked':
             print("Email will not be encrypted due to security concerns.")
 
