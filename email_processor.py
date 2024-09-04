@@ -75,14 +75,9 @@ def parse_email(file_path):
         
         #Encryption
         if email_data['action status'] != 'pending':
-            approval = input("Email contains sensitive data. Type 'yes' to approve and encrypt, 'no' to move to 'Approval needed': ").strip().lower()
-            if approval == 'yes':
-                encrypt_email(file_path)
-                email_data['action status'] = 'encrypted'
-                move_to_sent_folder(file_path)
-            else:
-                move_to_approval_folder(file_path)
-                email_data['action status'] = 'approval needed'
+            encrypt_email(file_path)
+            email_data['action status'] = 'allowed'
+            move_to_sent_folder(file_path)
         elif email_data['action status'] == 'blocked':
             print("Email will not be encrypted due to security concerns.")
 
@@ -101,15 +96,6 @@ def move_to_sent_folder(eml_file):
     destination = os.path.join(sent_folder, os.path.basename(eml_file))
     shutil.move(eml_file, destination)
     print(f"Moved file to {sent_folder}")
-
-def move_to_approval_folder(eml_file):
-    approval_folder = os.path.join(os.path.dirname(eml_file), "Approval needed")
-    if not os.path.exists(approval_folder):
-        os.makedirs(approval_folder)
-    
-    destination = os.path.join(approval_folder, os.path.basename(eml_file))
-    shutil.move(eml_file, destination)
-    print(f"Moved file to {approval_folder}")
 
 # function stores email content in a log file
 def log_email(log_file_path, email_content):
