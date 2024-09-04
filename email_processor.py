@@ -5,6 +5,9 @@ import os
 from SecurityChecks.PhishingFilter.phishingtest import (is_phishing_email, load_phishing_domains, load_phishing_links)
 from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
 from SecurityChecks.DLP.dlp_patterns import check_dlp
+from SecurityChecks.checks.DKIM_check import dkim_check
+from SecurityChecks.checks.dmarc_check import dmarc_check
+from SecurityChecks.checks.spf_check import spf_check
 
 # note to all
 # apply integeration of other code checks.
@@ -69,6 +72,33 @@ def parse_email(file_path):
         else:
             print("No DLP Voilations detected.") # delete later for testing
 
+        #DKIM Check
+        dkim_result = dkim_check(email_data['body'])
+        if dkim_result :
+            print("DKIM Violation Detected. Updating email status") # this is for testing purposes
+            email_data['action_status'] = 'blocked'
+            email_data['type'] = 'DKIM Violation'
+        else:
+            print("No DKIM Voilations detected.") # delete later for testing    
+
+
+        #DMARC Check
+        dmarc_result = dmarc_check(email_data['body'])
+        if dmarc_result :
+            print("DMARC Violation Detected. Updating email status") # this is for testing purposes
+            email_data['action_status'] = 'blocked'
+            email_data['type'] = 'DMAR Violation'
+        else:
+            print("No DMARC Voilations detected.") # delete later for testing    
+
+        #SPF Check
+        spf_result = spf_check(email_data['body'])
+        if spf_result :
+            print("SPF Violation Detected. Updating email status") # this is for testing purposes
+            email_data['action_status'] = 'blocked'
+            email_data['type'] = 'SPF Violation'
+        else:
+            print("No SPF Voilations detected.") # delete later for testing    
 
         #print(f'{file_path} has been successfully parsed!') # testing purposes
         return email_data
