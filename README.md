@@ -35,12 +35,14 @@ A brief description of what the project is and what it does.
 - Start by cloning the repository to your local machine. You can do this by running the following command in your terminal:
 
   ```bash
-  git clone https://github.com/yourusername/email-security-gateway.git
+  git clone https://github.com/yourusername/gateway.git
+  
+- Make sure to replace the placeholder with your actual username
 ### Step 2: Set Up Environment Variables
 - After cloning the repository, navigate to the project directory:
 
   ```bash
-  cd email-security-gateway
+  cd gateway
 - You will need to set up a .env file to store your environment variables. This file will contain sensitive information such as directory paths and passwords, so make sure to keep it secure.
 
 - Create a .env file in the root directory of the project and add the following environment variables:
