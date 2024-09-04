@@ -7,6 +7,7 @@ from SecurityChecks.PhishingFilter.phishingtest import (is_phishing_email, load_
 from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
 from SecurityChecks.DLP.dlp_patterns import check_dlp
 from SecurityChecks.Encryption.encryption import encrypt_email
+from SecurityChecks.SensitiveInfo.sensitive_info import check_email_sensitivity
 # note to all
 # apply integeration of other code checks.
 # if something returns false it needs to modify
@@ -72,6 +73,14 @@ def parse_email(file_path):
             print("No DLP Voilations detected.") # delete later for testing
 
         #Sensitive Info Check
+        sensitive_results = check_email_sensitivity(email_data["body"])
+        if sensitive_results :
+            print("DLP Violation Detected. Updating email status") # this is for testing purposes
+            #Pending so that it can be forwaded to encrypt and then save
+            email_data['action_status'] = 'pending'
+            email_data['type'] = 'Sensitive Information Detected'
+        else:
+            print("No Sensitive Information detected.") # delete later for testing
         
         #Encryption
         if email_data['action status'] != 'pending':
