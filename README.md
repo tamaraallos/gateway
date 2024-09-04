@@ -1,4 +1,4 @@
-# Project Name
+# Email Security Gateway
 
 A brief description of what the project is and what it does.
 
