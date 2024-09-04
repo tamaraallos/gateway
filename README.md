@@ -5,16 +5,17 @@ A brief description of what the project is and what it does.
 ## Table of Contents
 
 1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Features](#features)
-4. [Configuration](#configuration)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Acknowledgements](#acknowledgements)
+2. [Prerequisites](#Prerequisites)
+3. [Usage](#usage)
+4. [Features](#features)
+5. [Configuration](#configuration)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Acknowledgements](#acknowledgements)
 
 ## Installation
 
-### Prerequisites
+## Prerequisites
 - List any prerequisites required before installation (e.g., software versions, dependencies).
 - Example:
   ```bash
