@@ -2,10 +2,11 @@ from email import policy
 from email.parser import BytesParser
 import json
 import os
+import shutil
 from SecurityChecks.PhishingFilter.phishingtest import (is_phishing_email, load_phishing_domains, load_phishing_links)
 from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
 from SecurityChecks.DLP.dlp_patterns import check_dlp
-
+from SecurityChecks.Encryption.encryption import encrypt_email
 # note to all
 # apply integeration of other code checks.
 # if something returns false it needs to modify
@@ -64,11 +65,26 @@ def parse_email(file_path):
         dlp_results = check_dlp(email_data['body'])
         if dlp_results :
             print("DLP Violation Detected. Updating email status") # this is for testing purposes
-            email_data['action_status'] = 'blocked'
+            #Pending so that it can be forwaded to encrypt and then save
+            email_data['action_status'] = 'pending'
             email_data['type'] = 'DLP Violation'
         else:
             print("No DLP Voilations detected.") # delete later for testing
 
+        #Sensitive Info Check
+        
+        #Encryption
+        if email_data['action status'] != 'pending':
+            approval = input("Email contains sensitive data. Type 'yes' to approve and encrypt, 'no' to move to 'Approval needed': ").strip().lower()
+            if approval == 'yes':
+                encrypt_email(file_path)
+                email_data['action status'] = 'encrypted'
+                move_to_sent_folder(file_path)
+            else:
+                move_to_approval_folder(file_path)
+                email_data['action status'] = 'approval needed'
+        elif email_data['action status'] == 'blocked':
+            print("Email will not be encrypted due to security concerns.")
 
         #print(f'{file_path} has been successfully parsed!') # testing purposes
         return email_data
@@ -76,6 +92,24 @@ def parse_email(file_path):
     except Exception as e:
         #print(f"failed to parse email from the {file_path}: {e}")
         return None
+
+def move_to_sent_folder(eml_file):
+    sent_folder = os.path.join(os.path.dirname(eml_file), "Sent")
+    if not os.path.exists(sent_folder):
+        os.makedirs(sent_folder)
+    
+    destination = os.path.join(sent_folder, os.path.basename(eml_file))
+    shutil.move(eml_file, destination)
+    print(f"Moved file to {sent_folder}")
+
+def move_to_approval_folder(eml_file):
+    approval_folder = os.path.join(os.path.dirname(eml_file), "Approval needed")
+    if not os.path.exists(approval_folder):
+        os.makedirs(approval_folder)
+    
+    destination = os.path.join(approval_folder, os.path.basename(eml_file))
+    shutil.move(eml_file, destination)
+    print(f"Moved file to {approval_folder}")
 
 # function stores email content in a log file
 def log_email(log_file_path, email_content):
