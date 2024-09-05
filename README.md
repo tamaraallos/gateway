@@ -5,12 +5,15 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
 
 ## Table of Contents
 
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Features](#features)
-4. [Contributing](#contributing)
-5. [Acknowledgements](#acknowledgements)
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Contributing](#contributing)
+4. [Acknowledgements](#acknowledgements)
 
+## Features
+
+- List the key features and functions of the software.
+  
 ## Installation
 
 ### Prerequisites
@@ -56,12 +59,11 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
 
 #### Step 3: Additional Configuration
 - Ensure that the directories you specify in the .env file are correctly set up and have the necessary read/write permissions.
-## Usage
+  
+### Usage
 - Explain how to use the software. Can include examples and screenshots.
-- 
-## Features
+  
 
-- List the key features and functions of the software.
 
 
 
