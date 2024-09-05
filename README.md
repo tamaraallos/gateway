@@ -1,44 +1,35 @@
 # Email Security Gateway
 
-A brief description of what the project is and what it does.
+This project is a prototype of an Email Security Gateway, designed to protect an SMTP server by filtering and inspecting email traffic based on threat intelligence. Acting as a proxy, the gateway secures both inbound and outbound emails, protecting against phishing, spam, spoofing, and preventing the leakage of sensitive information.
+Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SPF checks and blocks any suspicious emails from reaching the user.
 
 ## Table of Contents
 
 1. [Installation](#installation)
-2. [Prerequisites](#Prerequisites)
-3. [Usage](#usage)
-4. [Features](#features)
-5. [Configuration](#configuration)
-6. [Contributing](#contributing)
-7. [License](#license)
-8. [Acknowledgements](#acknowledgements)
+2. [Usage](#usage)
+3. [Features](#features)
+4. [Contributing](#contributing)
+5. [Acknowledgements](#acknowledgements)
 
 ## Installation
 
-## Prerequisites
+### Prerequisites
 - List any prerequisites required before installation (e.g., software versions, dependencies).
 - Example:
   ```bash
   # Install Watchdog
   pip install watchdog
 
-## Usage
-- Explain how to use the software. Can include examples and screenshots.
-- 
-## Features
+### Configurations
 
-- List the key features and functions of the software.
-
-## Configurations
-
-### Step 1: Clone the Repository
+#### Step 1: Clone the Repository
 - Start by cloning the repository to your local machine. You can do this by running the following command in your terminal:
 
   ```bash
   git clone https://github.com/yourusername/gateway.git
   
 - Make sure to replace the placeholder with your actual username
-### Step 2: Set Up Environment Variables
+#### Step 2: Set Up Environment Variables
 - After cloning the repository, navigate to the project directory:
 
   ```bash
@@ -60,15 +51,19 @@ A brief description of what the project is and what it does.
   LOG_PATH: The directory where log files will be saved.
   LOG_EMAIL_ARCHIVE: The directory where archived emails will be stored.
   LOG_EMAIL_PROCESSED: The directory for storing processed emails.
-  PASSWORD: The password used for using the gateway.
+  PASSWORD: The password for using the gateway.
 - Make sure to replace the placeholder paths and values with your actual directory paths and a secure password.
 
-### Step 3: Additional Configuration
+#### Step 3: Additional Configuration
 - Ensure that the directories you specify in the .env file are correctly set up and have the necessary read/write permissions.
+## Usage
+- Explain how to use the software. Can include examples and screenshots.
+- 
+## Features
 
-## License
+- List the key features and functions of the software.
 
-- Provide details of any license. (Can delete it later if its unnecessary. )
+
 
 ## Acknowledgements
 
