@@ -11,10 +11,8 @@ DLP_PATTERNS = {
     'Phone Number': r'\b(?:\+?(\d{1,3})?[-.\s]?)?((\(\d{1,4}\))|\d{1,4})[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}\b',
     'Email Address': r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b',
     'Street Address': r'\b\d{1,5}\s+\b[A-Za-z0-9.\s,-]+\b(?:Street|St|Avenue|Ave|Boulevard|Blvd|Road|Rd|Lane|Ln|Drive|Dr)\b',
-    'Passport Number': r'\b[A-PR-WYa-pr-wy][1-9]\d\s?\d{4}[1-9]\b',  # Generic passport number pattern
     'IP Address': r'\b(?:\d{1,3}\.){3}\d{1,3}\b',
     'MAC Address': r'\b([0-9A-Fa-f]{2}[:-]){5}([0-9A-Fa-f]{2})\b',
-    'Driver License Number': r'\b[A-Z0-9]{1,9}\b'  # Generic pattern for driver's license numbers
 }
 
 #Check content against DLP patterns
