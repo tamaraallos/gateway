@@ -6,9 +6,7 @@ def on_created_email(event, email_dire, log_archive_path, log_email_processed_pa
     if event.is_directory: # edge case if event is for dire then ignore
         return 
     if event.src_path.endswith(".eml"): # only process .eml files
-         #print(f"new mail detected: {event.src_path}") # testing purposes
         process_all_emails(email_dire, log_archive_path, log_email_processed_path)
-
 
 # creates and return a file system event handler 
 def create_event_handler(email_dire, log_archive_path, log_email_processed_path):
