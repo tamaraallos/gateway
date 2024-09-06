@@ -5,6 +5,7 @@ import os
 from SecurityChecks.PhishingFilter.phishingtest import (is_phishing_email, load_phishing_domains, load_phishing_links)
 from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
 from SecurityChecks.DLP.dlp_patterns import check_dlp
+from SecurityChecks.spoofing.spoofing import (check_spoofing)
 
 # note to all
 # apply integeration of other code checks.
@@ -60,7 +61,7 @@ def parse_email(file_path):
         #   READ LINE 8 to 14 FOR INTEGRATION
         # integrate yours here...
         
-        #DLP Check
+        # DLP Check
         dlp_results = check_dlp(email_data['body'])
         if dlp_results :
             print("DLP Violation Detected. Updating email status") # this is for testing purposes
@@ -69,6 +70,12 @@ def parse_email(file_path):
         else:
             print("No DLP Voilations detected.") # delete later for testing
 
+        # Spoofing Check
+        spoofing_results = check_spoofing(message)
+        if spoofing_results:
+            print("Spoofing detected. Updating email status...") # this is for testing purposes
+            email_data['action_status'] = 'blocked'
+            email_data['type'] = 'Spoofing'
 
         #print(f'{file_path} has been successfully parsed!') # testing purposes
         return email_data
