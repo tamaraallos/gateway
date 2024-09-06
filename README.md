@@ -7,7 +7,7 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
 
 1. [Features](#features)
 2. [Installation](#installation)
-3. [Contributing](#contributing)
+3. [Contribution](#contribution)
 4. [Acknowledgements](#acknowledgements)
 
 ## Features
@@ -69,4 +69,15 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
 
 ## Acknowledgements
 
-- thank anyone for their contribution here
+We would like to express our gratitude to the following team members for their dedication and contributions to this project:
+
+- **Bhuvan Virmani** - Project Manager
+- **Tamara Allos** - UX Development Lead
+- **Nelchael Kenshi Turija** - Backend Development Lead
+- **Sai Veera Venkat Rahul Chagant** - Documentation Lead
+- **Nehal Rahuja** - Quality Assurance (Testing) Lead
+- **Saksham** - Communication Lead
+
+A special thanks to our supervisor, **Jamie Ooi**, for their invaluable guidance and support throughout the project.
+
+We would also like to acknowledge our clients, **Allen** and **Tom** from **Bad Security Inc.**, for providing us with this opportunity and for their trust in our work.
