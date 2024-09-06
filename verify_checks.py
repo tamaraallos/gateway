@@ -30,8 +30,8 @@ def extract_email_data(message):
 
 # phishing
 def check_phishing(email_data, message):
-    phishing_domains = load_phishing_domains('SecurityChecks/phishing/phishing_domains.txt')
-    phishing_links = load_phishing_links('SecurityChecks/phishing/phishing_links.txt')
+    phishing_domains = load_phishing_domains('SecurityChecks/PhishingFilter/phishing_domains.txt')
+    phishing_links = load_phishing_links('SecurityChecks/PhishingFilter/phishing_links.txt')
     
     if is_phishing_email(message, phishing_domains, phishing_links):
         email_data['action status'] = 'blocked'
@@ -40,7 +40,7 @@ def check_phishing(email_data, message):
 
 # spam
 def check_spam(email_data):
-    spam_keywords = load_spam_keywords('SecurityChecks/spam/spam_keywords.txt')
+    spam_keywords = load_spam_keywords('SecurityChecks/SpamFilter/spam_keywords.txt')
     if is_spam(email_data['body'], spam_keywords):
         email_data['action status'] = 'blocked'
         email_data['type'] += 'Spam, '
