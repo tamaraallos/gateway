@@ -50,7 +50,7 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
   LOG_EMAIL_PROCESSED=/path/to/processed/emails
   PASSWORD=yourpasswordhere
 
-##### Configuration Details
+  Configuration Details
   ROOT_DIR: The root directory where your project is located.
   EMAIL_FOLDER: The directory where incoming emails are stored.
   LOG_PATH: The directory where log files will be saved.
