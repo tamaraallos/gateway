@@ -1,87 +1,27 @@
-from email import policy
-from email.parser import BytesParser
 import json
 import os
-from SecurityChecks.PhishingFilter.phishingtest import (is_phishing_email, load_phishing_domains, load_phishing_links)
-from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
-from SecurityChecks.DLP.dlp_patterns import check_dlp
-from SecurityChecks.spoofing.spoofing import (check_spoofing)
-
-# note to all
-# apply integeration of other code checks.
-# if something returns false it needs to modify
-# type to be equal to type = spam, spoof, phishing, etc
-# action status needs to be blocked.
-# is true do nothing
-## SEE HOW I DID IT LINE 44 - 58
+from verify_checks import (parse_email_file, extract_email_data, check_phishing, check_spam, check_dlp_results, check_spoofing_results, check_type)
 
 # function parses email and returns extracted content
 def parse_email(file_path):
-    try: # using try and catch block
-
-        # phishing - reading phishing files
-        phishing_domains = load_phishing_domains('SecurityChecks/PhishingFilter/phishing_domains.txt')
-        phishing_links = load_phishing_links('SecurityChecks/PhishingFilter/phishing_links.txt')
-
-        # spam - reading spam files
-        spam_keywords = load_spam_keywords('SecurityChecks/SpamFilter/spam_keywords.txt')
-
-        # open then parse email
-        with open(file_path, 'rb') as file: #open file in read binary 
-            # using default policy for parsing the email msgs - policies define how aspects of email msgs are handled
-            message = BytesParser(policy=policy.default).parse(file)
-
+    try: 
+        # parse email
+        message = parse_email_file(file_path)
+ 
         # retrieve data from the parsed email
-        email_data = { 
-            'to': message['to'],
-            'subject': message['subject'],
-            'from': message['from'],
-            'date': message['date'],
-            'action status': message['X-Action-Status'],
-            'type': message['X-Type'],
-            'body': message.get_body(preferencelist=('plain', 'html')).get_content()
-        }
+        email_data = extract_email_data(message)
 
-        # Phishing check
-        if is_phishing_email(message, phishing_domains, phishing_links):
-            print("Phishing detected. Updating email status.") # for testing purposes
-            email_data['action status'] = 'blocked'
-            email_data['type'] = 'phishing'
-        else:
-            print("No phishing detected.") # delete later for testing
+        # perform checks
+        email_data = check_phishing(email_data, message)
+        email_data = check_spam(email_data)
+        email_data = check_dlp_results(email_data)
+        email_data = check_spoofing_results(email_data, message)
+        email_data = check_type(email_data)
 
-        # Spam Check
-        if is_spam(email_data['body'], spam_keywords): 
-            print("spam detected. Updating email stat") # for testing purposes
-            email_data['action status'] = 'blocked'
-            email_data['type'] = 'spam'
-        else:
-            print("no spam detected") # delete later for testing
-
-        #   READ LINE 8 to 14 FOR INTEGRATION
-        # integrate yours here...
-        
-        # DLP Check
-        dlp_results = check_dlp(email_data['body'])
-        if dlp_results :
-            print("DLP Violation Detected. Updating email status") # this is for testing purposes
-            email_data['action_status'] = 'blocked'
-            email_data['type'] = 'DLP Violation'
-        else:
-            print("No DLP Voilations detected.") # delete later for testing
-
-        # Spoofing Check
-        spoofing_results = check_spoofing(message)
-        if spoofing_results:
-            print("Spoofing detected. Updating email status...") # this is for testing purposes
-            email_data['action_status'] = 'blocked'
-            email_data['type'] = 'Spoofing'
-
-        #print(f'{file_path} has been successfully parsed!') # testing purposes
         return email_data
-    # error handling - throw error if code in try doesn't work
+        
     except Exception as e:
-        #print(f"failed to parse email from the {file_path}: {e}")
+        print(f"failed to parse email from the {file_path}: {e}")
         return None
 
 # function stores email content in a log file
@@ -92,7 +32,6 @@ def log_email(log_file_path, email_content):
         # write JSON string into log file
         with open(log_file_path, 'a') as log_file: # a = append json string
             log_file.write(json_email + '\n') # writes json email string to the file 
-
 
 # function stores emails that have been processed (only file name)
 def processed_email_storage(log_file_path, email_file_name):
