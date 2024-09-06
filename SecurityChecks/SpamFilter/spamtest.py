@@ -17,6 +17,7 @@ def load_spam_keywords(file_path: str) -> List[str]:
 def is_spam(email_text: str, spam_keywords: List[str]) -> bool:
     # converts text to lowercase.
     email_text = email_text.lower()
-
-    # Check for presence of any spam keyword in the email text
-    return any(keyword in email_text for keyword in spam_keywords)
+    for keyword in spam_keywords:
+        if keyword in email_text:
+            return True
+    return False
