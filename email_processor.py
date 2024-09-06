@@ -37,7 +37,6 @@ def log_email(log_file_path, email_content):
 def processed_email_storage(log_file_path, email_file_name):
     with open(log_file_path, 'a') as log_file:
         log_file.write(email_file_name + '\n') # write name of email into file
-        #print(f"file name successfully written to process email log file: {email_file_name}") # for testing
 
 # functions reads log file and prints each line
 def print_log_file(log_file_path):
@@ -54,7 +53,6 @@ def load_emails_processed(log_file_path):
                 emails_processedd.add(line.strip()) # add email name to set and remove white space
             return emails_processedd
 
-
 # function processes email and logs it into a log file
 def process_and_log_email(email_file, log_archive_path, log_email_processed_path):
     email_details = parse_email(email_file) # parses email
@@ -70,5 +68,3 @@ def process_all_emails(email_dire, log_archive_path, log_email_processed_path):
         if email_file.endswith(".eml") and email_file  not in emails_processed: # check if already processed
             email_file_path = os.path.join(email_dire, email_file) # joins email dire with email name to construct a path
             process_and_log_email(email_file_path, log_archive_path,log_email_processed_path) # parse, and log email
-        #else:
-            #print(f"already processed email thats being skipped: {email_file}")
