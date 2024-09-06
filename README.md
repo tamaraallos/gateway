@@ -7,8 +7,9 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
 
 1. [Features](#features)
 2. [Installation](#installation)
-3. [Contribution](#contribution)
-4. [Acknowledgements](#acknowledgements)
+3. [Usage](#usage)
+4. [Contribution](#contribution)
+5. [Acknowledgements](#acknowledgements)
 
 ## Features
 
@@ -50,7 +51,8 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
   LOG_EMAIL_PROCESSED=/path/to/processed/emails
   PASSWORD=yourpasswordhere
 
-  Configuration Details
+  Configuration Details:
+  
   ROOT_DIR: The root directory where your project is located.
   EMAIL_FOLDER: The directory where incoming emails are stored.
   LOG_PATH: The directory where log files will be saved.
@@ -66,7 +68,7 @@ Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SP
 - Explain how to use the software. Can include examples and screenshots.
   
 
-
+### Contribution
 
 
 ## Acknowledgements
