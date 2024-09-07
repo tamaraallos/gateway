@@ -6,6 +6,7 @@ from SecurityChecks.DLP.dlp_patterns import (check_dlp)
 from SecurityChecks.spoofing.spoofing import (check_spoofing)
 from SecurityChecks.encryption.encryption import (encrypt_body)
 from SecurityChecks.checks.spf_check import (check_spf_status_code)
+from SecurityChecks.checks.dmarc_check import (is_dmarc_record)
 
 # parse email file
 def parse_email_file(file_path):
@@ -76,6 +77,17 @@ def spf_check_result(email_data):
     else:
         print("no bad spf")
     return email_data
+    
+# dmarc check
+def dmarc_check_result(email_data):
+    results = is_dmarc_record(email_data['from'])
+    if results == False:
+        email_data['action status'] = 'blocked'
+        email_data['type'] += 'DMARC Violation, '
+    else:
+        print("no bad dmarc")
+    return email_data
+
 
 
 # check email type
