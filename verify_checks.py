@@ -5,6 +5,7 @@ from SecurityChecks.SpamFilter.spamtest import (load_spam_keywords, is_spam)
 from SecurityChecks.DLP.dlp_patterns import (check_dlp)
 from SecurityChecks.spoofing.spoofing import (check_spoofing)
 from SecurityChecks.encryption.encryption import (encrypt_body)
+from SecurityChecks.checks.spf_check import (check_spf_status_code)
 
 # parse email file
 def parse_email_file(file_path):
@@ -63,6 +64,19 @@ def check_spoofing_results(email_data, message):
         email_data['action status'] = 'blocked'
         email_data['type'] += 'Spoofing, '
     return email_data
+
+
+# checks
+# spf check
+def spf_check_result(email_data):
+    results = check_spf_status_code(email_data['from'])
+    if results == False:
+        email_data['action status'] = 'blocked'
+        email_data['type'] += 'Spf Violation, '
+    else:
+        print("no bad spf")
+    return email_data
+
 
 # check email type
 def check_type(email_data):
