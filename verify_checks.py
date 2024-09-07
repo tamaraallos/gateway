@@ -7,6 +7,7 @@ from SecurityChecks.spoofing.spoofing import (check_spoofing)
 from SecurityChecks.encryption.encryption import (encrypt_body)
 from SecurityChecks.checks.spf_check import (check_spf_status_code)
 from SecurityChecks.checks.dmarc_check import (is_dmarc_record)
+from SecurityChecks.checks.DKIM_check import (dkim_check)
 
 # parse email file
 def parse_email_file(file_path):
@@ -24,6 +25,7 @@ def extract_email_data(message):
         'date': message['date'],
         'action status': "allowed",
         'type': '',
+        'dkim signature': "normal",
         'body': message.get_body(preferencelist=('plain', 'html')).get_content()
     }
 
@@ -77,7 +79,7 @@ def spf_check_result(email_data):
     else:
         print("no bad spf")
     return email_data
-    
+
 # dmarc check
 def dmarc_check_result(email_data):
     results = is_dmarc_record(email_data['from'])
@@ -88,7 +90,14 @@ def dmarc_check_result(email_data):
         print("no bad dmarc")
     return email_data
 
-
+# dkim check
+def dkim_check_result(file_path, email_data):
+    results = dkim_check(file_path)
+    if not results:
+        email_data['dkim signature'] = 'No DKIM Signature'
+    else:
+        email_data['dkim signature'] = 'DKIM Signature'
+    return email_data
 
 # check email type
 def check_type(email_data):
