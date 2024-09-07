@@ -1,0 +1,14 @@
+From: support@fakeinsurance.com
+To: claims@badsec.com.au
+Subject: Superannuation Claim Pending
+Received: from smtp.fakeinsurance.com ([198.51.100.15]) by unknown.mail.com (Postfix) with ESMTP id DEF654321789 for <claims@badsec.com.au>; Tue, 5 Sep 2024 08:25:45 +0000 (UTC)
+Received: from smtp.fakeinsurance.com ([10.0.0.2]) by relay.unknown.mail.com with ESMTP id GHI987654321 for <claims@badsec.com.au>; Tue, 5 Sep 2024 08:20:13 +0000 (UTC)
+
+Dear Claims Team,
+
+We require further information to process your pending superannuation claim. Please verify the Superannuation Account number linked to your file: 1122-3344-5566. Ensure the details are accurate to avoid any delay in the claim process.
+
+Thank you for your cooperation.
+
+Sincerely,
+Fake Insurance Claims Team

@@ -1,0 +1,12 @@
+From: info@phishingalerts.com
+To: alerts@badsec.com.au
+Subject: Suspicious Activity Detected on Your Account
+Received: from smtp.phishingalerts.com ([203.0.113.45]) by unknown.gateway.com (Postfix) with ESMTP id VWX987654321 for <alerts@badsec.com.au>; Fri, 8 Sep 2024 16:05:50 +0000 (UTC)
+Received: from unknown ([172.16.1.1]) by smtp.phishingalerts.com with ESMTP id YZA123456789 for <alerts@badsec.com.au>; Fri, 8 Sep 2024 15:48:30 +0000 (UTC)
+
+Dear Alerts Team,
+
+We have detected unusual activity on your corporate account and need you to confirm your Tax File Number (TFN): 789-321-456. Please take immediate action to prevent unauthorized access.
+
+Best regards,
+Phishing Alerts Security Team

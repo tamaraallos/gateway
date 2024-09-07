@@ -1,0 +1,14 @@
+From: billing@randombank.com
+To: finance@badsec.com.au
+Subject: Payment Confirmation Required
+
+Received: from smtp.randombank.com ([203.0.113.10]) by fake.mailserver.com (Postfix) with ESMTP id ABC123456789 for <finance@badsec.com.au>; Mon, 4 Sep 2024 10:15:30 +0000 (UTC)
+Received: from unknown ([192.168.1.1]) by smtp.randombank.com with ESMTP id XYZ987654321 for <finance@badsec.com.au>; Mon, 4 Sep 2024 09:59:12 +0000 (UTC)
+Dear Finance Team,
+
+We have received your recent payment, but there appears to be an issue with the associated Tax File Number (TFN). Please confirm the following TFN for account number 1234-5678-9123: 452-784-112. If this is incorrect, kindly update it at your earliest convenience.
+
+Thank you for your prompt attention.
+
+Best regards,
+RandomBank Billing Department

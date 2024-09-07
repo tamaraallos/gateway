@@ -1,0 +1,12 @@
+From: admin@fakesecurity.com
+To: security@badsec.com.au
+Subject: Urgent: Credit Card Fraud Detected
+Received: from fakesecurity.server.com ([198.51.100.30]) by untrustedrelay.com (Postfix) with ESMTP id PQR654321987 for <security@badsec.com.au>; Thu, 7 Sep 2024 14:35:50 +0000 (UTC)
+Received: from unknown ([192.168.10.2]) by fakesecurity.server.com with ESMTP id STU987654321 for <security@badsec.com.au>; Thu, 7 Sep 2024 14:20:25 +0000 (UTC)
+
+Dear Security Team,
+
+Our monitoring system has detected suspicious activity on your company credit card ending in 1234. Please verify the full credit card number immediately to avoid any interruptions to your account.
+
+Thank you,
+FakeSecurity Fraud Prevention Team
