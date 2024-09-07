@@ -1,6 +1,6 @@
 import json
 import os
-from verify_checks import (parse_email_file, extract_email_data, check_phishing, dmarc_check_result, spf_check_result, check_spam, check_dlp_results, check_spoofing_results, check_type)
+from verify_checks import (parse_email_file, extract_email_data, check_phishing, dkim_check_result, dmarc_check_result, spf_check_result, check_spam, check_dlp_results, check_spoofing_results, check_type)
 
 # function parses email and returns extracted content
 def parse_email(file_path):
@@ -11,15 +11,16 @@ def parse_email(file_path):
         # retrieve data from the parsed email
         email_data = extract_email_data(message)
 
-        # perform checks
+        # perform security checks checks
         email_data = check_phishing(email_data, message)
         email_data = check_spam(email_data)
         email_data = check_dlp_results(email_data)
         email_data = check_spoofing_results(email_data, message)
-
         email_data = spf_check_result(email_data)
         email_data = dmarc_check_result(email_data)
+        email_data = dkim_check_result(file_path, email_data)
 
+        # update and cleans the type field
         email_data = check_type(email_data)
 
         return email_data
