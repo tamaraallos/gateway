@@ -1,10 +1,10 @@
 import dns.resolver
 
 # security protocol - verifies email senders by checking the DNS
-# note: I probably need to make changes later
 
-def dmarc_check(domain):
+def dmarc_check(sender):
     try:
+        domain = sender.split('@', 1)[1] # gets domain
         # query the dns for dmarc record
         dmarc_domain = f"_dmarc.{domain}" # creates dmarc domain name. e.g _dmarc.gmail.com
         result = dns.resolver.resolve(dmarc_domain, 'TXT') # this queries txt records for the dmarc domaiin
@@ -16,17 +16,11 @@ def dmarc_check(domain):
                 return text_record.strip('"')
             return None
     except Exception as e:
-        print(f"Error occured: {e}")
         return None
 
+def is_dmarc_record(sender):
+    dmarc_record = dmarc_check(sender)
+    return dmarc_record is not None 
 
-# My example for testing 
-domain = 'sdfdsds.com'
-dmarc_record = dmarc_check(domain)
 
-if dmarc_record:
-    print(f"dmarc record for {domain}: {dmarc_record}")
-else:
-    print(f"No dmarc record found for {domain}")
-
-## resource: https://www.thierolf.org/posts/small-python-script-to-quick-test-dmarc-dkim-and-spf-records/
+# examples to use for testing tempmail.net,... <-- these don't have a dmarc record
