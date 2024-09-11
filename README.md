@@ -6,10 +6,13 @@ Make it look better, and go into depth
 - Description of project, purpose and it's aim, mention client
 
 ## Features
-- **Feature 1**: 'Insert description of feature here.'
-- **Feature 2**: 'Insert description of feature here.'
-- **Feature 3**: 'Insert description of feature here.'
-...
+- **User-Friendly Command-Line Interface (CLI)** - This application includes an easy-to-use CLI designed to simplify interaction with the email security features.
+- **Searchable Event and Email Logs** - provides comprehensive logging of all email events, allowing user to search logs by date, subject, sender, recipient, type, or action (e.g., block or allow). This feature aids in tracking and auditing email communications.
+- **Sender Policy Framework (SPF), DKIM, and DMARC Verification** - ensures that incoming emails are verified through SPF, DKIM, and DMARC checks, protecting against email spoofing and ensuring email authenticity.
+- **Data Loss Prevention (DLP)** - monitors outgoing emails for sensitive information and blocks or encrypts emails to prevent data leaks outside Bad Security Inc.
+- **Protection against Phishing, Spam, and Spoofing** - filters and blocks phishing attempts, spam, and email spoofing through python scripts, ensuring that malicious emails do not reach the inbox.
+- **Content Filtering** - prevents sensitive documents from being sent to unauthorised external recipients by analysing email content and applying policies to block or encrypt sensitive information.
+- **Automatic Email Encryption** - encrypts outgoing emails that contain sensitive information to ensure secure communication.
 
 ## Installation
 does anything need to be set up,
