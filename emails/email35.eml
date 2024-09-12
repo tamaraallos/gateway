@@ -1,0 +1,16 @@
+Content-Type: multipart/mixed; boundary="===============0654767098631420026=="
+MIME-Version: 1.0
+To: JohnDoeBadSecurityInc@gmail.com
+From: update@paypal-safe-login.com
+Subject: PayPal: Your Account Needs Immediate Attention
+Date: Tuesday, 27 Feb 2024 16:25:34 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============0654767098631420026==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear PayPal User,          We noticed unusual activity on your account and have temporarily suspended it for your safety.      To regain access, please confirm your identity by following the link below.          Failure to act may result in permanent suspension.          Thank you for your prompt attention,     PayPal Security Team
+--===============0654767098631420026==--
