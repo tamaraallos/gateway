@@ -1,0 +1,64 @@
+Return-Path: manager@badsecurity.com.au
+Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
+	by localhost with ESMTPA
+	; Thu, 12 Sep 2024 14:50:47 +1000
+Content-Type: multipart/alternative;
+ boundary="------------5FDP47w86JxcXVwc0FmuUs0o"
+Message-ID: <fa44d9a7-75bf-43be-838b-6ac25a5b8789@badsecurity.com.au>
+Date: Thu, 12 Sep 2024 14:50:47 +1000
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: ITSupport@badsecurity.com.au
+From: manager <manager@badsecurity.com.au>
+Subject: Tax File Number Submission
+
+This is a multi-part message in MIME format.
+--------------5FDP47w86JxcXVwc0FmuUs0o
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Please find my Australian Tax File Number below for verification
+
+TFN: 123 456 789
+
+BestRegards
+
+Emma
+
+--------------5FDP47w86JxcXVwc0FmuUs0o
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p><span class="hljs-variable">Hi</span><span class="hljs-operator">,</span>
+      <span class="hljs-variable"><br>
+      </span></p>
+    <p><span class="hljs-variable">Please</span> <span
+        class="hljs-variable">find</span> <span class="hljs-variable">my</span>
+      <span class="hljs-variable">Australian</span> <span
+        class="hljs-variable">Tax</span> <span class="hljs-built_in">File</span>
+      <span class="hljs-built_in">Number</span> <span
+        class="hljs-variable">below</span> <span class="hljs-variable">for</span>
+      <span class="hljs-variable">verification</span></p>
+    <p> <span class="hljs-variable">TFN</span><span
+        class="hljs-operator">:</span> <span class="hljs-number">123</span>
+      <span class="hljs-number">456</span> <span class="hljs-number">789</span>
+      <span class="hljs-variable"><br>
+      </span></p>
+    <p><span class="hljs-variable">Best</span><span
+        class="hljs-operator"> Regards</span><span class="hljs-variable"><br>
+      </span></p>
+    <p><span class="hljs-variable">Emma</span> </p>
+  </body>
+</html>
+
+--------------5FDP47w86JxcXVwc0FmuUs0o--

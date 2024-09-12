@@ -1,0 +1,25 @@
+Return-Path: ITSupport@badsecurity.com.au
+Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
+	by localhost with ESMTPA
+	; Thu, 12 Sep 2024 14:55:23 +1000
+Message-ID: <bbc2cc71-6f2b-4451-aee4-9f5a57d106a8@badsecurity.com.au>
+Date: Thu, 12 Sep 2024 14:55:23 +1000
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: manager <manager@badsecurity.com.au>
+From: ITSupport <ITSupport@badsecurity.com.au>
+Subject: Access to Secret Servers
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hey,
+
+Make sure the **secret** project files are uploaded to the server with 
+the following IP address:
+IP Address: 10.0.0.5
+Keep this information **confidential**.
+
+Best Regards,
+Jenny
+

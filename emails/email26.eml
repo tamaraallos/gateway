@@ -1,0 +1,57 @@
+Return-Path: manager@badsecurity.com.au
+Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
+	by localhost with ESMTPA
+	; Thu, 12 Sep 2024 14:46:30 +1000
+Content-Type: multipart/alternative;
+ boundary="------------TjGYRU5kudfv56GvYsSU0qMM"
+Message-ID: <f06e575c-7541-481f-b937-538141d7ffff@badsecurity.com.au>
+Date: Thu, 12 Sep 2024 14:46:30 +1000
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: ITSupport@badsecurity.com.au
+From: manager <manager@badsecurity.com.au>
+Subject: Confidential Report
+
+This is a multi-part message in MIME format.
+--------------TjGYRU5kudfv56GvYsSU0qMM
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Greetings,
+
+Please review the attached document as it contains some **confidential** 
+information about the company's new strategy. Make sure this remains 
+**proprietary** and is not shared with anyone.
+
+Regards
+
+Mark
+
+--------------TjGYRU5kudfv56GvYsSU0qMM
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p>Greetings, <br>
+    </p>
+    <p>Please review the attached document <span class="hljs-keyword">as</span>
+      it contains some **confidential** information about the company<span
+        class="hljs-comment">'s new strategy. </span>
+      Make sure this remains **proprietary** <span
+        class="hljs-built_in">and</span> <span class="hljs-built_in">is</span>
+      <span class="hljs-built_in">not</span> <span class="hljs-keyword">shared</span>
+      <span class="hljs-keyword">with</span> anyone. <br>
+    </p>
+    <p>Regards</p>
+    <p>Mark </p>
+  </body>
+</html>
+
+--------------TjGYRU5kudfv56GvYsSU0qMM--

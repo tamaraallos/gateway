@@ -1,0 +1,53 @@
+Return-Path: ITSupport@badsecurity.com.au
+Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
+	by localhost with ESMTPA
+	; Thu, 12 Sep 2024 14:51:18 +1000
+Content-Type: multipart/alternative;
+ boundary="------------GEjZA0qi1NNQv5avtSPcVmnG"
+Message-ID: <c8be35e7-5cfc-45e8-8228-2fe8c629ff61@badsecurity.com.au>
+Date: Thu, 12 Sep 2024 14:51:18 +1000
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: manager <manager@badsecurity.com.au>
+From: ITSupport <ITSupport@badsecurity.com.au>
+Subject: Contact Info
+
+This is a multi-part message in MIME format.
+--------------GEjZA0qi1NNQv5avtSPcVmnG
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+|Hi, You can reach me at my new phone number: +1 (123) 456-7890 Let me 
+know if you need anything else. Best regards, Tom |
+
+--------------GEjZA0qi1NNQv5avtSPcVmnG
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <pre><div
+class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium"><div
+    class="overflow-y-auto p-4" dir="ltr"><code
+    class="!whitespace-pre hljs language-vbnet">Hi,  
+You can reach <span class="hljs-keyword">me</span> at my <span
+    class="hljs-built_in">new</span> phone number: +<span
+    class="hljs-number">1</span> (<span class="hljs-number">123</span>) <span
+    class="hljs-number">456</span>-<span class="hljs-number">7890</span>  
+<span class="hljs-keyword">Let</span> <span class="hljs-keyword">me</span> know <span
+    class="hljs-keyword">if</span> you need anything <span
+    class="hljs-keyword">else</span>.  
+Best regards,  
+Tom  
+</code></div></div></pre>
+    <p></p>
+  </body>
+</html>
+
+--------------GEjZA0qi1NNQv5avtSPcVmnG--
