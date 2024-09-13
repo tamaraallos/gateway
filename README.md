@@ -19,10 +19,49 @@ does anything need to be set up,
 e.g vsc, downloading the libraries we used
 (look through the files and u can see which ones we need)
 
-### Prereqs
-- Prereqs 1 (Having VSC, Python)
-- ...
+### Prerequisites
+Make sure that you have all of the pre-requisites installed on your development machine
+- Install Python [Download & Install Python](https://www.python.org/downloads/)
+  ```bash
+  # Verify the installation
+  $ python --version
+  ```
 
+- Install pip as it is required to install project dependencies
+  ```bash
+  # Download the get-pip.py file from bootstrap.pypa.io/get-pip.py.
+  $ curl bootstrap.pypa.io/get-pip.py
+  ```
+  ```bash
+  # Run the following command in Command Prompt from the directory where get-pip.py is downloaded:
+  $ python get-pip.py
+  ```
+  ```bash
+  # Verify the installation
+  pip --version
+  ```
+  
+- Install Git [Download & Install Git](https://git-scm.com/downloads). to clone the git repository or instead you can download the repository from [github](https://github.com/tamaraallos/gateway.git)
+  ```bash
+  # Verify the installation
+  $ git --version
+  ```
+- Install Watchdog for file system handling
+  ```bash
+  # Install Watchdog
+  $ pip install watchdog
+  ```
+- Install Cryptography
+  ```bash
+  # Install Cryptography
+  $ pip install crytography
+  ```
+- Install Dnspython fir querying DNS records
+  ```bash
+  # Install DNS toolkit
+  $ pip install dnspython
+  ```
+- Install Email
 
 ### Set up
 1. **Clone the repo**:
