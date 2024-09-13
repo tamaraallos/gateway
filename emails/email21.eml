@@ -1,0 +1,58 @@
+Return-Path: ITSupport@badsecurity.com.au
+Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
+	by localhost with ESMTPA
+	; Thu, 12 Sep 2024 14:47:42 +1000
+Content-Type: multipart/alternative;
+ boundary="------------7seMqiBmbXjh7PBo7unhk1qc"
+Message-ID: <b6e27e22-1d52-4f51-ad0b-06b7ea50d031@badsecurity.com.au>
+Date: Thu, 12 Sep 2024 14:47:42 +1000
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: manager <manager@badsecurity.com.au>
+From: ITSupport <ITSupport@badsecurity.com.au>
+Subject: Complete Payment
+
+This is a multi-part message in MIME format.
+--------------7seMqiBmbXjh7PBo7unhk1qc
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hi,
+
+Please process the payment with the following credit card: Card Number: 
+1234 5678 9123 4567.
+
+Expiry: 12/25
+
+Thanks
+
+John
+
+--------------7seMqiBmbXjh7PBo7unhk1qc
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body>
+    <p><span class="hljs-string">Hi,</span> <span class="hljs-attr"><br>
+      </span></p>
+    <p><span class="hljs-attr">Please process the payment with the
+        following credit card:</span> <span class="hljs-attr">Card
+        Number:</span> <span class="hljs-number">1234 </span><span
+        class="hljs-number">5678 </span><span class="hljs-number">9123
+      </span><span class="hljs-number">4567.</span></p>
+    <p><span class="hljs-attr">Expiry:</span> <span class="hljs-number">12</span><span
+        class="hljs-string">/25</span> <span class="hljs-string"><br>
+      </span></p>
+    Thanks<br>
+    <p><span class="hljs-string">John</span> </p>
+  </body>
+</html>
+
+--------------7seMqiBmbXjh7PBo7unhk1qc--

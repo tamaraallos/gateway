@@ -1,0 +1,24 @@
+Return-Path: manager@badsecurity.com.au
+Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
+	by localhost with ESMTPA
+	; Thu, 12 Sep 2024 14:53:57 +1000
+Message-ID: <765c8e0e-8ce3-49fc-9334-955dfc007c39@badsecurity.com.au>
+Date: Thu, 12 Sep 2024 14:53:57 +1000
+MIME-Version: 1.0
+User-Agent: Mozilla Thunderbird
+Content-Language: en-US
+To: ITSupport@badsecurity.com.au
+From: manager <manager@badsecurity.com.au>
+Subject: Server Access Details
+Content-Type: text/plain; charset=UTF-8; format=flowed
+Content-Transfer-Encoding: 7bit
+
+Hello,
+
+Here are the access details for the server:
+IP Address: 192.168.1.1
+MAC Address: 00:1A:2B:3C:4D:5E
+
+Thanks,
+Alex
+
