@@ -28,28 +28,28 @@ Make sure that you have all of the pre-requisites installed on your development 
   ```
 
 2. Install pip as it is required to install project dependencies
+  Download the get-pip.py file from bootstrap.pypa.io/get-pip.py.
   ```bash
-  # Download the get-pip.py file from bootstrap.pypa.io/get-pip.py.
   $ curl bootstrap.pypa.io/get-pip.py
   ```
+  Run the following command in Command Prompt from the directory where get-pip.py is downloaded:
   ```bash
-  # Run the following command in Command Prompt from the directory where get-pip.py is downloaded:
   $ python get-pip.py
   ```
+  Verify the installation
   ```bash
-  # Verify the installation
-  pip --version
+  $ pip --version
   ```
   
 3. Install Git [Download & Install Git](https://git-scm.com/downloads). to clone the git repository or instead you can download the repository from [github](https://github.com/tamaraallos/gateway.git)
+  Verify the installation
   ```bash
-  # Verify the installation
   $ git --version
   ```
 4. Install Python Modules
   - Install dotenv module for environment variables
     ```bash
-    pip install python-dotenv
+    $ pip install python-dotenv
     ```
   - Install Watchdog for file system handling
     ```bash
