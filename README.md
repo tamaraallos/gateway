@@ -21,13 +21,13 @@ e.g vsc, downloading the libraries we used
 
 ### Prerequisites
 Make sure that you have all of the pre-requisites installed on your development machine
-- Install Python [Download & Install Python](https://www.python.org/downloads/)
+1. Install Python [Download & Install Python](https://www.python.org/downloads/)
   ```bash
   # Verify the installation
   $ python --version
   ```
 
-- Install pip as it is required to install project dependencies
+2. Install pip as it is required to install project dependencies
   ```bash
   # Download the get-pip.py file from bootstrap.pypa.io/get-pip.py.
   $ curl bootstrap.pypa.io/get-pip.py
@@ -41,27 +41,36 @@ Make sure that you have all of the pre-requisites installed on your development 
   pip --version
   ```
   
-- Install Git [Download & Install Git](https://git-scm.com/downloads). to clone the git repository or instead you can download the repository from [github](https://github.com/tamaraallos/gateway.git)
+3. Install Git [Download & Install Git](https://git-scm.com/downloads). to clone the git repository or instead you can download the repository from [github](https://github.com/tamaraallos/gateway.git)
   ```bash
   # Verify the installation
   $ git --version
   ```
-- Install Watchdog for file system handling
-  ```bash
-  # Install Watchdog
-  $ pip install watchdog
-  ```
-- Install Cryptography
-  ```bash
-  # Install Cryptography
-  $ pip install crytography
-  ```
-- Install Dnspython fir querying DNS records
-  ```bash
-  # Install DNS toolkit
-  $ pip install dnspython
-  ```
-- Install Email
+4. Install Python Modules
+  - Install dotenv module for environment variables
+    ```bash
+    pip install python-dotenv
+    ```
+  - Install Watchdog for file system handling
+    ```bash
+    $ pip install watchdog
+    ```
+  - Install Cryptography for email encryption
+    ```bash
+    $ pip install crytography
+    ```    
+  - Install SPF for Sender Policy Framework
+    ```bash
+    $ pip install pyspf
+    ```
+  - Install DKIM for DomainKeys Identified Mail
+    ```bash
+    $ pip install dkimpy
+    ```
+  - Install Dnspython for querying DNS records
+    ```bash
+    $ pip install dnspython
+    ```
 
 ### Set up
 1. **Clone the repo**:
