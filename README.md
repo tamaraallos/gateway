@@ -22,30 +22,31 @@ e.g vsc, downloading the libraries we used
 ### Prerequisites
 Make sure that you have all of the pre-requisites installed on your development machine
 1. Install Python [Download & Install Python](https://www.python.org/downloads/)
-  Verify the installation
+   Verify the installation
   ```bash
   $ python --version
   ```
 
 2. Install pip as it is required to install project dependencies
-  Download the get-pip.py file from bootstrap.pypa.io/get-pip.py.
-  ```bash
-  $ curl bootstrap.pypa.io/get-pip.py
-  ```
-  Run the following command in Command Prompt from the directory where get-pip.py is downloaded:
-  ```bash
-  $ python get-pip.py
-  ```
-  Verify the installation
-  ```bash
-  $ pip --version
-  ```
-  
+   Download the get-pip.py file from bootstrap.pypa.io/get-pip.py.
+   ```bash
+   $ curl bootstrap.pypa.io/get-pip.py
+   ```
+   Run the following command in Command Prompt from the directory where get-pip.py is downloaded:
+   ```bash
+   $ python get-pip.py
+   ```
+   Verify the installation
+   ```bash
+   $ pip --version
+   ```
+
 3. Install Git [Download & Install Git](https://git-scm.com/downloads). to clone the git repository or instead you can download the repository from [github](https://github.com/tamaraallos/gateway.git)
   Verify the installation
   ```bash
   $ git --version
   ```
+
 4. Install Python Modules
   - Install dotenv module for environment variables
     ```bash
