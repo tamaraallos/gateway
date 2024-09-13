@@ -22,8 +22,8 @@ e.g vsc, downloading the libraries we used
 ### Prerequisites
 Make sure that you have all of the pre-requisites installed on your development machine
 1. Install Python [Download & Install Python](https://www.python.org/downloads/)
+  Verify the installation
   ```bash
-  # Verify the installation
   $ python --version
   ```
 
