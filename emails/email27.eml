@@ -1,58 +1,101 @@
-Return-Path: manager@badsecurity.com.au
-Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
-	by localhost with ESMTPA
-	; Thu, 12 Sep 2024 14:48:58 +1000
-Content-Type: multipart/alternative;
- boundary="------------EnWlastAlb2GQv3EkVujpDaw"
-Message-ID: <be7b1239-28cd-4358-baad-5b59f458a992@badsecurity.com.au>
-Date: Thu, 12 Sep 2024 14:48:58 +1000
+Delivered-To: will.rogersbsi@gmail.com
+Received: by 2002:a05:7108:6449:b0:3b2:97c5:89d7 with SMTP id c9csp221946gdt;
+        Sat, 14 Sep 2024 05:39:15 -0700 (PDT)
+X-Received: by 2002:a05:6a21:e96:b0:1cf:440a:d445 with SMTP id adf61e73a8af0-1cf75f2a627mr13383982637.21.1726317555446;
+        Sat, 14 Sep 2024 05:39:15 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726317555; cv=none;
+        d=google.com; s=arc-20160816;
+        b=x+98HJElxfU1uZUCuwuJieZn+t1yRDaVNFcaTiOT2En7d7QIZs38JrXtvSBc2emBdt
+         dWiKZfkENYL2Ldesy/Cr9uFuUjhJnXl6xCZ++LeelO36UzG0xwoJEg6MVWgl6mCUi8C1
+         ayX9lumruSzoLFuTgcTCCRTyLPo641HxqS4mGewD1N6UBQCYnqaMwXLUz3VPH00OteRj
+         aPUHIEgElUHCk1B6QHuWXa9Zh5/RZ4WfbwKJtrfIXSghomCgXXOZ1lEs2M+yyas80Xbx
+         gNnlam563rPxJJXI0ch9dT1izrOrem7aRjitb4qfzs1GM5gjjwEsCYzck8EEASZ+lwrS
+         WtRA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=fqwxMQd1NMz1XHxKucdsqFebXg43fS9FX0FX+pqkme4=;
+        fh=IU53OG2RP8NULgCMoHrHC1lMDtQJw2VXqJ9jSjDdbBo=;
+        b=CC4I5SgDaHvaen19GqZBRvBM6pwjgCSBIGoxSo+Lf3ST+SHNXMfHQimrk0ErosecaK
+         TqTTu5YXnfETNExQGUP1pEC4P30LMdwebcxoaJtHyJtDoZ7B3SZjR883ZukYnkqr2H9q
+         B4qzkbfXv5W8MjqR7UG0rVEJ4QlYt3lb+/74mI8HeLiCpbaqmLiFSSp0neVyyCN0JQHt
+         57m9VRiqa+dD1+/frvs21QUtO/28cRqjwwFAmQeG6OMabjcCnVALsN21Zpl3BYmHkOoX
+         vcN0y1i7SMnSKlBgxPbTZcBIcQThqW39mBCINDyU2VQzblz/cDrz/yFEa0/LNBq28HdA
+         Go7Q==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=mXkg7xMU;
+       spf=pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sam.williamsbsi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <sam.williamsbsi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 41be03b00d2f7-7db499ba55esor596418a12.10.2024.09.14.05.39.15
+        for <will.rogersbsi@gmail.com>
+        (Google Transport Security);
+        Sat, 14 Sep 2024 05:39:15 -0700 (PDT)
+Received-SPF: pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=mXkg7xMU;
+       spf=pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sam.williamsbsi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726317555; x=1726922355; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=fqwxMQd1NMz1XHxKucdsqFebXg43fS9FX0FX+pqkme4=;
+        b=mXkg7xMUpT+dT2kygO1TQwD4CwDClegMfsl9FY+bxwWTrKkaYH+p+6F0yKlmM2tZWS
+         Y79dteMzgcncyPyuZjnGUZCwkGL3p7rUDTE9QWbAsSN5bmnCI/FLsKoUylOVGDFYZTEv
+         w9168DypVGmsVjECnWnsDO949e1uVT++WtbB3mRlABjVWIXVym3bPy7UDBmeEOX+UNK/
+         qkl7/I4je+xyRwD+hLo8gdYlmFW2W7QjGl9AsmNORFcyimn9ieO449qnbwo8T7nkvG6Q
+         N11JpPEI4CTOmciUQzKb3XxFq57zI5J+1GMR9Fbm96zL0SAG4Y/8bfGMO715zsjkvq1Z
+         Kl0Q==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726317555; x=1726922355;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=fqwxMQd1NMz1XHxKucdsqFebXg43fS9FX0FX+pqkme4=;
+        b=EiynRFSSseLIzwKORelDYbmBB9eflO0p9E5oPBvjSjGItIWmoSyWebU/ya5L0/zhEv
+         RyyVqhBOVWL78NZnuXixkUJpmwsWLff/liKNcBDvbHUoU9jhOYjTwMN/tppUVCAWKAz4
+         r2eiBdGHJLNKO6LTsU0SCb7ETxBMlHCo72xYg1sX+ZjrRGzB5tAZO8hBxdpI6MyeA/Dn
+         vKrs0DRMV5Ju20VG1btTr8fHmSwZ0ts2Kjlu4Szm++jBIbvf4eIx2q5K+CqeN3vdBaou
+         UohIiPTSihCmk6pJT20PYicFcT18pOI/GbQuhgupkewdrrfl93lkWFfnsFsO2ubsagvd
+         q91w==
+X-Gm-Message-State: AOJu0Yz3b9xLfgLyI5OuD1Eq78zz7mMvdbs74KVoSegeAAW9HDMAwQgB
+	mB8okFgP5NZEXJRiruWwcGl0v+k0Q417yyJwkdyiMB3AehLw5mapp45YLol9/uEH5uh2RfFTNm7
+	7ZydJH1R7u1bePOYXuYHF6XMWnH+HZ2yclt4u09kJ
+X-Google-Smtp-Source: AGHT+IEN91lks8s5ettrnh+6bunB9Pcv8J3ZPuLYD7IHIZ1us8KKnezW6/v5KmkF6RfgIOpsXmlr/FE0PVeZiQ2IPYw=
+X-Received: by 2002:a17:90b:4a47:b0:2da:6367:f1d9 with SMTP id
+ 98e67ed59e1d1-2dba00963c6mr11177028a91.41.1726317554568; Sat, 14 Sep 2024
+ 05:39:14 -0700 (PDT)
 MIME-Version: 1.0
-User-Agent: Mozilla Thunderbird
-Content-Language: en-US
-To: ITSupport@badsecurity.com.au
-From: manager <manager@badsecurity.com.au>
-Subject: Wire Transfer Details
+From: Sam Williams <sam.williamsbsi@gmail.com>
+Date: Sat, 14 Sep 2024 22:39:03 +1000
+Message-ID: <CAGz06iK2tRG0sSz=0gquDe_yUTithv3qBQcV6mB-7Ue3U-v_2g@mail.gmail.com>
+Subject: Confidential Report
+To: "will.rogersbsi@gmail.com" <will.rogersbsi@gmail.com>
+Content-Type: multipart/alternative; boundary="0000000000009c1c7e062213a03d"
 
-This is a multi-part message in MIME format.
---------------EnWlastAlb2GQv3EkVujpDaw
-Content-Type: text/plain; charset=UTF-8; format=flowed
-Content-Transfer-Encoding: 7bit
+--0000000000009c1c7e062213a03d
+Content-Type: text/plain; charset="UTF-8"
 
-Hi,
+Hey,
+Please review the attached document as it contains some **confidential**
+information about the company's new strategy.
+Make sure this remains **proprietary** and is not shared with anyone.
 
-Please transfer the funds to the following bank account:
+Regards,
+Sam
 
-Account Number: 12345678901234567
+--0000000000009c1c7e062213a03d
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
 
-Thank you,
+<div dir=3D"ltr"><div dir=3D"ltr"><div>Hey,=C2=A0=C2=A0<br></div><div>Pleas=
+e review the attached document as it contains some **confidential** informa=
+tion about the company&#39;s new strategy.=C2=A0=C2=A0</div><div>Make sure =
+this remains **proprietary** and is not shared with anyone.=C2=A0=C2=A0</di=
+v><div><br></div><div>Regards,=C2=A0=C2=A0</div><div>Sam</div><div><br></di=
+v></div></div>
 
-Sarah
-
---------------EnWlastAlb2GQv3EkVujpDaw
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: 7bit
-
-<!DOCTYPE html>
-<html>
-  <head>
-
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  </head>
-  <body>
-    <p><span class="hljs-string">Hi,</span> <span class="hljs-attr"><br>
-      </span></p>
-    <p><span class="hljs-attr">Please transfer the funds to the
-        following bank account:</span> <br>
-    </p>
-    <p><span class="hljs-attr">Account Number:</span> <span
-        class="hljs-number">12345678901234567</span> <span
-        class="hljs-string"><br>
-      </span></p>
-    <p><span class="hljs-string">Thank</span> <span class="hljs-string">you,</span>
-      <span class="hljs-string"><br>
-      </span></p>
-    <p><span class="hljs-string">Sarah</span> </p>
-  </body>
-</html>
-
---------------EnWlastAlb2GQv3EkVujpDaw--
+--0000000000009c1c7e062213a03d--
