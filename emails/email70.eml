@@ -1,8 +1,8 @@
-Received: from smtp.fakeairlines.com ([198.51.100.30]) by fake.mailserver.com (Postfix) with ESMTP id XYZ123456789 for <travel@badsec.com.au>; Tue, 19 Mar 2024 12:50:45 +0000 (UTC)
+Received: from smtp.airlines.com ([198.51.100.30]) by fake.mailserver.com (Postfix) with ESMTP id XYZ123456789 for <travel@badsec.com.au>; Tue, 19 Mar 2024 12:50:45 +0000 (UTC)
 Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
 MIME-Version: 1.0
 To: travel@badsec.com.au
-From: support@fakeairlines.com
+From: support@airlines.com
 Subject: Flight Information Required
 Date: Tuesday, 19 Mar 2024 12:50:45 -0000
 X-Action-Status: pending

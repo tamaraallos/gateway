@@ -1,8 +1,8 @@
-Received: from smtp.fakehealthcare.com ([203.0.113.50]) by fake.mailserver.com (Postfix) with ESMTP id XYZ654321987 for <support@badsec.com.au>; Thu, 21 Mar 2024 14:35:50 +0000 (UTC)
+Received: from smtp.healthcare.com ([203.0.113.50]) by healthcare.mailserver.com (Postfix) with ESMTP id XYZ654321987 for <support@badsec.com.au>; Thu, 21 Mar 2024 14:35:50 +0000 (UTC)
 Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
 MIME-Version: 1.0
 To: support@badsec.com.au
-From: admin@fakehealthcare.com
+From: admin@healthcare.com
 Subject: Urgent: Medicare Number Update Required
 Date: Thursday, 21 Mar 2024 14:35:50 -0000
 X-Action-Status: pending

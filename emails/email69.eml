@@ -1,8 +1,8 @@
-Received: from smtp.fakejobs.com ([203.0.113.15]) by fakejobs.mailserver.com (Postfix) with ESMTP id ABC654321789 for <hr@badsec.com.au>; Mon, 18 Mar 2024 11:45:15 +0000 (UTC)
+Received: from smtp.jobs.com ([203.0.113.15]) by jobs.mailserver.com (Postfix) with ESMTP id ABC654321789 for <hr@badsec.com.au>; Mon, 18 Mar 2024 11:45:15 +0000 (UTC)
 Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
 MIME-Version: 1.0
 To: hr@badsec.com.au
-From: hr@fakejobs.com
+From: hr@jobs.com
 Subject: Employment Record Update
 Date: Monday, 18 Mar 2024 11:45:15 -0000
 X-Action-Status: pending

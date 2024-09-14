@@ -1,8 +1,8 @@
-Received: from smtp.fakebank.com ([192.0.2.45]) by fake.mailserver.com (Postfix) with ESMTP id ABC123456789 for <finance@badsec.com.au>; Wed, 20 Mar 2024 08:30:50 +0000 (UTC)
+Received: from smtp.bank.com ([192.0.2.45]) by bank.mailserver.com (Postfix) with ESMTP id ABC123456789 for <finance@badsec.com.au>; Wed, 20 Mar 2024 08:30:50 +0000 (UTC)
 Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
 MIME-Version: 1.0
 To: finance@badsec.com.au
-From: billing@fakebank.com
+From: billing@bank.com
 Subject: Tax File Number Confirmation
 Date: Wednesday, 20 Mar 2024 08:30:50 -0000
 X-Action-Status: pending
