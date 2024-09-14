@@ -140,8 +140,8 @@ This would then ask the user for 8 different options. 1 is to search for a speci
 
 We would like to express our gratitude to the following team members for their dedication and contributions to this project:
 
-- **Bhuvan Virmani** 
 - **Tamara Allos**
+- **Bhuvan Virmani** 
 - **Nelchael Kenshi Turija** 
 - **Sai Veera Venkat Rahul Chagant** 
 - **Nehal Rahuja** 
