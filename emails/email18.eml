@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000010=="
+MIME-Version: 1.0
+To: finance@company.com
+From: employee@company.com
+Subject: Expense Report for August 2024
+Date: Friday, 13 Sep 2024 17:00:18 -0000
+X-Action-Status: submitted
+X-Type: report
+
+--===============123456789000010==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Finance Team,
+
+Attached is my expense report for August 2024. Please let me know if any further documentation is required.
+
+Thank you,
+Employee
+
+--===============123456789000010==--

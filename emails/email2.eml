@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000007=="
+MIME-Version: 1.0
+To: allstaff@company.com
+From: it@company.com
+Subject: Security Update Notification
+Date: Friday, 13 Sep 2024 14:15:18 -0000
+X-Action-Status: implemented
+X-Type: update
+
+--===============123456789000007==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear All,
+
+The latest security update has been applied. No action is required on your part. If you face any issues, please contact IT support.
+
+Regards,
+IT Team
+
+--===============123456789000007==--

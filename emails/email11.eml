@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000017=="
+MIME-Version: 1.0
+To: marketing@company.com
+From: analyst@company.com
+Subject: Campaign Results - Q3 2024
+Date: Friday, 13 Sep 2024 20:30:18 -0000
+X-Action-Status: completed
+X-Type: report
+
+--===============123456789000017==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Marketing Team,
+
+Attached is the report on our Q3 2024 marketing campaign results. Let me know if you need additional data.
+
+Best regards,
+Analyst
+
+--===============123456789000017==--

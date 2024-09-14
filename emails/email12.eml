@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000016=="
+MIME-Version: 1.0
+To: recruiting@company.com
+From: recruiter@company.com
+Subject: Recruitment Update - September 2024
+Date: Friday, 13 Sep 2024 20:00:18 -0000
+X-Action-Status: ongoing
+X-Type: update
+
+--===============123456789000016==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Recruiting Team,
+
+Please find attached the latest updates on our recruitment efforts for September 2024.
+
+Best regards,
+Recruiter
+
+--===============123456789000016==--

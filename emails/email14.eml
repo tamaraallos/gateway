@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000014=="
+MIME-Version: 1.0
+To: hr@company.com
+From: newhire@company.com
+Subject: New Hire Paperwork - September
+Date: Friday, 13 Sep 2024 19:00:18 -0000
+X-Action-Status: submitted
+X-Type: paperwork
+
+--===============123456789000014==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear HR Team,
+
+Attached are the completed forms for my onboarding process. Please let me know if any further information is required.
+
+Thank you,
+New Hire
+
+--===============123456789000014==--

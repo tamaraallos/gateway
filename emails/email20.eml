@@ -1,0 +1,24 @@
+Content-Type: multipart/mixed; boundary="===============123456789000020=="
+MIME-Version: 1.0
+To: customers@company.com
+From: support@company.com
+Subject: Software Release - Version 2.5
+Date: Friday, 13 Sep 2024 22:00:18 -0000
+X-Action-Status: released
+X-Type: update
+
+--===============123456789000020==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Customers,
+
+We are pleased to announce the release of version 2.5 of our software. Please find the release notes attached.
+
+Thank you for your continued support.
+
+Best regards,
+Support Team
+
+--===============123456789000020==--

@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000003=="
+MIME-Version: 1.0
+To: team@company.com
+From: sarah@company.com
+Subject: Meeting Minutes - September 2024
+Date: Friday, 13 Sep 2024 10:30:18 -0000
+X-Action-Status: completed
+X-Type: minutes
+
+--===============123456789000003==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Team,
+
+Please find attached the minutes from our meeting held on September 12th, 2024. Let me know if you have any corrections.
+
+Best regards,
+Sarah
+
+--===============123456789000003==--
