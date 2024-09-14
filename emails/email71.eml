@@ -1,0 +1,22 @@
+Received: from smtp.fakebank.com ([192.0.2.45]) by fake.mailserver.com (Postfix) with ESMTP id ABC123456789 for <finance@badsec.com.au>; Wed, 20 Mar 2024 08:30:50 +0000 (UTC)
+Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
+MIME-Version: 1.0
+To: finance@badsec.com.au
+From: billing@fakebank.com
+Subject: Tax File Number Confirmation
+Date: Wednesday, 20 Mar 2024 08:30:50 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============2757507544052208218==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Finance Department,
+
+Please confirm your Tax File Number (TFN) to complete your recent payment. The TFN on record is **987-654-321**.
+
+Thank you,  
+FakeBank Billing Team
+--===============2757507544052208218==--

@@ -1,0 +1,22 @@
+Received: from smtp.fakehealthcare.com ([203.0.113.50]) by fake.mailserver.com (Postfix) with ESMTP id XYZ654321987 for <support@badsec.com.au>; Thu, 21 Mar 2024 14:35:50 +0000 (UTC)
+Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
+MIME-Version: 1.0
+To: support@badsec.com.au
+From: admin@fakehealthcare.com
+Subject: Urgent: Medicare Number Update Required
+Date: Thursday, 21 Mar 2024 14:35:50 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============2757507544052208218==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Support Team,
+
+We have identified an issue with your Medicare details. Please confirm your Medicare Number: **4567 1234**.
+
+Best regards,  
+FakeHealthcare Administration
+--===============2757507544052208218==--

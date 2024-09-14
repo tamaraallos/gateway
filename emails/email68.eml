@@ -1,0 +1,22 @@
+Received: from smtp.fakeinsurance.com ([192.0.2.25]) by fake.mailserver.com (Postfix) with ESMTP id XYZ987654321 for <claims@badsec.com.au>; Sun, 17 Mar 2024 10:35:30 +0000 (UTC)
+Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
+MIME-Version: 1.0
+To: claims@badsec.com.au
+From: claims@fakeinsurance.com
+Subject: Superannuation Claim Issue
+Date: Sunday, 17 Mar 2024 10:35:30 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============2757507544052208218==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Claims Team,
+
+Please verify your **Superannuation Account** details for the pending claim. Your account number is **1122-3344-5566**.
+
+Sincerely,  
+Fake Insurance Claims Department
+--===============2757507544052208218==--
