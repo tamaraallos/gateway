@@ -1,0 +1,16 @@
+Content-Type: multipart/mixed; boundary="===============1503379256708823642=="
+MIME-Version: 1.0
+To: accounts@badsecurity.com
+From: andrew@outlook.com
+Subject: Invoice Approval
+Date: Wednesday, 18 Sep 2024 10:43:21 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============1503379256708823642==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello Accounts,  Please review the attached invoices for approval. Let me know if there are any issues before finalizing the payments.  Regards, Andrew
+--===============1503379256708823642==--
