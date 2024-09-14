@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000004=="
+MIME-Version: 1.0
+To: legal@company.com
+From: john@company.com
+Subject: Contract Review Request
+Date: Friday, 13 Sep 2024 11:05:18 -0000
+X-Action-Status: pending
+X-Type: contract
+
+--===============123456789000004==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Legal Team,
+
+I would appreciate it if you could review the attached contract and provide your feedback by next week.
+
+Thank you,
+John
+
+--===============123456789000004==--

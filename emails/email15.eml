@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000013=="
+MIME-Version: 1.0
+To: events@company.com
+From: planner@company.com
+Subject: October Event Planning
+Date: Friday, 13 Sep 2024 18:30:18 -0000
+X-Action-Status: in-progress
+X-Type: planning
+
+--===============123456789000013==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Events Team,
+
+Please find attached the initial plan for our October event. Let me know if you need any further details.
+
+Best regards,
+Planner
+
+--===============123456789000013==--

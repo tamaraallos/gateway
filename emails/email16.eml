@@ -1,0 +1,11 @@
+Content-Type: multipart/mixed; boundary="===============123456789000012=="
+MIME-Version: 1.0
+To: management@company.com
+From: projectlead@company.com
+Subject: Project Proposal - Q4 2024
+Date: Friday, 13 Sep 2024 18:00:18 -0000
+X-Action-Status: reviewed
+X-Type: proposal
+
+--===============123456789000012==
+Content-Type: text/plain;

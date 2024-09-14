@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000015=="
+MIME-Version: 1.0
+To: partnerships@company.com
+From: jane@company.com
+Subject: Partnership Proposal for 2024
+Date: Friday, 13 Sep 2024 19:30:18 -0000
+X-Action-Status: reviewed
+X-Type: proposal
+
+--===============123456789000015==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Partnerships Team,
+
+Attached is our partnership proposal for 2024. Please review and provide feedback.
+
+Best regards,
+Jane
+
+--===============123456789000015==--

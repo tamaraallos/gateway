@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000011=="
+MIME-Version: 1.0
+To: hr@company.com
+From: james@company.com
+Subject: Time Off Request for September
+Date: Friday, 13 Sep 2024 17:30:18 -0000
+X-Action-Status: pending
+X-Type: request
+
+--===============123456789000011==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear HR Team,
+
+I am requesting time off from September 20th to September 25th. Please find the details in the attached document.
+
+Thank you,
+James
+
+--===============123456789000011==--

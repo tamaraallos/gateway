@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000006=="
+MIME-Version: 1.0
+To: employees@company.com
+From: hr@company.com
+Subject: Work Schedule for Next Week
+Date: Friday, 13 Sep 2024 13:00:18 -0000
+X-Action-Status: confirmed
+X-Type: schedule
+
+--===============123456789000006==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear All,
+
+Please find attached the work schedule for the next week. Let HR know if you have any questions.
+
+Best regards,
+HR Team
+
+--===============123456789000006==--

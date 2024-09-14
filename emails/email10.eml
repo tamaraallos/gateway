@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000018=="
+MIME-Version: 1.0
+To: support@company.com
+From: techlead@company.com
+Subject: Technical Issue - Server Downtime
+Date: Friday, 13 Sep 2024 21:00:18 -0000
+X-Action-Status: urgent
+X-Type: issue
+
+--===============123456789000018==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Support Team,
+
+We are experiencing downtime on one of our servers. Please find the logs attached and resolve this issue as soon as possible.
+
+Best regards,
+Tech Lead
+
+--===============123456789000018==--

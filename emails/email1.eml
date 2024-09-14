@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000008=="
+MIME-Version: 1.0
+To: manager@company.com
+From: employee@company.com
+Subject: Performance Review - Q3 2024
+Date: Friday, 13 Sep 2024 15:30:18 -0000
+X-Action-Status: reviewed
+X-Type: review
+
+--===============123456789000008==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Manager,
+
+Please find my self-assessment for the Q3 performance review attached. Looking forward to your feedback.
+
+Best regards,
+Employee
+
+--===============123456789000008==--

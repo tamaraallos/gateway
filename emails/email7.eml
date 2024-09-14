@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000002=="
+MIME-Version: 1.0
+To: billing@vendor.com
+From: mark@company.com
+Subject: Invoice Submission - August 2024
+Date: Friday, 13 Sep 2024 09:45:18 -0000
+X-Action-Status: processed
+X-Type: invoice
+
+--===============123456789000002==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Billing Team,
+
+Please find attached the invoice for August 2024. Let us know if you need any additional information.
+
+Best regards,
+Mark
+
+--===============123456789000002==--

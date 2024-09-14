@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000005=="
+MIME-Version: 1.0
+To: productteam@company.com
+From: mary@company.com
+Subject: New Product Proposal
+Date: Friday, 13 Sep 2024 12:15:18 -0000
+X-Action-Status: reviewed
+X-Type: proposal
+
+--===============123456789000005==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hi Team,
+
+Here is the new product proposal I’ve been working on. Looking forward to your feedback.
+
+Thanks,
+Mary
+
+--===============123456789000005==--

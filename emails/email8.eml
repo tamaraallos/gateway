@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000001=="
+MIME-Version: 1.0
+To: manager@company.com
+From: alice@projects.com
+Subject: Project Status Update
+Date: Friday, 13 Sep 2024 08:15:18 -0000
+X-Action-Status: completed
+X-Type: normal
+
+--===============123456789000001==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Manager,
+
+The project has been completed as per the requirements. Please find the final report attached.
+
+Best regards,
+Alice
+
+--===============123456789000001==--

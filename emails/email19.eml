@@ -1,0 +1,22 @@
+Content-Type: multipart/mixed; boundary="===============123456789000009=="
+MIME-Version: 1.0
+To: feedback@company.com
+From: client@client.com
+Subject: Feedback on Services
+Date: Friday, 13 Sep 2024 16:45:18 -0000
+X-Action-Status: pending
+X-Type: feedback
+
+--===============123456789000009==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Team,
+
+Please find attached our feedback on your services for Q3. We hope this helps improve the ongoing collaboration.
+
+Best regards,
+Client Team
+
+--===============123456789000009==--
