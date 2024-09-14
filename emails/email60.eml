@@ -1,0 +1,16 @@
+Content-Type: multipart/mixed; boundary="===============3189863723466047597=="
+MIME-Version: 1.0
+To: it@badsecurity.com
+From: helen@outlook.com
+Subject: System Upgrade
+Date: Sunday, 15 Sep 2024 16:18:50 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============3189863723466047597==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hi IT Team,  We are planning a system upgrade this weekend. Please ensure all servers are prepped and backed up prior to the upgrade window.  Thanks, Helen
+--===============3189863723466047597==--
