@@ -1,9 +1,15 @@
-For the people working on the README below is a template you can follow.
-Make it look better, and go into depth
+# Email Security Gateway
 
-# Project Title
-## Description
-- Description of project, purpose and it's aim, mention client
+This project is a prototype of an Email Security Gateway, designed to protect an SMTP server by filtering and inspecting email traffic based on threat intelligence. Acting as a proxy, the gateway secures both inbound and outbound emails, protecting against phishing, spam, spoofing, and preventing the leakage of sensitive information.
+Moreover, the gateway inspects incoming emails and checks for DKIM, DMARC and SPF checks and blocks any suspicious emails from reaching the user.
+
+## Table of Contents
+
+1. [Features](#features)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Acknowledgements](#acknowledgements)
+
 
 ## Features
 - **User-Friendly Command-Line Interface (CLI)** - This application includes an easy-to-use CLI designed to simplify interaction with the email security features.
@@ -77,8 +83,48 @@ Make sure that you have all of the pre-requisites installed on your development 
 1. **Clone the repo**:
 2 continue...
 
+### Configurations
 
-### Usage
+#### Step 1: Clone the Repository
+- Start by cloning the repository to your local machine. You can do this by running the following command in your terminal:
+
+  ```bash
+  git clone https://github.com/yourusername/gateway.git
+  
+- Make sure to replace the placeholder with your actual username
+#### Step 2: Set Up Environment Variables
+- After cloning the repository, navigate to the project directory:
+
+  ```bash
+  cd gateway
+- You will need to set up a .env file to store your environment variables. This file will contain sensitive information such as directory paths and passwords, so make sure to keep it secure.
+
+- Create a .env file in the root directory of the project and add the following environment variables:
+
+
+  ```bash
+  ROOT_DIR=/path/to/your/root/directory
+  EMAIL_FOLDER=/path/to/your/email/folder
+  LOG_PATH=/path/to/log/files
+  LOG_EMAIL_ARCHIVE=/path/to/email/archive
+  LOG_EMAIL_PROCESSED=/path/to/processed/emails
+  PASSWORD=yourpasswordhere
+
+  Configuration Details:
+  
+  ROOT_DIR: The root directory where your project is located.
+  EMAIL_FOLDER: The directory where incoming emails are stored.
+  LOG_PATH: The directory where log files will be saved.
+  LOG_EMAIL_ARCHIVE: The directory where archived emails will be stored.
+  LOG_EMAIL_PROCESSED: The directory for storing processed emails.
+  PASSWORD: The password for using the gateway.
+- Make sure to replace the placeholder paths and values with your actual directory paths and a secure password.
+
+#### Step 3: Additional Configuration
+- Ensure that the directories you specify in the .env file are correctly set up and have the necessary read/write permissions.
+
+
+## Usage
 This script allows you to interact with email logs, view, search, and process them using a command-line interface (CLI). On running the script, you will be prompted to enter your username and password for authentication. After logging in, you will see a menu with four options. The four options are as follows:
 - **Command 1:** This allows the user to view the email logs
 - **Command 2:** This allows the user to search through the email logs.
@@ -90,14 +136,17 @@ This would then ask the user for 8 different options. 1 is to search for a speci
 
 
 
-### Note - To All - From Tamara
-You need to set up a .env if u want it to work
+## Acknowledgements
 
-## New note - To All - From Tamara
-You need to also add in a password for .env. I added a random password 'test'. It uses that to validate whatever the users input into the prompt. If correct they will proceed else try again.
+We would like to express our gratitude to the following team members for their dedication and contributions to this project:
 
-### What needs to be done
-1. Integrate peoples code within mine - I will help for that
-2. I need to remove some of my test comments later
-3. I need to move around some print statements for it a better
+- **Bhuvan Virmani** 
+- **Tamara Allos**
+- **Nelchael Kenshi Turija** 
+- **Sai Veera Venkat Rahul Chagant** 
+- **Nehal Rahuja** 
+- **Saksham**
 
+A special thanks to our supervisor, **Jamie Ooi**, for their invaluable guidance and support throughout the project.
+
+We would also like to acknowledge our clients, **Allen** and **Tom** from **Bad Security Inc.**, for providing us with this opportunity and for their trust in our work.
