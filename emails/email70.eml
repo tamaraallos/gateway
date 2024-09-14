@@ -1,0 +1,22 @@
+Received: from smtp.fakeairlines.com ([198.51.100.30]) by fake.mailserver.com (Postfix) with ESMTP id XYZ123456789 for <travel@badsec.com.au>; Tue, 19 Mar 2024 12:50:45 +0000 (UTC)
+Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
+MIME-Version: 1.0
+To: travel@badsec.com.au
+From: support@fakeairlines.com
+Subject: Flight Information Required
+Date: Tuesday, 19 Mar 2024 12:50:45 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============2757507544052208218==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Traveler,
+
+We need to confirm your recent booking. Please provide your booking reference and contact information.
+
+Best regards,  
+FakeAirlines Support
+--===============2757507544052208218==--

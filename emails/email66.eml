@@ -1,0 +1,22 @@
+Received: from smtp.genuinebank.com ([203.0.113.10]) by genuine.mailserver.com (Postfix) with ESMTP id ABC123456789 for <finance@badsec.com.au>; Fri, 15 Mar 2024 10:15:30 +0000 (UTC)
+Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
+MIME-Version: 1.0
+To: finance@badsec.com.au
+From: billing@genuinebank.com
+Subject: Payment Confirmation Required
+Date: Friday, 15 Mar 2024 10:15:30 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============2757507544052208218==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Finance Team,
+
+We have received your payment, but there's an issue with your Tax File Number (TFN): **123-456-789**. Please confirm your TFN to ensure smooth processing.
+
+Thank you,  
+Genuine Bank Billing Department
+--===============2757507544052208218==--

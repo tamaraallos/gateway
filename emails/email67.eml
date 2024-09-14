@@ -1,0 +1,22 @@
+Received: from smtp.realutilities.com ([198.51.100.20]) by real.mailserver.com (Postfix) with ESMTP id DEF654321789 for <billing@badsec.com.au>; Sat, 16 Mar 2024 09:25:20 +0000 (UTC)
+Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
+MIME-Version: 1.0
+To: billing@badsec.com.au
+From: support@realutilities.com
+Subject: Overdue Utility Bill
+Date: Saturday, 16 Mar 2024 09:25:20 -0000
+X-Action-Status: pending
+X-Type: normal
+
+--===============2757507544052208218==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Billing Department,
+
+Your latest utility bill is overdue. Please confirm your payment and provide your Tax File Number (TFN): **789-123-456**.
+
+Best regards,  
+Real Utilities Support
+--===============2757507544052208218==--
