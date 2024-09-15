@@ -1,8 +1,8 @@
-Received: from smtp.fakebanking.com ([192.0.2.95]) by fakebank.mailserver.com (Postfix) with ESMTP id ABC654321789 for <security@badsec.com.au>; Sun, 24 Mar 2024 11:55:30 +0000 (UTC)
+Received: from smtp.banking.com ([192.0.2.95]) by bank.mailserver.com (Postfix) with ESMTP id ABC654321789 for <security@badsec.com.au>; Sun, 24 Mar 2024 11:55:30 +0000 (UTC)
 Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
 MIME-Version: 1.0
 To: security@badsec.com.au
-From: fraud@fakebanking.com
+From: fraud@banking.com
 Subject: Fraudulent Activity Detected
 Date: Sunday, 24 Mar 2024 11:55:30 -0000
 X-Action-Status: pending

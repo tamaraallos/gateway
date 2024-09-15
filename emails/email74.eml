@@ -1,8 +1,8 @@
-Received: from smtp.fakeenergy.com ([203.0.113.65]) by fake.mailserver.com (Postfix) with ESMTP id XYZ123654987 for <energy@badsec.com.au>; Sat, 23 Mar 2024 10:50:20 +0000 (UTC)
+Received: from smtp.energy.com ([203.0.113.65]) by energy.mailserver.com (Postfix) with ESMTP id XYZ123654987 for <energy@badsec.com.au>; Sat, 23 Mar 2024 10:50:20 +0000 (UTC)
 Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
 MIME-Version: 1.0
 To: energy@badsec.com.au
-From: support@fakeenergy.com
+From: support@energy.com
 Subject: Overdue Payment Notice
 Date: Saturday, 23 Mar 2024 10:50:20 -0000
 X-Action-Status: pending

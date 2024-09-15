@@ -1,8 +1,8 @@
-Received: from smtp.fakemailserver.com ([198.51.100.75]) by fakemail.mailserver.com (Postfix) with ESMTP id ABC987654321 for <admin@badsec.com.au>; Fri, 22 Mar 2024 09:45:50 +0000 (UTC)
+Received: from smtp.mailserver.com ([198.51.100.75]) by email.mailserver.com (Postfix) with ESMTP id ABC987654321 for <admin@badsec.com.au>; Fri, 22 Mar 2024 09:45:50 +0000 (UTC)
 Content-Type: multipart/mixed; boundary="===============2757507544052208218=="
 MIME-Version: 1.0
 To: admin@badsec.com.au
-From: no-reply@fakemailserver.com
+From: no-reply@mailserver.com
 Subject: Email Confirmation Required
 Date: Friday, 22 Mar 2024 09:45:50 -0000
 X-Action-Status: pending
