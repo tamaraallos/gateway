@@ -76,8 +76,6 @@ def spf_check_result(email_data):
     if results == False:
         email_data['action status'] = 'blocked'
         email_data['type'] += 'Spf Violation, '
-    else:
-        print("no bad spf")
     return email_data
 
 # dmarc check
@@ -86,8 +84,6 @@ def dmarc_check_result(email_data):
     if results == False:
         email_data['action status'] = 'blocked'
         email_data['type'] += 'DMARC Violation, '
-    else:
-        print("no bad dmarc")
     return email_data
 
 # dkim check
