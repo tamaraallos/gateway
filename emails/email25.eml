@@ -1,25 +1,102 @@
-Return-Path: ITSupport@badsecurity.com.au
-Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
-	by localhost with ESMTPA
-	; Thu, 12 Sep 2024 14:55:23 +1000
-Message-ID: <bbc2cc71-6f2b-4451-aee4-9f5a57d106a8@badsecurity.com.au>
-Date: Thu, 12 Sep 2024 14:55:23 +1000
+Delivered-To: sam.williamsbsi@gmail.com
+Received: by 2002:a05:7301:2397:b0:13d:85d4:e1db with SMTP id gw23csp330454dyb;
+        Sat, 14 Sep 2024 05:44:37 -0700 (PDT)
+X-Received: by 2002:a05:690c:4a02:b0:632:12b:8315 with SMTP id 00721157ae682-6dbb6b246d7mr90083987b3.22.1726317877739;
+        Sat, 14 Sep 2024 05:44:37 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726317877; cv=none;
+        d=google.com; s=arc-20160816;
+        b=Sj+xONFTQValSezGXnmz5p0rBCrc/WA1XdJczH3yCL8xN7z/ADxyjkwH+BwNrw7x9E
+         S3C4M1y7hKkRLh/aAlCJnAApWzudI5Hgh3zDhZsLstCRZma/HRfaASOdtHw2VERfSoz5
+         fSvKmnuRg4S9zPQx8+t0GOCdDTuo1C29yU4oJ0+Q30kWgEwgKFkMIhkRWu4ydsd8+/Ej
+         il6VKDSJ73HlpiwcZjxavia903GWwRg92/CcLQvy+rH+GY2I9rk9OahyJQtfjk7yPFxw
+         H7XD/tPXB5fCzmBovmjdFlwj+77Kv+9RJ+FEZHp7TYkvWYEs/nZbTiNhB4wzL8aBe8z8
+         hGRw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=8MupPzZ0f6W8fTMY2VwliGlcmRbmr1nz1YW+V6cNxag=;
+        fh=qG/e26EHmaBLNnSpnP8yO9eC1aztOguMLtrUR+TQr3g=;
+        b=LpabXEj7HNpBPIPjLU+6So3Y7qkrvt8rDGoj8OjbOF/pQCgPhq/pamwSq7d9t5qk2R
+         JWykpYc9UQ8ttjXxPkdSqxbMJx2ZqdolZvqn77fgYWXEaLmKd2GnPORu2/+Vk09/S1UH
+         anfuDhOcUWGpF/bfGnc9YsrWd5OgcaA+wXldbRKKEFCadBuK996uETajMRc2KWh76aVN
+         ljgfQVX/9s31wwOEajxKHF2GJcD1oSJ/7otfqz00kmYRVo9NXAN/0Wq74jQWFGSIxSh8
+         9mXcqa9wz9WyPSvtofxGamNCdY8ljNrt/8V+ZHJhyplzbmRii1yfmjFWCEjnz+w4b10h
+         1jmA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ko3Niit9;
+       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <will.rogersbsi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6dbe2f0697csor5332377b3.12.2024.09.14.05.44.37
+        for <sam.williamsbsi@gmail.com>
+        (Google Transport Security);
+        Sat, 14 Sep 2024 05:44:37 -0700 (PDT)
+Received-SPF: pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=ko3Niit9;
+       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726317877; x=1726922677; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=8MupPzZ0f6W8fTMY2VwliGlcmRbmr1nz1YW+V6cNxag=;
+        b=ko3Niit9Qcs1ScGsTw/wk2uhLHxw6yneUtL3Id65+5pEIMQFKz6Nkky47/1GIEZdSG
+         5M9EbtUF7JYakpj9SXLflJSwnHaE8e/dvzhomkzdiKmavSBXflo2FgzPa2Q3TIbzfWx2
+         zbGpts2rCusUTcOLUHzw6maFWemcYNBYDoc8GZ2JhAWDWn1OFuTvHHtSRilv53dcmuml
+         5rCUZCsZ9Ehb0vUoYu/GmWc98M2Cs3yjPK6Np+NPCmFpNKFunWlgpRkAVi8LcgWhFPjq
+         HCscwwRmt4s0DTpJ8pLFIBf6BHKfx4bJPKtRM0oWsSzmoRapdzAuqzElT+3fkMInwQF2
+         qrVQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726317877; x=1726922677;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=8MupPzZ0f6W8fTMY2VwliGlcmRbmr1nz1YW+V6cNxag=;
+        b=ERYjRSi/atP+V5nt9wOI67XnGGGSQPh1EnFib+nXehnA+XA0ztcyKlaVv15Vs1XeHi
+         bDOEct5afemDc8XC5J0Wwxt3VWXdKtZvfiGz2Y/TdmCv9lZJCpVCGSPBoeqPhlT3EDpr
+         7vF9zZeRmWf/5wJh9QzUDNeKwSpdLE9mn6Go8EGZ27GY90GzTeH1QewUPIkEA/HKEpW6
+         7gYu1PRJtk4HbcvGcufXxbpJ89uAx83m5X27YXJdjsT4mKMW1LRzWrfjj1lWOxoZqs7e
+         whcTgspN8Iyg3YZb8/B3kfBll46enZHiM5oBfKfh65HGuW9HxPnYtNongXEt7WkKd2j1
+         Uagg==
+X-Gm-Message-State: AOJu0Yxr09gnGYcVfAklGoYDFK5QrtyrIB4aZrKwWJ7KNjx/5VEa6DbF
+	igcNK1HN6VTSh9xwLYmhzT1SZz86lXO/Na+N+3Qo7P/pnf3KGipiQ5PzZzfnIaSPQAGoK6oNjXt
+	y6I174l9IsRFxtu12Lk4fC74A+21ZrHQa6KaPtg==
+X-Google-Smtp-Source: AGHT+IEkGzpmVfIBBZCGKVTSoDnEpobkIST7v2OHlLT4IUV/4hWaNMhVyZJeqC5nllQOVxrXmhqPYU4HILV7jqVXhgE=
+X-Received: by 2002:a05:690c:f07:b0:62c:e6c0:e887 with SMTP id
+ 00721157ae682-6dbb6ad72f8mr96821317b3.9.1726317876725; Sat, 14 Sep 2024
+ 05:44:36 -0700 (PDT)
 MIME-Version: 1.0
-User-Agent: Mozilla Thunderbird
-Content-Language: en-US
-To: manager <manager@badsecurity.com.au>
-From: ITSupport <ITSupport@badsecurity.com.au>
+From: Will Rogers <will.rogersbsi@gmail.com>
+Date: Sat, 14 Sep 2024 22:44:25 +1000
+Message-ID: <CAMYGh1PHwV-NfWDrEKqK995gUomyf-DWDUBG0L8mnLqGS_YS1w@mail.gmail.com>
 Subject: Access to Secret Servers
-Content-Type: text/plain; charset=UTF-8; format=flowed
-Content-Transfer-Encoding: 7bit
+To: sam.williamsbsi@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000cfd01e062213b369"
+
+--000000000000cfd01e062213b369
+Content-Type: text/plain; charset="UTF-8"
 
 Hey,
 
-Make sure the **secret** project files are uploaded to the server with 
-the following IP address:
+Make sure the **secret** project files are uploaded to the server with the
+following IP address:
 IP Address: 10.0.0.5
 Keep this information **confidential**.
 
-Best Regards,
-Jenny
+Best,
+Will
 
+--000000000000cfd01e062213b369
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div dir=3D"ltr"><div>Hey,=C2=A0=C2=A0<br></div><div><br><=
+/div><div>Make sure the **secret** project files are uploaded to the server=
+ with the following IP address:=C2=A0=C2=A0</div><div>IP Address: 10.0.0.5=
+=C2=A0=C2=A0</div><div>Keep this information **confidential**.=C2=A0=C2=A0<=
+/div><div><br></div><div>Best,=C2=A0=C2=A0</div><div>Will</div></div></div>
+
+--000000000000cfd01e062213b369--

@@ -1,53 +1,100 @@
-Return-Path: ITSupport@badsecurity.com.au
-Received: from [127.0.0.1] (checkhost.local [127.0.0.1])
-	by localhost with ESMTPA
-	; Thu, 12 Sep 2024 14:51:18 +1000
-Content-Type: multipart/alternative;
- boundary="------------GEjZA0qi1NNQv5avtSPcVmnG"
-Message-ID: <c8be35e7-5cfc-45e8-8228-2fe8c629ff61@badsecurity.com.au>
-Date: Thu, 12 Sep 2024 14:51:18 +1000
+Delivered-To: sam.williamsbsi@gmail.com
+Received: by 2002:a05:7301:2397:b0:13d:85d4:e1db with SMTP id gw23csp329737dyb;
+        Sat, 14 Sep 2024 05:42:41 -0700 (PDT)
+X-Received: by 2002:a05:6902:2185:b0:e1d:1c66:a334 with SMTP id 3f1490d57ef6-e1db0102428mr4100559276.54.1726317761144;
+        Sat, 14 Sep 2024 05:42:41 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1726317761; cv=none;
+        d=google.com; s=arc-20160816;
+        b=IftjYDJzxKJF5TMYGCl7ZrDu2qTO2lgyYQMkTnmyzCG7Z9A0gv386A3UTE88+MbQTB
+         UmOuW32AhQ3f7QFhLlLaHVPPFTS/sxhHFOz8UNZPEPysUoiAC1AYMo82x3+2ekrqms5A
+         gJz+2QvpuX/xuqpi7/C0nwx8Xd0jYs3rzuB14oC4D0KQAr/NyLKCty3gIHF1BfOCsZpP
+         LO8IurVIMG2HwHmNM/7v+RwqtKBSAzRsI5LCRvGyF/JS7lyxzuFzJ58m4nlHJ8uhG3gL
+         1u/ZoGeZH28JWdL2lWJDXwFBN7bA77yAwQcr0YMTKzLq1gv250Y0a7/kcQRU5sR6pGWF
+         MLtw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=to:subject:message-id:date:from:mime-version:dkim-signature;
+        bh=jSMYQLvYpRVNidpMyQ7boF/k5H6brdcqx0xbPdorWLQ=;
+        fh=qG/e26EHmaBLNnSpnP8yO9eC1aztOguMLtrUR+TQr3g=;
+        b=OA70mPny4/gGadCM156evMoO4kZiO/AjKxUlIh4IhF0SnvxltZyTzX9NIpkaOLZ7IA
+         koELa0yD7x87VdfXWhgiTMFy67PDbq+SoJedIajHxQ0MSNsScTV47S27QdX6cSvG3DT7
+         2IIM7RK4ZNm//O2kI5mCqZcahimCdDMxSYC1nm+5SkKqW5KpcBYWwYiCuTm9p9MWrdx9
+         DPWZfU3M668Ho9AiGcgEGmqc3GD7ouVUrqYB021P6zT1zM6XB5m+6ddycBrkvToOqbxn
+         IseKFb/nuj6poYNEJHS/GaDJii9uEtAS+VeJYvhVNPTqjHyD5JsGEMvaGPCV7xR4bTy2
+         Xrxw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=RkEnkqHp;
+       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <will.rogersbsi@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 00721157ae682-6dbe2dfbe55sor5510577b3.3.2024.09.14.05.42.41
+        for <sam.williamsbsi@gmail.com>
+        (Google Transport Security);
+        Sat, 14 Sep 2024 05:42:41 -0700 (PDT)
+Received-SPF: pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=RkEnkqHp;
+       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1726317760; x=1726922560; dara=google.com;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=jSMYQLvYpRVNidpMyQ7boF/k5H6brdcqx0xbPdorWLQ=;
+        b=RkEnkqHplmUJDbkO7xoRdPCxO4An/3LZcbXIQjmWTHtAED8eqZt3fmc1PLiMrVvll3
+         8ERk/gEzdtL4KZN5uvr/ajZbptI2XKMIghyVQwgm6IuyV8Dsp5On6xkzdwe218FmCHt5
+         3DKSqMiCQNXzg0IIYwkRJXMusU3X9Bc25HH71XXRGs+VKQ8ct1pqJjgED6ZenGEjq7PB
+         qB+pPL5PzvGy2Azrm5oNqVpT9bQPeLhpjeGLJdWp3RudsTJR7rYcUykqlZ2F99yGX8Nj
+         cdUBYXhJlZ0RYSlcFPpLyMZHFzQU9Zu3t/myB6CxoYtaAQhVoEF0dD6j1wpphJOfPsVd
+         9inQ==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1726317760; x=1726922560;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=jSMYQLvYpRVNidpMyQ7boF/k5H6brdcqx0xbPdorWLQ=;
+        b=KHfwKj+16LDwXnyuaacJ39yejung2u7Auk/8315otTepBHozhPkIHg/M+ivhFA0iUg
+         SFyP7DEtzikhn6NlLVJEgd3xdV1++XnV+4ig8romtERGKnRGiUNmHedKoiykQn0F1VI7
+         /IGOlaoKTQcutRcZIhmkh+yq7UHw0ux3kVbeSuC4znpNjsReUUzfjtZPsQ64pak4MFyw
+         qeUSfr76i8CtPCZAKADJ2z98ikkD9WAgDqq/4Mrlcv61oCvKK/dvoPQGpeaf8wkio4Wi
+         Oi1CnGaAPiLyOH/l3yKlHR5bcIiVkFqxS9nygf6uFALPtjin4Uw8z2ZRHdzfSZWTrb8N
+         rzvw==
+X-Gm-Message-State: AOJu0YyXxPMCtVFrdkhfrYLicVI4OlJDN86bm6uK4zgAqAoWL2bsdEhi
+	5zSy+7TQXqxcLt0XN2Yye+so28nEqSpgHGxBwcff8DUSSE1/5vEtQEj6WCdt+fDjvNli0SIh+6w
+	ythXoKbvgcK29sywi/mgwSZfTKOYH+kV2i8SAyg==
+X-Google-Smtp-Source: AGHT+IHdpZt4B8HsWKtZXoUQNQcRcbDTUnhfi/hJMkvdQdXsQw+zgpXxb+kpScq7UD/8/PALf3tl9bskiVzb7queBuM=
+X-Received: by 2002:a05:690c:b8e:b0:6c7:a120:e0ec with SMTP id
+ 00721157ae682-6dbcc4bef4emr56292417b3.22.1726317760210; Sat, 14 Sep 2024
+ 05:42:40 -0700 (PDT)
 MIME-Version: 1.0
-User-Agent: Mozilla Thunderbird
-Content-Language: en-US
-To: manager <manager@badsecurity.com.au>
-From: ITSupport <ITSupport@badsecurity.com.au>
-Subject: Contact Info
+From: Will Rogers <will.rogersbsi@gmail.com>
+Date: Sat, 14 Sep 2024 22:42:28 +1000
+Message-ID: <CAMYGh1NoLvXJ-scL5cn+=4pedRa1pZ135EmS=r6v0YT5BgXs2A@mail.gmail.com>
+Subject: Account Creation
+To: sam.williamsbsi@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000ddee95062213ac41"
 
-This is a multi-part message in MIME format.
---------------GEjZA0qi1NNQv5avtSPcVmnG
-Content-Type: text/plain; charset=UTF-8; format=flowed
-Content-Transfer-Encoding: 7bit
+--000000000000ddee95062213ac41
+Content-Type: text/plain; charset="UTF-8"
 
-|Hi, You can reach me at my new phone number: +1 (123) 456-7890 Let me 
-know if you need anything else. Best regards, Tom |
+Hello,
 
---------------GEjZA0qi1NNQv5avtSPcVmnG
-Content-Type: text/html; charset=UTF-8
-Content-Transfer-Encoding: 7bit
+Please create an account for the following email address:
+testuser@example.com
 
-<!DOCTYPE html>
-<html>
-  <head>
+Thanks,
+Will
 
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  </head>
-  <body>
-    <pre><div
-class="dark bg-gray-950 contain-inline-size rounded-md border-[0.5px] border-token-border-medium"><div
-    class="overflow-y-auto p-4" dir="ltr"><code
-    class="!whitespace-pre hljs language-vbnet">Hi,  
-You can reach <span class="hljs-keyword">me</span> at my <span
-    class="hljs-built_in">new</span> phone number: +<span
-    class="hljs-number">1</span> (<span class="hljs-number">123</span>) <span
-    class="hljs-number">456</span>-<span class="hljs-number">7890</span>  
-<span class="hljs-keyword">Let</span> <span class="hljs-keyword">me</span> know <span
-    class="hljs-keyword">if</span> you need anything <span
-    class="hljs-keyword">else</span>.  
-Best regards,  
-Tom  
-</code></div></div></pre>
-    <p></p>
-  </body>
-</html>
+--000000000000ddee95062213ac41
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
 
---------------GEjZA0qi1NNQv5avtSPcVmnG--
+<div dir=3D"ltr"><div dir=3D"ltr"><div>Hello,=C2=A0=C2=A0<br></div><div><br=
+></div><div>Please create an account for the following email address:=C2=A0=
+=C2=A0</div><div><a href=3D"mailto:testuser@example.com">testuser@example.c=
+om</a>=C2=A0=C2=A0</div><div><br></div><div>Thanks,=C2=A0=C2=A0</div><div>W=
+ill</div></div></div>
+
+--000000000000ddee95062213ac41--
