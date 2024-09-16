@@ -1,97 +1,16 @@
-Delivered-To: will.rogersbsi@gmail.com
-Received: by 2002:a05:7108:6449:b0:3b2:97c5:89d7 with SMTP id c9csp221169gdt;
-        Sat, 14 Sep 2024 05:37:20 -0700 (PDT)
-X-Received: by 2002:a17:902:e80e:b0:205:4721:19c with SMTP id d9443c01a7336-20782be4db8mr91906665ad.37.1726317439838;
-        Sat, 14 Sep 2024 05:37:19 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1726317439; cv=none;
-        d=google.com; s=arc-20160816;
-        b=JPMeYBh+wMmotJm7PIlKz3ZQe4ZU6JhNzLQ+aWf5BaGxafmC5TvVWiNHbdQt7LyPAG
-         P62fQoNQSvB9h9ERFbXdRm4V40aatCk+SAdd3h9GpMZ+ZvlNJMqkXHXcm+JsUcnEM0M1
-         2uLnUS4yNaN5OdDXh4wlLM9SdpVGkptdFWWbbdZsozBxqMry5zfjYUwx/+21KX7XsMOw
-         P/MmRwkTkppGrsADaP7ASQR831Cnihkm/DY8PrQzp3zJYYs56OG0IfpJQHdTRAKSTqhx
-         p79DCHfPHWO+JgMFB4hCgYwGOLQKmXdW8QLWlksQj+3/pKwHoPQ9kkQDWh8XxkNC+Xao
-         v4ew==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
-        h=to:subject:message-id:date:from:mime-version:dkim-signature;
-        bh=aqbBLYO8ZBZC2H0bbwJCCUXpUIyd4smLGNt370eTO5I=;
-        fh=8Ys8NJr71BGchZt07hjtv4K5+RQTHsVRJdwz8B3tXzc=;
-        b=SSl8WjDE57aXaazZm1gOdZlfRgREonFcJ8pXBBH1ChZ8/y4t4KvvFJDkjyXtOpukxG
-         hEBA5hhLpqjoCVtUiL1OidpVmmKtTOXGybpjeYZFratnmCI1I1UaiMbyzfNamb+dhsCH
-         RH4qclrrs7xbGFS0jDhbobQ/RmKSgRX1jSx9ErAZ471/mnp11IF5GlgrbZgJTGxy3sZZ
-         vY25FYMN6AZw/QnskG3b+DZozJDeObBc4w1n4ka4Q9CV94p4OIIPlDFDQDD0uOh+sKY3
-         gO0S0Sq35+OJ9Re//qQ9xyHsq7JcIJe0g8E02MJiDnVXDHZA8t5xKVoOg2RaAY8HIBaB
-         +3rA==;
-        dara=google.com
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=afrW2B8e;
-       spf=pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sam.williamsbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-Return-Path: <sam.williamsbsi@gmail.com>
-Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
-        by mx.google.com with SMTPS id d9443c01a7336-207946c1fabsor5444335ad.15.2024.09.14.05.37.19
-        for <will.rogersbsi@gmail.com>
-        (Google Transport Security);
-        Sat, 14 Sep 2024 05:37:19 -0700 (PDT)
-Received-SPF: pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=afrW2B8e;
-       spf=pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sam.williamsbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=gmail.com; s=20230601; t=1726317439; x=1726922239; dara=google.com;
-        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
-         :date:message-id:reply-to;
-        bh=aqbBLYO8ZBZC2H0bbwJCCUXpUIyd4smLGNt370eTO5I=;
-        b=afrW2B8eiinbmPS1ReRwoG1PnOT16MNoK7CqmYsyCjVuXbFOSTRpdcmnRUfUMdhwgd
-         d6XQaOBcDcp9/ZEbt6qwNOyqZ7a1N6Ga39pdEz1yhphgSUuGDzv2+0sM3bNAXhGnJZpr
-         PZN8J+N+P8ksfZ+GiZ0oQDN0Tf4H0LwYzsM/QGboSAgoJlqvj7wrL0nGgYmiN8Qcqz6J
-         YAyIHa/jb+pAMmdUfC05I/9UHQRHJxRQE4bVabmj+6n5G5FojPEc+cZW2eDWiV3Peeq3
-         i1Qu/tdTasBvY1AlxNbBqfW7miCca1WXb79eHUBNc2gZNP4FWCvEP3H4uzYk6ILQOUtI
-         sGeA==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=1e100.net; s=20230601; t=1726317439; x=1726922239;
-        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
-         :from:to:cc:subject:date:message-id:reply-to;
-        bh=aqbBLYO8ZBZC2H0bbwJCCUXpUIyd4smLGNt370eTO5I=;
-        b=jPpI2MOrZhxASMUxiwGEaNGzKW6OqktHrss6W6PwyzFAFCp1QCUeDIO3DZJ1mvTazL
-         F2ZUSj0LLA0I6Z3MYVSS507SzGtb3SiqCtXC7O4tGQ6TxVMhA2eHKBh8qqShz2yC0PaP
-         8KDN8YVBCWWOqbQLrADezGdrpp7AAZIy6gwL2afRZF0z6Yvby0jBXrugs4YJqicHvL9P
-         I5iUULmGizMDB+klKZkkagilbb9IGT3ZsVNZe5rpeLR05B6jMtXcR8OTA5EMQWugd9SM
-         /HugNZmAPK+BlW83ywYYrjXskgxez1J8n5CMsItyQtOdjeLro6m68VTH3Kt1cKTvISTy
-         YrSA==
-X-Gm-Message-State: AOJu0YwT3KCAU5+HUeZjMY75Wlz+sX6UaWXGvlS/5wMNBMrw/obdXrPz
-	Qxf7U23nWsNlqMGn05O8iPA1SUhvbXBGUk1C5DT3puUZViRHEvJfzwMeVtzP8gvSzol4MMpDAeb
-	Us9LNhd0rChGvOFiPExbjdfcfk6GBThoVkhg00hx3
-X-Google-Smtp-Source: AGHT+IHAFpudX8ms7OCMi4MsMQmEJhcXN3/mo0D7cx+Yo1MSADcEas3h7sYu/4wtDzHddg4FsrQl7k2OjQeaU5BDlq4=
-X-Received: by 2002:a17:90b:384e:b0:2d3:db91:ee82 with SMTP id
- 98e67ed59e1d1-2dbb9f0f40bmr6953197a91.40.1726317439033; Sat, 14 Sep 2024
- 05:37:19 -0700 (PDT)
+Content-Type: multipart/mixed; boundary="===============0387940608459659506=="
 MIME-Version: 1.0
-From: Sam Williams <sam.williamsbsi@gmail.com>
-Date: Sat, 14 Sep 2024 22:37:08 +1000
-Message-ID: <CAGz06i+QmMzT05e4H2dN=-ZFrZzkRi5cdZg_yQZC3URYfLvK=A@mail.gmail.com>
-Subject: Reimbursement Request
-To: will.rogersbsi@gmail.com
-Content-Type: multipart/alternative; boundary="000000000000b92bad0622139983"
+To: sam.williamsbsi@gmail.com
+From: tom.watersbsi@gmail.com
+Subject: Contact Info
+Date: Tuesday, 03 Sep 2024 12:39:34 -0000
+X-Action-Status: pending
+X-Type: normal
 
---000000000000b92bad0622139983
-Content-Type: text/plain; charset="UTF-8"
+--===============0387940608459659506==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
 
-Hello,
-Kindly reimburse the amount to my debit card:
-Card Number: 9876 5432 1098 7654
-Regards,
-Sam
-
---000000000000b92bad0622139983
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
-
-<div dir=3D"ltr"><div dir=3D"ltr"><div>Hello,=C2=A0=C2=A0<br></div><div>Kin=
-dly reimburse the amount to my debit card:=C2=A0=C2=A0</div><div>Card Numbe=
-r: 9876 5432 1098 7654=C2=A0=C2=A0</div><div>Regards,=C2=A0=C2=A0</div><div=
->Sam</div><div><br></div></div></div>
-
---000000000000b92bad0622139983--
+Hi,       You can reach me at my new phone number: +1 (123) 456-7890       Let me know if you need anything else.       Best regards,       Tom
+--===============0387940608459659506==--
