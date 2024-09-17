@@ -1,0 +1,750 @@
+{
+    "to": "manager@company.com",
+    "subject": "Performance Review - Q3 2024",
+    "from": "employee@company.com",
+    "date": "Fri, 13 Sep 2024 15:30:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Manager,\n\nPlease find my self-assessment for the Q3 performance review attached. Looking forward to your feedback.\n\nBest regards,\nEmployee\n"
+}
+{
+    "to": "support@company.com",
+    "subject": "Technical Issue - Server Downtime",
+    "from": "techlead@company.com",
+    "date": "Fri, 13 Sep 2024 21:00:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Support Team,\n\nWe are experiencing downtime on one of our servers. Please find the logs attached and resolve this issue as soon as possible.\n\nBest regards,\nTech Lead\n"
+}
+{
+    "to": "marketing@company.com",
+    "subject": "Campaign Results - Q3 2024",
+    "from": "analyst@company.com",
+    "date": "Fri, 13 Sep 2024 20:30:18 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S59G3zFeUoV1NQbo_YAJ_PSbIxWr0nEoC4r1duv5IKeT8Lwy1LJmbVmP1IByHfPv01ccYmfwzZVKxXfj8Yfz0ChkazAPESpf1h8h2WE0-9maFPvnghQNO-FornBrsmElnz4Fhi2lF1ig0J9u8iKnCtZCJcQi0D_SjQ1zUoH0YmPZ2OmPKJGM-lm0sVEMkUmry_o4PAJpF3jKmVhmWcwl4EMOAnJeruiFDxthSEVB5yOGQqK_1Q0W3cy9YVX6sVDHRbmmG4CXZGmFOsC89Z1rSTYSg=="
+}
+{
+    "to": "recruiting@company.com",
+    "subject": "Recruitment Update - September 2024",
+    "from": "recruiter@company.com",
+    "date": "Fri, 13 Sep 2024 20:00:18 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S59puHiZmyMJSIQFaEDIWZ7WhphjwHJoRp1gJGt_njJ1-4H13EA28gf0b3iQShn4UZ7adNZzJJDY4pZY8jHB8fZ75wwDgPWi5OiW3A4Avskx2oXy6eDFcEUkHf4fAWaW3Qx6VLQXQfKZE1T4kdYcS23jsMOOcQ_c-OWDey2_0JpZ1NbBjozrdMsFybZmuSThcu6t_mXIwUJig3JykOvKsH0XCbRoDIu0SqP4owz0zauTc27RKZXDYY7UM7xgGO1T-73"
+}
+{
+    "to": "partnerships@company.com",
+    "subject": "Partnership Proposal for 2024",
+    "from": "jane@company.com",
+    "date": "Fri, 13 Sep 2024 19:30:18 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S59u-1Jf_Ydb5F5MdZ2r1f4t1Dq_GM8Wz4Pj-_kTR9KeDsGgSZMrUQ1pv1stNRpkYknk8RsIQ77kDw6XXX_U9h01TTsscQ5qnMTemW2gL9OZHT5JdbYyxbIR3iIeJt3oCfSiqu08w4gOJVzRoq0VSpGUstVjBPpk3COEuiIyTUa70zyOPTbvjyZLJub3sEr61De3htZKt6ywVVZpxrTB1ysre9PDk4yAb2Q9l9eb5yACRr6sxRUwxVVT-8QIjERim-c"
+}
+{
+    "to": "hr@company.com",
+    "subject": "New Hire Paperwork - September",
+    "from": "newhire@company.com",
+    "date": "Fri, 13 Sep 2024 19:00:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear HR Team,\n\nAttached are the completed forms for my onboarding process. Please let me know if any further information is required.\n\nThank you,\nNew Hire\n"
+}
+{
+    "to": "events@company.com",
+    "subject": "October Event Planning",
+    "from": "planner@company.com",
+    "date": "Fri, 13 Sep 2024 18:30:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Events Team,\n\nPlease find attached the initial plan for our October event. Let me know if you need any further details.\n\nBest regards,\nPlanner\n"
+}
+{
+    "to": "client@company.com",
+    "subject": "Follow-up on Meeting - September 2024",
+    "from": "accountmanager@company.com",
+    "date": "Fri, 13 Sep 2024 22:30:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Client,\n\nThank you for taking the time to meet with us today. Attached is a summary of our discussion and next steps. Please feel free to reach out if you have any questions.\n\nBest regards,\nAccount Manager\n"
+}
+{
+    "to": "hr@company.com",
+    "subject": "Time Off Request for September",
+    "from": "james@company.com",
+    "date": "Fri, 13 Sep 2024 17:30:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear HR Team,\n\nI am requesting time off from September 20th to September 25th. Please find the details in the attached document.\n\nThank you,\nJames\n"
+}
+{
+    "to": "finance@company.com",
+    "subject": "Expense Report for August 2024",
+    "from": "employee@company.com",
+    "date": "Fri, 13 Sep 2024 17:00:18 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S59Trz1wTWx6E1ursS0fCeG2kljxBs-Lc7zlhPXlrgyiMsSkJlO6xAXI8ZGmdk0ERfOLhcIAMmwkeevTIHvAUf6ZNUE9fZkI-hreg_YY6tElmEn3xllwt3S_u-knemIfOJiLKS952T_45NIvHYUU_kpuVvJuhecAx3m9sIe9jo-7-dsLPR6lp-SIzN_YZ3J1hqQC4VqvL31JPP_N95Ko-Zo_WegoYhpxTCYa11tcTgg_IUzuqr6r2o_XVPQm7OUvSBQnYoHbFGzAJyGEzghbi0e6g=="
+}
+{
+    "to": "feedback@company.com",
+    "subject": "Feedback on Services",
+    "from": "client@client.com",
+    "date": "Fri, 13 Sep 2024 16:45:18 -0000",
+    "action status": "blocked",
+    "type": "DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Team,\n\nPlease find attached our feedback on your services for Q3. We hope this helps improve the ongoing collaboration.\n\nBest regards,\nClient Team\n"
+}
+{
+    "to": "allstaff@company.com",
+    "subject": "Security Update Notification",
+    "from": "it@company.com",
+    "date": "Fri, 13 Sep 2024 14:15:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear All,\n\nThe latest security update has been applied. No action is required on your part. If you face any issues, please contact IT support.\n\nRegards,\nIT Team\n"
+}
+{
+    "to": "customers@company.com",
+    "subject": "Software Release - Version 2.5",
+    "from": "support@company.com",
+    "date": "Fri, 13 Sep 2024 22:00:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Customers,\n\nWe are pleased to announce the release of version 2.5 of our software. Please find the release notes attached.\n\nThank you for your continued support.\n\nBest regards,\nSupport Team\n"
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Payment Details  ",
+    "from": "john.rogersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5-UdBIKZG91u6eE1y3v3Eyz6pZedXjJArzPiIFrA6eW3TpLugBWT_ubrL_PoztT6R0EM9SpZE5aIpPorXXG3x7VSKtMi526JTpLbWIBJsmFprTl-L9R9qHsaDvRvgYhNgWfC9U6L_qHDYKsoY9KjM_IuGyhZRsFKM5nA-BuIbQWfDMigARZV9v9cuUbVmZTNp4GyWBhl08_QJCmKDlI3DlPQYSdZJuhWQpJNSHCg1jbK-SrZ8ey_MAi4LvMlIqvLNPgFjHEejAhZ5EFoS7SdJaJA=="
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Reimbursement Request ",
+    "from": "alice.williamsbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5-9Foz2wt4WWygWNqSOahRj9aO2qFshSv5gNNzzhbJFWRw6UEnpkKAUVyGJJudK9cUMDQosjKsD1am5fhVDkVcQHFd-PH1wtzqbzHNgkT7viUWtD0a8KYSJgN7rlmOUy0DIPt-a0fwRXhkGnBuehx7NGrIFx0Q2x1Zi322SXT5hETC2Wv1uWBCYl_wnyqyIsEcmFyryGAFPnGV_o6p6A9qColgWH_1eAfkgsU4u8szdZU="
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "PIN Update",
+    "from": "bob.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5-any9clTVl3-M7p7WPPTDIsj5AJGGwXYFGvL5YL7D2AmNbdAaMd6Ql-74VqrrmjKPpm7JEO24FPlNnTrrScWCn2PZ0-CVywb6E1i8sXpF-I1YE6ZDCV50dq1uNIPsEtHRk6QpWargKEJnOuXjq9U2tfV2503dC0Gy90mN7bYe-d5o9I7Nm4mFTa7zjjnFdH0vsinDfZ8Un-AIvam2s7b_oQ=="
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "PIN Update",
+    "from": "bob.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5-SaUkodKWZ4n9fIgMyiEJshP4IUu8JDGlOJB28Ceo_003UR2Pni2eNgRM8mooO2pLrg7X42BDfxuoRtuuP_QwZRx_dwoaGG9RlmukbeZ3uVGSOY7zYjLfxTdiKhXvlpAZg035N5CAsWt8fqJHPwe8HEJh0MhMVEDoixUPaFZWlDT8nhXciT2M2b2xmUjhWaGbyYgmUMyQ-fbmP2zXUEAJTg=="
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Tax File Number Submission",
+    "from": "emma.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5-9_dOykzwSvlHOYcBBMpN9nBqoaFqflnqhY-X_HtJ0cFE1m32CDlbTPErGEk1kOphPj0eA2kp9KJkKSO30saraXyEnN0vhVOB3kO93Qel1kX1K5w4mFikV2xc9vcc0JAn4XrUZDEyDh2yATucHeOJ-NjpIXMrWKkDZ9w0KouNXB8HuHtfdFoIXOcgn1B21QnlviNETRm1dmzZ-_m24qsXs_e2NsrYzIDLkpuRzQADy0c="
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Contact Info",
+    "from": "tom.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5_VzhBmqm8TSQ_CfUNFPAW5bOeM7SdAb00NxYpDSmAQULgHc4GSYFQIjVWH5m6AkqNIvXFPs49owudOumIbrTDUtKUCxaOhLu-oK5vTZrbUVvMf4GOMJ3H6m6mlAV5XW5p26PdQPj8dX0-WYlFi5xnTlR7r95Mjex18vPvMwtA1TJ-o9OqeojSmHqMUGL8APc8okAaX5BKqJkLd2raVa6deD-CXt2nabmMryqhCh6IRndmKqSHmohfEoEj7VIQqx2K"
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Account Creation",
+    "from": "sam.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5_60oVxzU--M5wJEqC2l34rW4oyb1jk3XuANj64qDFFk60WlwjY6-YmVKIutTSMljaJk6UAdwVZpyYDKSJ7acfxNNSkJq3C5vgiWzDgyAFXTnNWF2VWqk-nA9l5WTM9_gwEFxn9kr5DEyexPKur1OBWgqcWeyqtzGoHd0kLeadzNREbwZfFlWtj2WQv9YC7t8o1BeVUaHYfwY7a2BTCLw3piQ5ws3GtzYgYC2BRODujYg="
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Delivery Address",
+    "from": "jane.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5_TiFOR2IfmjW07Rj_rD44xh5B3Pp_o-RbNSO02OH3OjOoEBc63aJemGckbRSrtwWG6HKP0tlTynmO3BDIGXF99gpgmZtkLEK6HEX3BFw2EJj3XvSMUuPROkvuNoFCwEu_59h9TnGckVBcToIjMa7NNCFOjSRVSN6LOcPliB28TvZ_zO_vdvITr5tYa4r4qwNl3cCvCiu5M5UllizCcE6tn4ipEQ3CMN2b3K3wolKOGJf1gBVNUjU1galsai4a65ErBIhGnLI_RD03tFOc0j0n362rlE0Cn2CwsGB7deXwW_E="
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Server Access Details  ",
+    "from": "alex.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5_3z9fqPeQqJJeCZ-DO8Zbhal-QYLOyms3vFzEvN354qIT4DQ0w70dAjzL4D-UdudqrMhZaHf2yZM5-soIOCf71XCSXTISESQFhtOSfnY-hTFjcwoLWSndFydRtO4gq4osxzUNx-5AvpRu8vqL1RDNxOI2oYOMNm5vg6FfpGHT7xv9kNar8zO_tikfwhW5jwT7V4jaVJZ92cbHaZ8Q4HjYjykKukQyGCrncLqVZRcjQMdpzppD4l2wJJEtdkmn-hdiu8jX_vIf7Qhk43CCt1PbiQ=="
+}
+{
+    "to": "employees@company.com",
+    "subject": "Work Schedule for Next Week",
+    "from": "hr@company.com",
+    "date": "Fri, 13 Sep 2024 13:00:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear All,\n\nPlease find attached the work schedule for the next week. Let HR know if you have any questions.\n\nBest regards,\nHR Team\n"
+}
+{
+    "to": "sam.williamsbsi@gmail.com",
+    "subject": "Shipping Information",
+    "from": "linda.watersbsi@gmail.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S5__AV-oOkmPoW03vrCxVKEznQlV36roP2-AOOre_0-Cp9fj_M8ZXnYRsPlzHfQt0zvqiQBn1ICNUFpwUj1vJl9JjnO6sW4otF6KQG-Eqfzgj7-CS1yjbTsrimrk6xzkOXFWsHTNG9dSeTST-z3kM30fFzg9RSAfFQ35bXQ2NeQVhqYXtCK9fbz9jH2ryn6BBvWQH2qYbn0eE6MFd68HogvrUYWesYcTLa_30JHaq4JYSkGqT-27Tl-7q9ob-a0eaZUuWQM94_GO1I8rbwtwrlP69CD1xehtiR-OaK-MB4QF6Lk5b6Jo9WyEj0C_bhSVQKW"
+}
+{
+    "to": "nina.patelBSI@gmail.com",
+    "subject": "You've Won! Claim Your $5,000 Gift Card Now!",
+    "from": "promo@company.com",
+    "date": "Mon, 12 Aug 2024 10:42:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Valued Customer,          Congratulations! You have been selected to receive an exclusive $5,000 gift card.      All you need to do is verify your account and confirm your shipping address.      Hurry, this offer is valid for the next 24 hours only!      Reply back to this e-mail to claim your prize!          Best regards,     Promo Team"
+}
+{
+    "to": "maria.sanchezBSI@gmail.com",
+    "subject": "Exclusive: Earn 5% Cashback on ALL Purchases!",
+    "from": "creditreward@company.com",
+    "date": "Fri, 19 Jul 2024 11:15:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hello,          For a limited time, we are offering a special 5% cashback on all your purchases, no strings attached!      Simply activate your bonus by replying to this email and start earning today.          Don\u2019t miss out on this incredible deal!          Cheers,     Elite Rewards Team"
+}
+{
+    "to": "li.weiBSI@gmail.com",
+    "subject": "Free Roundtrip Flight for You!",
+    "from": "freeflight@company.com",
+    "date": "Wed, 24 Apr 2024 14:05:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hi Traveler,          This is your chance to fly for free!      Book any roundtrip flight within the next 48 hours and we\u2019ll cover 100% of your ticket cost.      No hidden fees, no catches\u2014just free travel!          Get started by replying to this email!          Bon voyage!     Travel Specials 24/7"
+}
+{
+    "to": "oliver.johnsonBSI@gmail.com",
+    "subject": "Urgent: Medicare Benefits Are Expiring!",
+    "from": "healthsupport@company.com",
+    "date": "Fri, 15 Mar 2024 15:14:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Senior,          Your Medicare benefits are about to expire!      To continue receiving your full benefits, you must update your information immediately.      Reply now to avoid losing coverage.       Act now to ensure uninterrupted healthcare support.          Best regards,     Medicare Alert"
+}
+{
+    "to": "Yasmin.al-farsiBSI@gmail.com",
+    "subject": "CONGRATULATIONS! You've WON $1,000,000 in the International Lottery!",
+    "from": "lottery@company.com",
+    "date": "Tue, 27 Feb 2024 16:25:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Winner,  We are pleased to inform you that YOU have been selected as the GRAND PRIZE WINNER of $1,000,000 USD in the International Lottery!  This is a result of an automated random draw, and your email was selected from millions of entries worldwide.  To claim your winnings, simply reply the following: Full Name Address Date of Birth Bank Account Information for the transfer Please respond within 24 hours to avoid losing this opportunity! DO NOT MISS THIS LIFE-CHANGING CHANCE!  Congratulations again, Mr. Edward Harrison International Lottery Promotions Manager"
+}
+{
+    "to": "josephine.nguyenBSI@gmail.com",
+    "subject": "Limited Time Offer: 90% Off Luxury Watches!",
+    "from": "promo@company.com",
+    "date": "Tue, 07 May 2024 17:00:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hi there,          Get your hands on the finest luxury watches at a fraction of the price!      For a limited time only, enjoy up to 90% off brands like Rolex, Omega, and more.      Don\u2019t miss this incredible deal!     Shop Luxury Watches Now!          Best,     Luxury Watch Deals Team"
+}
+{
+    "to": "daniel.rossiBSI@gmail.com",
+    "subject": "WORK FROM HOME! EARN $5,000 A WEEK WITH MINIMAL EFFORT!",
+    "from": "homejobs@company.com",
+    "date": "Mon, 08 Jan 2024 18:10:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hi there,  Are you looking for an EASY way to make BIG MONEY from the comfort of your own home?  We have a limited number of positions available for a HIGH-PAYING remote job. No experience required, and you can start immediately!  Earn $5,000+ a week just by completing simple tasks.  All you need is a computer or smartphone, and we'll take care of the rest.  Don't miss out on this once-in-a-lifetime opportunity to achieve financial freedom!  To apply now, just send us your: Full Name Contact Number Email Address Bank Account Info (for direct payments) Don't delay \u2013 spots are limited!  Best regards, The HomeJob Solutions Team"
+}
+{
+    "to": "hassan.elmadiBSI@gmail.com",
+    "subject": "You\u2019ve Won the Mega Lottery! Claim Now!",
+    "from": "lotto@company.com",
+    "date": "Fri, 02 Aug 2024 19:30:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Congratulations! You are the lucky winner of our international Mega Lottery. You\u2019ve won $1,000,000!      To claim your prize, please provide your banking details and we\u2019ll process your payment immediately.          Don\u2019t miss out on this life-changing opportunity!          Best regards,     Mega Lottery Team"
+}
+{
+    "to": "lena.smirnovaBSI@gmail.com",
+    "subject": "Get a FREE $100 Amazon Gift Card Today!",
+    "from": "giftcardsupport@company.com",
+    "date": "Wed, 17 Apr 2024 20:05:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hi,          We\u2019re offering a special promotion to a select few customers\u2014get a FREE $100 Amazon gift card just for completing a quick survey!      Don\u2019t miss this exclusive opportunity.          Reply to this email to show interest and to not miss out on this AMAZING opportunity!          Happy shopping!     Amazon Deals Team"
+}
+{
+    "to": "productteam@company.com",
+    "subject": "New Product Proposal",
+    "from": "mary@company.com",
+    "date": "Fri, 13 Sep 2024 12:15:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hi Team,\n\nHere is the new product proposal I\ufffd\ufffd\ufffdve been working on. Looking forward to your feedback.\n\nThanks,\nMary\n"
+}
+{
+    "to": "hiroshi.tanakaBSI@gmail.com",
+    "subject": "Get a free iPad Today!!",
+    "from": "support@company.com",
+    "date": "Tue, 02 Jul 2024 11:15:34 -0000",
+    "action status": "blocked",
+    "type": "Spam, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hi,          We\u2019re offering a special promotion to a select few customers\u2014get a FREE iPad just for sending your address!      Don\u2019t miss this exclusive opportunity.          Reply to this email with your address and we will send out a FREE iPad!          Apple"
+}
+{
+    "to": "michael.andersonBSI@gmail.com",
+    "subject": "Urgent: Confirm Your Account to Avoid Suspension",
+    "from": "securelogin@gos-uslug.ru",
+    "date": "Fri, 15 Mar 2024 15:14:34 -0000",
+    "action status": "blocked",
+    "type": "Phishing, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Michael,          We detected unusual login attempts to your account and suspect unauthorized access.      To secure your account, we require you to confirm your identity immediately.      Failure to do so will result in temporary suspension.          Verify your account here:      http://eqnavfwqkfugjaapylqgizdacs-dot-gleow2021ja.ue.r.appspot.com     This link will expire in 24 hours, and your account may be locked.          Sincerely,     Account Security Team     securelogin.com"
+}
+{
+    "to": "jessica.mitchellBSI@gmail.com",
+    "subject": "Action Required: Update Your Billing Information",
+    "from": "hsbc@poponuss.de",
+    "date": "Mon, 10 Jun 2024 09:27:18 -0000",
+    "action status": "blocked",
+    "type": "Phishing, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Jessica,          Your recent payment was unsuccessful.      To avoid service interruption, please update your billing information immediately.          Update your details here:     https://verifymy-newpayees-issue.live/hsbc          If your billing details are not updated within 48 hours, your account will be closed.          Best regards,     Customer Support     HSBC"
+}
+{
+    "to": "emily.johnsonBSI@gmail.com",
+    "subject": "Suspicious Account Activity found in your bank",
+    "from": "gmail@accounts-mail.ru",
+    "date": "Wed, 17 Jul 2024 16:42:59 -0000",
+    "action status": "blocked",
+    "type": "Phishing",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Emily,          We have detected multiple unsuccessful login attempts on your account.      As a precaution, we've temporarily disabled your online banking.      You must verify your identity to restore access.          Verify Identity Now:     http://guineult.com/webmail/webmail.php          This is a time-sensitive issue, and your account will be permanently locked if not addressed within 24 hours.          Thank you,     Gmail"
+}
+{
+    "to": "david.wilsonBSI@gmail.com",
+    "subject": "Claim Your Reward: $500 Gift Card Inside",
+    "from": "rewards@awesome-wescoff.34-125-197-109.plesk.page",
+    "date": "Thu, 08 Aug 2024 11:32:50 -0000",
+    "action status": "blocked",
+    "type": "Phishing, Spam, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Congratulations David,          You\u2019ve been selected to receive a $500 gift card from our recent customer appreciation event.      To claim your prize, click the link below and follow the instructions.          Claim Your Reward:     https://getrewardscard.com/fr-amazon-pl/?item=7SG&sub1=1M1&sub2=&sub3=ed6f1538-743b-4ab3-bc6c-e64a398e857d          Don\u2019t miss out! This offer expires in 48 hours.          Best regards,     Awesome Rewards"
+}
+{
+    "to": "sarah.millerBSI@gmail.com",
+    "subject": "Important: Password Expiration Notice",
+    "from": "no-reply@8vproq.com",
+    "date": "Sun, 25 Feb 2024 08:01:42 -0000",
+    "action status": "blocked",
+    "type": "Phishing, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Sarah,          Your account password will expire in 48 hours.      To avoid any disruption in accessing your account, please reset your password as soon as possible.          Reset Password Now:     http://online-securemyaccount.com     Failure to reset will result in your account being locked for security reasons.          Sincerely,     Apple"
+}
+{
+    "to": "john.douglasBSI@gmail.com",
+    "subject": "URGENT ACCOUNT NOTICE \u2013 ACTION REQUIRED NOW!",
+    "from": "bank@alphaumi.com",
+    "date": "Tue, 03 Sep 2024 12:39:34 -0000",
+    "action status": "blocked",
+    "type": "Phishing, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Valued Customer,  We have detected suspicious activity on your account.  For your protection, we have temporarily locked your account until further verification.  To restore access, please click on the secure link below and verify your identity: https://accessboaonlines.com/here/signin.php  Sincerely, The Security Team"
+}
+{
+    "to": "stephanie.brownBSI@gmail.com",
+    "subject": "Confirm Your Email Address for Security Purposes",
+    "from": "verify@mkemerchant.com",
+    "date": "Mon, 12 Aug 2024 10:23:12 -0000",
+    "action status": "blocked",
+    "type": "Phishing, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Stephanie,          As part of our routine security check, we need you to confirm your email address to ensure that your account information remains secure.          Confirm Email Address:     http://ferrovi.net/verifys/home/step2.php     If not confirmed within 24 hours, your account will be flagged for review.          Thank you,     Verification Team"
+}
+{
+    "to": "andrew.thomasBSI@gmail.com",
+    "subject": "Account Access Alert: Immediate Action Required",
+    "from": "security@storage.googleapis.com",
+    "date": "Tue, 20 Aug 2024 07:35:45 -0000",
+    "action status": "blocked",
+    "type": "Phishing, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Andrew,          We noticed multiple failed login attempts on your account from an unfamiliar device.      To keep your account secure, we\u2019ve temporarily disabled access. Please confirm your identity to restore account access.          Restore Access:     http://google-services.com.devland.cl/index.php_archivos/index.php_archivos/index.php_archivos/index.php_archivos/index.php_archivos     This link is only valid for 24 hours.          Thank you,     Google"
+}
+{
+    "to": "brian.whiteBSI@gmail.com",
+    "subject": "Last Chance: Complete Your Survey and Earn $100",
+    "from": "rewards@spiffcoin.net",
+    "date": "Thu, 19 Sep 2024 21:17:24 -0000",
+    "action status": "blocked",
+    "type": "Phishing, Spam, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Brian,          You have been selected to complete our customer satisfaction survey, and in return, you will earn a $100 reward.      Please click the link below to complete the survey before the offer expires.          Complete Survey Here:     http://peterchristo.com/Shopper/freelancesurvey.htm     The survey must be completed within 48 hours to claim your reward.          Best regards,     Survey Team"
+}
+{
+    "to": "legal@company.com",
+    "subject": "Contract Review Request",
+    "from": "john@company.com",
+    "date": "Fri, 13 Sep 2024 11:05:18 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Legal Team,\n\nI would appreciate it if you could review the attached contract and provide your feedback by next week.\n\nThank you,\nJohn\n"
+}
+{
+    "to": "amanda.hallBSI@gmail.com",
+    "subject": "Urgent: Confirm Payment Details for Recent Order",
+    "from": "payment@8vpror.com",
+    "date": "Thu, 29 Feb 2024 18:14:04 -0000",
+    "action status": "blocked",
+    "type": "Phishing, Spam, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Amanda,          We encountered an issue while processing the payment for your recent order.      Please confirm your payment details by clicking the link below.      If not confirmed within 24 hours, your order will be canceled.          Confirm Payment Details:     http://payonsvitepaypllfr.000webhostapp.com     Thank you for shopping with us.          Sincerely,     Payment Team"
+}
+{
+    "to": "manager@badsecurity.com",
+    "subject": "Team Meeting Update",
+    "from": "alex@yandex.com",
+    "date": "Mon, 02 Sep 2024 08:15:27 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Manager,  I would like to update you regarding our team meeting scheduled for this Friday. Please review the attached agenda and provide your feedback.  Best regards, Alex"
+}
+{
+    "to": "admin@badsecurity.com",
+    "subject": "New Project Proposal",
+    "from": "john@zoho.com",
+    "date": "Wed, 04 Sep 2024 09:30:11 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hello Admin,  I am sending you the new project proposal for review. Kindly let me know if you require any adjustments before final submission.  Sincerely, John"
+}
+{
+    "to": "info@badsecurity.com",
+    "subject": "New Launch",
+    "from": "maria@aol.com",
+    "date": "Thu, 05 Sep 2024 11:45:43 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Info Team,  We are excited to announce our product launch next month. Please let us know how we can coordinate with your team to ensure a smooth release.  Best, Maria"
+}
+{
+    "to": "support@badsecurity.com",
+    "subject": "System Outage",
+    "from": "dan@yahoo.com",
+    "date": "Fri, 06 Sep 2024 14:22:35 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Support Team,  We experienced a major system outage today, and we need your immediate assistance to restore services. Please escalate this matter urgently.  Regards, Dan"
+}
+{
+    "to": "hr@badsecurity.com",
+    "subject": "Leave Request",
+    "from": "susan@icloud.com",
+    "date": "Sat, 07 Sep 2024 10:05:29 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hello HR,  I am writing to formally request leave for the first week of October. Please confirm if this can be approved.  Thank you, Susan"
+}
+{
+    "to": "manager@badsecurity.com",
+    "subject": "Team Meeting Update",
+    "from": "sai@email.com",
+    "date": "Sat, 14 Sep 2024 08:15:27 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear HR,  Dear Manager,  I would like to update you regarding our team meeting scheduled for this Friday. Please review the attached agenda and provide your feedback.    Best regards,  Sai"
+}
+{
+    "to": "finance@badsecurity.com",
+    "subject": "Budget Approval",
+    "from": "kelly@live.com",
+    "date": "Tue, 10 Sep 2024 17:23:12 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Finance,  We have submitted the budget plan for approval. Could you please review and provide feedback at your earliest convenience?  Kind regards, Kelly"
+}
+{
+    "to": "contact@badsecurity.com",
+    "subject": "Client Feedback",
+    "from": "peter@gmail.com",
+    "date": "Thu, 12 Sep 2024 09:37:44 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hello Team,  I have compiled the latest client feedback. Please review the attached document and let me know if you have any questions.  Best regards, Peter"
+}
+{
+    "to": "sales@badsecurity.com",
+    "subject": "Sales Inquiry",
+    "from": "james@swin.edu.au",
+    "date": "Fri, 13 Sep 2024 07:12:18 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Sales Team,  We received a sales inquiry from one of our major clients. Please check the details in the attachment and follow up with them accordingly.  Regards, James"
+}
+{
+    "to": "team@company.com",
+    "subject": "Meeting Minutes - September 2024",
+    "from": "sarah@company.com",
+    "date": "Fri, 13 Sep 2024 10:30:18 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6E_ppx57hY-S08ItpM6KeSPbk62v3f0RnX5BCkqOCtPZ54kNciBhzPD201_FB7PkDzG7JyDAl56rNUuqTGzL7w07Jc9o58-3y6o0OzdwVVXPDFJrgizV1qEBB7_Ote9_5O9Kg7P1V-HYOCP63TYI7rkZD66uRmHTAQTH6jK4oVQn3foM2f0HX_hr3zcmCyK8K_YTmY52rn5wXSHA-vtgINTwcBVc6vjgQEIeyyz9vHJ5ZPH8dsv9xb_5_-Pk8zS04x66uTzyePJVO26RBTcg5sWA=="
+}
+{
+    "to": "it@badsecurity.com",
+    "subject": "System Upgrade",
+    "from": "helen@outlook.com",
+    "date": "Sun, 15 Sep 2024 16:18:50 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hi IT Team,  We are planning a system upgrade this weekend. Please ensure all servers are prepped and backed up prior to the upgrade window.  Thanks, Helen"
+}
+{
+    "to": "marketing@badsecurity.com",
+    "subject": "Campaign Strategy",
+    "from": "nancy@hotmail.co.uk",
+    "date": "Tue, 17 Sep 2024 19:30:07 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Marketing Team,  I have drafted the new campaign strategy. Please go over the document and share your thoughts during the next meeting.  Best regards, Nancy"
+}
+{
+    "to": "accounts@badsecurity.com",
+    "subject": "Invoice Approval",
+    "from": "andrew@outlook.com",
+    "date": "Wed, 18 Sep 2024 10:43:21 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Hello Accounts,  Please review the attached invoices for approval. Let me know if there are any issues before finalizing the payments.  Regards, Andrew"
+}
+{
+    "to": "legal@badsecurity.com",
+    "subject": "Contract Review",
+    "from": "frank@outlook.com",
+    "date": "Fri, 20 Sep 2024 15:55:38 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Legal Team,  We need your assistance in reviewing the attached contract. Please prioritize this as it is time-sensitive.  Thank you, Frank"
+}
+{
+    "to": "hr@badsecurity.com",
+    "subject": "Interview Schedule",
+    "from": "olivia@msn.com",
+    "date": "Mon, 23 Sep 2024 14:02:55 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear HR,  I would like to confirm the interview schedule for next week. Please send me the final details.  Best regards, Olivia"
+}
+{
+    "to": "manager@badsecurity.com",
+    "subject": "Team Meeting Update",
+    "from": "sai@reddit.com",
+    "date": "Sat, 14 Sep 2024 08:15:27 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear HR,  Dear Manager,  I would like to update you regarding our team meeting scheduled for this Friday. Please review the attached agenda and provide your feedback.    Best regards,  Sai"
+}
+{
+    "to": "finance@badsec.com.au",
+    "subject": "Payment Confirmation Required",
+    "from": "billing@genuinebank.com",
+    "date": "Fri, 15 Mar 2024 10:15:30 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6FlVH07q3WaLWsWWmmW2j7GqUfzFhsUCLFhhTAHjni0497zSRTdicBfLLTeHoRiwWuPO-VATeJx5yyPU_KRM49F6_xnqN75GDJvGU-ibbSNgfdPdioGiGhgtlhcF-xdtSKWYj4KW68veyijey97aezm1WUrhWmsP8oiXyKm8yqgAbPhiugYPZ2M27WyXaEWkQ9d9_2Fxmb98ujTcF-T4uGhKmVOxcELcq9x9obo57K8ciA57Dro-VLXJNaiKA20jlpf-KMFzQ-ZVZ8kIvhgEhJY9B_bRY_HwpZBw_D9BIgM0gl9vD7E_6zwTfNVDeV-h-FMbNvnN32K5z6bqBm0MJ9ziVixjuiWAEec2LoJdXdneE="
+}
+{
+    "to": "billing@badsec.com.au",
+    "subject": "Overdue Utility Bill",
+    "from": "support@realutilities.com",
+    "date": "Sat, 16 Mar 2024 09:25:20 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6FGvn2HPs0rSQ_LTkiZMbvLfrv9nTXHKwfIOgOPMrOUNP8JwihQUASNvVJJzrH1mOXnqDFWd_7k2fnD1D87QCcydoDCIMBnAlN8mAo4N05V3V-5aiiRL_nQ9LdOJSkk_MhTtEvgb6ja3KTAOvs-eJ7qknEXQO3tQC2mNhMujIcKmUs8Us_tdt-gnvym8nnX0GQgQ3Bo1GdSu-qgnij5EDWrilrTF1qG3SbOVu0x-S2GHOPpnces8EnS5CZVsY7aK6e6k9M-LkPWNrrndyqDhOQ9ioqntklKjeFKU6rS63WlRleLlgB_UAaxUaE0RmfGPCB"
+}
+{
+    "to": "claims@badsec.com.au",
+    "subject": "Superannuation Claim Issue",
+    "from": "claims@insurance.com",
+    "date": "Sun, 17 Mar 2024 10:35:30 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6FLvXUYbTkCaJ_vZ6_UDDXOzdzf3WbB1b9ng1D5bmFWnUbCjewmo6p8h-YWjbEV-6BMGVKMPLvnZK287Kk5cGspfuJbSSDZUfpEns0i1czBiaJabKQJo1lSYoXx2BLYAhVUjDwoPpfXclOZvWDCe7ragf53mwgC7a-aEaR3nlAMaKSqZdtt-JCZkLfXHPS8axBE-_06zPSWCEMCoLZEV4RsWNImRKfBxQL7_TRBnzuT-uElxdfvDHUVTy9YDStUpRl024psnCe98eNSw8fzCT9ptH2Msak-R-yVeZUpUZIR5WTQ1s69eGbeSc4WD9w3UOk"
+}
+{
+    "to": "hr@badsec.com.au",
+    "subject": "Employment Record Update",
+    "from": "hr@jobs.com",
+    "date": "Mon, 18 Mar 2024 11:45:15 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear HR,\n\nPlease provide the Medicare Number for your employee, Jane Doe, to update our records.\n\nBest,  \nFakeJobs HR Department"
+}
+{
+    "to": "billing@vendor.com",
+    "subject": "Invoice Submission - August 2024",
+    "from": "mark@company.com",
+    "date": "Fri, 13 Sep 2024 09:45:18 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6HF8XdYDgOAOiuCKYPWFV5X-mLhowfPfWWSBsfLnF7gqWGhDgoOuPycVZqARUruwFC63Pwhf8ju6ylHqk8OOGIwBG5Hx9vBKD_T2koNwOz3wViF7iyv5bb914HwlcWnIsbtzdl82P3XvOgxAX2PABsow5ljdrJxw6_nBELgVhZNt1xHchuSp4sXmXcf3fPUY9TnQaak_g4h-k3rF8QSjE2wk-B6q91O7AUF3IC9XCE2ZaBDB6HQ40rh8aH29NySjaR"
+}
+{
+    "to": "travel@badsec.com.au",
+    "subject": "Flight Information Required",
+    "from": "support@airlines.com",
+    "date": "Tue, 19 Mar 2024 12:50:45 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Traveler,\n\nWe need to confirm your recent booking. Please provide your booking reference and contact information.\n\nBest regards,  \nFakeAirlines Support"
+}
+{
+    "to": "finance@badsec.com.au",
+    "subject": "Tax File Number Confirmation",
+    "from": "billing@bank.com",
+    "date": "Wed, 20 Mar 2024 08:30:50 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6HdmIt40TWg8nFXwPqtRnbdvpZxcjXUt6aLsI24yYHbQvoQn1vlfb1Mw-2oqC0tlUp5aIV71nscfKJJ3p-ifc154YEasHPzUEO8Wxq2plHDhqy6G-0o-DfAxh-LsbkQKq2CEru0UYyiZj5nOObVgDJkuxUJYKIAYbVF9XbGBe5rRYFPRoFYGmEeIz3pPGnMprmy6jnwHDuHcXk6QNyqcfOBQwZv2JNhRQ8K4ePnCKTROygSoE8JZmWjyEEqFtgosZ5myay_pcGoabuaPiDo5nASs7d0KLy_ToZeQweidi1A0U="
+}
+{
+    "to": "support@badsec.com.au",
+    "subject": "Urgent: Medicare Number Update Required",
+    "from": "admin@healthcare.com",
+    "date": "Thu, 21 Mar 2024 14:35:50 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6HK39UOV_5bMjqO7KahD5OSg7cF2ZvRFTSFmgSk_VAIHY0jzqpYSVw7jxsRdy_A6ILm8PpJF2AFlUnWPxppYayeDuZtnbSYlKIdTYM24QAWg1vUBIy47TDTMyRV5ihm6mcPUcRdZ5Od280ifJFXFf4W-cOaXiz1nTZb1Yqx7pVlQEweQEf8XeX7JlnMFtRmrWfHU6xHM07RFUmVm2964pLvhmq1AXn3PExEKO-qr6F1dhv2YlA3xTgKQEcodZ8Wxk7ctBcc_OEbyo6iohI55NlZNd15Xc6t5Ujggjqoc8zqtg="
+}
+{
+    "to": "admin@badsec.com.au",
+    "subject": "Email Confirmation Required",
+    "from": "no-reply@mailserver.com",
+    "date": "Fri, 22 Mar 2024 09:45:50 -0000",
+    "action status": "blocked",
+    "type": "Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Admin,\n\nWe have received a request to verify your email address. Please confirm this by replying with your full email details.\n\nThank you,  \nFakeMailServer Support Team"
+}
+{
+    "to": "energy@badsec.com.au",
+    "subject": "Overdue Payment Notice",
+    "from": "support@energy.com",
+    "date": "Sat, 23 Mar 2024 10:50:20 -0000",
+    "action status": "allowed",
+    "type": "normal",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Energy Team,\n\nYour payment is overdue. Please confirm your Tax File Number (TFN) and account number to complete the transaction.\n\nSincerely,  \nFakeEnergy Support"
+}
+{
+    "to": "security@badsec.com.au",
+    "subject": "Fraudulent Activity Detected",
+    "from": "fraud@banking.com",
+    "date": "Sun, 24 Mar 2024 11:55:30 -0000",
+    "action status": "blocked",
+    "type": "DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Security Team,\n\nWe have detected fraudulent activity on your account. Please verify your account number and Tax File Number (TFN) to secure your account.\n\nThank you,  \nFakeBanking Fraud Prevention Team"
+}
+{
+    "to": "manager@company.com",
+    "subject": "Project Status Update",
+    "from": "alice@projects.com",
+    "date": "Fri, 13 Sep 2024 08:15:18 -0000",
+    "action status": "blocked",
+    "type": "DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "Dear Manager,\n\nThe project has been completed as per the requirements. Please find the final report attached.\n\nBest regards,\nAlice\n"
+}
+{
+    "to": "sales@company.com",
+    "subject": "Sales Data for August 2024",
+    "from": "analyst@company.com",
+    "date": "Fri, 13 Sep 2024 21:30:18 -0000",
+    "action status": "blocked",
+    "type": "DLP Violation, Spf Violation, DMARC Violation",
+    "dkim signature": "No DKIM Signature",
+    "body": "gAAAAABm6S6Hi502TGvSgOP5u65ohbeMNpnnkpSfejefkTl-TwLUQvaVDmdbme9hsViif96q2QvLGIvxIoWwzkNPm0JkX2wLbbld-B0_ER8nzTHLxm9qVC4FitQ2F-2GYMUavxHzXdnkcZn5LTbgy8TClSdrrD0L6IJxwZPjhuc-TONYViIU_zpaKVFGmfjjMO6fGkjt7OOP7mavJbiDvxmR5hY2-Q8ZmGoncmvHhukFaBLpMWIzwCQEo0kPE8Q0PbQugSCRgLjTqh103HxyZUmYQO7cneJM8w=="
+}

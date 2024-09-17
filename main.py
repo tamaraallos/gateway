@@ -141,8 +141,3 @@ if __name__ == "__main__":
     initial_email_monitor()
     start_monitoring_thread()
     main_loop()
-
-
-# note to self: threading helps allow 2 things work at the same time
-# issues: I need to remove the print statements in email_processing/handling
-# this is so it does not intefer with the main
