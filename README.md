@@ -137,7 +137,7 @@ This would then ask the user for 8 different options. 1 is to search for a speci
 ## Additional Script: createEML.py
 This is an additional feature added outside of the POC. It is a script that generates emails for testing or demonstration purposes. It allows users to create customisable emails, which can be sued for testing different parts of the email security gateway solution. Features include:
 - Customisable email fields such as sender, recipient, subject, action status, email type and body.
-- Provides easy way to simulate a real-world email data. 
+- Provides easy way to simulate a real-world email data. <br>
 **To Use**
 1. Have a .env set up and specify where you want the emails saved.
 2. Run the script using python in terminal: 
