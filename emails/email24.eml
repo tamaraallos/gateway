@@ -1,101 +1,16 @@
-Delivered-To: sam.williamsbsi@gmail.com
-Received: by 2002:a05:7301:2397:b0:13d:85d4:e1db with SMTP id gw23csp330093dyb;
-        Sat, 14 Sep 2024 05:43:42 -0700 (PDT)
-X-Received: by 2002:a05:690c:64ca:b0:6db:c69d:e30d with SMTP id 00721157ae682-6dbc69de5cbmr70715517b3.20.1726317822475;
-        Sat, 14 Sep 2024 05:43:42 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1726317822; cv=none;
-        d=google.com; s=arc-20160816;
-        b=MuS9PocJZQzEy7R9nwUKrD053dDKPGyuk9zAuC7pJJwbD72HT2YrGPRxPMUg1p0nyw
-         Ths5fA0JswNQ1BVPLbuSFFli2Sn+jP+8YBDNV6VJ3q1/7flUYWhg2F2VQ/vRcL0hL4SQ
-         jKXEYSNC3SWUwtusrvCLwPUuQApAtXYRZ/WaIKegIua3ZTwmjtk5bYk8DCZwgK2LvI8R
-         sd9ZP4n5/TUSyuzaF6BevkxkiDsn+BCFCVJw3n5PdC/LvFKyUaOSFyGk+DzRkiAh7Uhz
-         KOciW0XNReg48NOAoCrQz7NyNmuOe/G92NVfmqMUBwi3s0+N6mU85LSp+sNjdt+lAaGL
-         A75Q==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
-        h=to:subject:message-id:date:from:mime-version:dkim-signature;
-        bh=+MHFX7ebdRVG9tVNLzhkHOv9MJ+P7tkRlNJ4NJ/CeL0=;
-        fh=qG/e26EHmaBLNnSpnP8yO9eC1aztOguMLtrUR+TQr3g=;
-        b=fxv/3nuZJ7M5gt8/eVOE49LYKoWwSFRHvzHTGPp4YNIyk69TvU4rOxTbPFAq5rsm/K
-         0KmSNjjiNnZCz21qGLBNTy7wSwLWj/bI2GPcPkC8P/zjjPgKnK6vSIMsO7i1ewT9YFzS
-         6/cWrfZDVSyDnOR1e8Yl1LLB22Y2DXHmJcQnIZHErmm9VpTgasVkb32R0JBgdV6LQIJS
-         JgAkFiOlpG7TG3BWCfjKRalp3d0HosONKtNZaAhZCZQ0wawwBaFAKWygKyqAnOE1RN20
-         L15OelTmwlzGx7bb02PDufyXievKyB//0yFezcVq8uGiRA9D4+mk5LB0morqIVVueBG0
-         /s7g==;
-        dara=google.com
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=lp1KYypO;
-       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-Return-Path: <will.rogersbsi@gmail.com>
-Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
-        by mx.google.com with SMTPS id 00721157ae682-6dbe2e61c85sor4540977b3.8.2024.09.14.05.43.42
-        for <sam.williamsbsi@gmail.com>
-        (Google Transport Security);
-        Sat, 14 Sep 2024 05:43:42 -0700 (PDT)
-Received-SPF: pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=lp1KYypO;
-       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=gmail.com; s=20230601; t=1726317822; x=1726922622; dara=google.com;
-        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
-         :date:message-id:reply-to;
-        bh=+MHFX7ebdRVG9tVNLzhkHOv9MJ+P7tkRlNJ4NJ/CeL0=;
-        b=lp1KYypOs2tu86h8nkHk1CHZISe3UXE3u+bMHcE3JJlqbujeXSDg3pNeFNWYAjizLo
-         1BMJ4iXZLVAarhwf2rAlHHrI0iem+bD8C3OwQcwGuVltfiHl+vACb5hBLT9PSANtPgKy
-         sTq0RvnHk/EiBLiRIPob/17yKzzg9TpCkmPaSXbAJEryhr8ABFCjwAppgfUbRltgHGOr
-         CJ8PMKqwkDhc0kG+moLyFhq8lM0rYL3S2tcCCSBSMKWPITiH6ZR3IV0Lc11NgR4nELJ3
-         zbj2nGpF5Lj8i4DvB0QBzB68w1JLQ3IoWpSIxXlCUmuV9hGCfp1H3rGIYzKMk8Tv7yM5
-         DDig==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=1e100.net; s=20230601; t=1726317822; x=1726922622;
-        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
-         :from:to:cc:subject:date:message-id:reply-to;
-        bh=+MHFX7ebdRVG9tVNLzhkHOv9MJ+P7tkRlNJ4NJ/CeL0=;
-        b=hKtBkxbtSOhO0kxVMujFudCZGYt4xCWhghvjy8Y/pamk8ahwdxYm8ZluEDXz2Z6Au6
-         vXO0T9QqMr4QbmGeo0/vhmQxXzG7jBoH6kM0DGZ94jWTd+FXA3b+yndBIQdOeuPurMfm
-         PLOaFOEYTpPxRdOFRjHpa08kMKIyz5AAx96J07WovhodN5cheV5ZcTGvjamJKaGR2/Iz
-         QWgY3nFhvRgzk0yYA5vlZ6ChSSYQSQ5+tnVcoO5yzHuEoj6LN95+icVnfyaARsqRY3hG
-         DUPwKDcJXacW7vLmg6xmfc8h7P9FiYZ0Su4WOEXmHf3qho3mvNrA+AYQEO1INee3tj1J
-         upbA==
-X-Gm-Message-State: AOJu0Yxbbjmw8KDqb7eoCQK91NgqnchEpcTrt7Q5fjhAisLAByjWnsLQ
-	Q+5BSerzfDyZdlrIQhkgamj9e8POEH78qYU+LkXzaTjgNrmW/Y/WlUPdhx3OZj4It0S0/fH7DtU
-	I8WspYJcgG6KF0Hk/wD/Edy95snJaRwXnOgpJ5A==
-X-Google-Smtp-Source: AGHT+IFV47Wy5LKC9sL8+1XjiN+lEPxWoe4LV43WiYqI5l54FbbHTn46GDf83Iifd/TuMZ/coJg5KcV3OX/GB9L7Nas=
-X-Received: by 2002:a05:690c:67c1:b0:6dd:ba68:4cca with SMTP id
- 00721157ae682-6ddba685b39mr6664247b3.21.1726317821784; Sat, 14 Sep 2024
- 05:43:41 -0700 (PDT)
+Content-Type: multipart/mixed; boundary="===============3691732469919055622=="
 MIME-Version: 1.0
-From: Will Rogers <will.rogersbsi@gmail.com>
-Date: Sat, 14 Sep 2024 22:43:30 +1000
-Message-ID: <CAMYGh1MJ5=Y7W0_gyBgK0QbgXh5UwJmF0aNoZHCEbWrDsQJA0Q@mail.gmail.com>
-Subject: Server Access Details
 To: sam.williamsbsi@gmail.com
-Content-Type: multipart/alternative; boundary="000000000000897a97062213b098"
+From: bob.watersbsi@gmail.com
+Subject: PIN Update
+Date: Tuesday, 03 Sep 2024 12:39:34 -0000
+X-Action-Status: pending
+X-Type: normal
 
---000000000000897a97062213b098
-Content-Type: text/plain; charset="UTF-8"
+--===============3691732469919055622==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
 
-Hello,
-
-Here are the access details for the server:
-IP Address: 192.168.1.1
-MAC Address: 00:1A:2B:3C:4D:5E
-
-Thanks,
-Will
-
---000000000000897a97062213b098
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
-
-<div dir=3D"ltr"><div dir=3D"ltr"><div>Hello,=C2=A0=C2=A0<br></div><div><br=
-></div><div>Here are the access details for the server:=C2=A0=C2=A0</div><d=
-iv>IP Address: 192.168.1.1=C2=A0=C2=A0</div><div>MAC Address: 00:1A:2B:3C:4=
-D:5E=C2=A0=C2=A0</div><div><br></div><div>Thanks,=C2=A0=C2=A0</div><div>Wil=
-l</div><div><br></div></div></div>
-
---000000000000897a97062213b098--
+Hi,       Here is my updated PIN: 4321       Please use this for the transaction.       Thanks,       Bob
+--===============3691732469919055622==--

@@ -1,97 +1,16 @@
-Delivered-To: will.rogersbsi@gmail.com
-Received: by 2002:a05:7108:6449:b0:3b2:97c5:89d7 with SMTP id c9csp222626gdt;
-        Sat, 14 Sep 2024 05:41:02 -0700 (PDT)
-X-Received: by 2002:a17:902:e88a:b0:206:9693:7d5b with SMTP id d9443c01a7336-2076e45cee2mr122805115ad.55.1726317662450;
-        Sat, 14 Sep 2024 05:41:02 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1726317662; cv=none;
-        d=google.com; s=arc-20160816;
-        b=EfABM+/gBZUnrZxjn6m9TONtSnhaQMWeSA9PWByq4DrmxNai+Nksu4hROl8lnDdD2o
-         LP80XOYIl8fWkdU9Gblifr/w5w9L0Dcs5m7g58fNa3+WV6dLN7b63uZvx1mrXgpZ3Jwg
-         ttc4ZE03fI46WFZeQtIOWARxzt3mfXndw8cc/GP2FgOCiAv+9+rF6kRfq8vAWkvxzNUr
-         veLt/sf3m+fH+gwXgOn7kF4HluUYTfiuVgnm7dkaANarXJuPZjLDbqM8HVG5/8qkGdFN
-         fnUOSzcIDNnA8B+OHah8ozQRODnO5bMRvr7PUrZMc+/2ns0ORPJOISUsIX9UdTDF+B7f
-         w15w==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
-        h=to:subject:message-id:date:from:mime-version:dkim-signature;
-        bh=r6dtMuDbpRcJaAZULfUrK8EmqTmIGK6h28jIowOVI7U=;
-        fh=IU53OG2RP8NULgCMoHrHC1lMDtQJw2VXqJ9jSjDdbBo=;
-        b=1Jv/0H4ZerinilczoGKgPeDDa74EFg/rzKBPgik8/oksOayn4HVuFbsA/hPCrJhy60
-         ab9Cde1vrk6eH1tdz2HneAW6Ef6zGJBX8BMGTGNn1vmELnt5oBLaSDyRKCaqFMtVd7cr
-         4eVSLIYi7ssSbhJ6VIsW4pU2M17DhStVDA/Ui/KSKj8vDOcsC8y4hZEu7t+ajRNVAV2X
-         3t+9ihk253aVGh3Shn9BcJNA4V/CshPWU9llU+RfWsq5NQhgNhR0am5m+CvC2DNot2p3
-         GFtBXWV9dXVnrW2hntCVylLxEPfT21vnWTiaGlSbOHa1kbqK4hP5mwVkhzwLu79UqU7I
-         qpEQ==;
-        dara=google.com
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=FBVfX70J;
-       spf=pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sam.williamsbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-Return-Path: <sam.williamsbsi@gmail.com>
-Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
-        by mx.google.com with SMTPS id d9443c01a7336-20794726329sor5852635ad.17.2024.09.14.05.41.02
-        for <will.rogersbsi@gmail.com>
-        (Google Transport Security);
-        Sat, 14 Sep 2024 05:41:02 -0700 (PDT)
-Received-SPF: pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=FBVfX70J;
-       spf=pass (google.com: domain of sam.williamsbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=sam.williamsbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=gmail.com; s=20230601; t=1726317662; x=1726922462; dara=google.com;
-        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
-         :date:message-id:reply-to;
-        bh=r6dtMuDbpRcJaAZULfUrK8EmqTmIGK6h28jIowOVI7U=;
-        b=FBVfX70JKq1iGSwEEG7zm8Ofam7xIQEiFyjMAQ91v8tc3XVKNYFvcMIJFjxvD8HzqP
-         FAEpk3NfkTV2VPhAPIKCeGhCZ0dPAteYc8cuc1d1BrggrEeRfbf43l0rmqLcDG+NzE2M
-         nLvtB3/UamyAi2RlDAPoNYovLn8PXVctFTECi403y1fmzhG+vsOeo1m4aDJEhP766jRz
-         GmRFcMbmDAc+y9QID+//bdaAFWiQnO49jJcYDXUGlx3QLsTNsW7qaK+zVE73kH/20QPg
-         CJ5FQQkJIwI2IrnGSEEwUTtj0w0sFdODIBfU97lU7JHt6hso9ghdadMDwpoUE1LAe+0K
-         zx7g==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=1e100.net; s=20230601; t=1726317662; x=1726922462;
-        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
-         :from:to:cc:subject:date:message-id:reply-to;
-        bh=r6dtMuDbpRcJaAZULfUrK8EmqTmIGK6h28jIowOVI7U=;
-        b=Pa+hYLsVtW5YmWCdpPP0oOkZm1DvS2MQIZ9XCq9gXyEUaNDi2Nv+oHBX+tuIdWO2kl
-         l2oEC7pLyHIcFkv/uE/r8t/F91w47FAXRqEzKX1k+wmMnkntbNZXEQF1XC24SB56+qN6
-         iZ5IeL89ErOvDvtm5lIdFaRVdSDz2Rcdx9fPjhix+TOAmgyNmP5o+MPKwXOtz2aYoNLM
-         tpd8pboICmrrJ4ffi/DaGXTrePkRj/1ssYeHvT/6+jvRDD/4I7dbqHkH/tTCaO8gxbR0
-         0ijG3xHZy+ZnhoAeaXRvhnFhto6/z63pOtcMbAAZyJtSbLkaNX7B2nwQUFv2M6DTsSOR
-         uQgg==
-X-Gm-Message-State: AOJu0YwwEHhFHQ/C2+VWTwdD+jnVwA8cIqjT26sjl+OYF8AXXPWyLknY
-	nHODnVkfY+4Io7WGp7Y8gKcWMLIXLpfFkfdje+xHvADCpH4uU17W1GOy/e8l9gEsYKwgJrcMZdS
-	6dL1zIqL0xJdER4+0Ev4Jq/ZMoKQqJNiwOfvxr0ns
-X-Google-Smtp-Source: AGHT+IFr3SZaTMCNxrskBG0j7a1UnuCsgoYj3s4lyRpwWSGyWR3OqB+iT75Oyj3hAMr50njKgqpdZB6/gyPIKO8BJjE=
-X-Received: by 2002:a17:902:d4c2:b0:201:f6e8:637f with SMTP id
- d9443c01a7336-2076e31a877mr164823625ad.11.1726317661816; Sat, 14 Sep 2024
- 05:41:01 -0700 (PDT)
+Content-Type: multipart/mixed; boundary="===============0126501452619920490=="
 MIME-Version: 1.0
-From: Sam Williams <sam.williamsbsi@gmail.com>
-Date: Sat, 14 Sep 2024 22:40:51 +1000
-Message-ID: <CAGz06iKcRAMAA8eo_dvA71bD29keT9tg1VFr100EmjF-ysJW0A@mail.gmail.com>
-Subject: Tax File Number Submission
-To: "will.rogersbsi@gmail.com" <will.rogersbsi@gmail.com>
-Content-Type: multipart/alternative; boundary="00000000000000915e062213a700"
+To: sam.williamsbsi@gmail.com
+From: alex.watersbsi@gmail.com
+Subject: Server Access Details  
+Date: Tuesday, 03 Sep 2024 12:39:34 -0000
+X-Action-Status: pending
+X-Type: normal
 
---00000000000000915e062213a700
-Content-Type: text/plain; charset="UTF-8"
+--===============0126501452619920490==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
 
-Hi,
-Please find my Australian Tax File Number below for verification:
-TFN: 123 456 789
-Best,
-Sam
-
---00000000000000915e062213a700
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
-
-<div dir=3D"ltr"><div dir=3D"ltr"><div>Hi,=C2=A0<br></div><div>Please find =
-my Australian Tax File Number below for verification:=C2=A0=C2=A0</div><div=
->TFN: 123 456 789=C2=A0=C2=A0</div><div>Best,=C2=A0=C2=A0</div><div>Sam</di=
-v><div><br></div></div></div>
-
---00000000000000915e062213a700--
+Hello,       Here are the access details for the server:       IP Address: 192.168.1.1       MAC Address: 00:1A:2B:3C:4D:5E       Thanks,       Alex
+--===============0126501452619920490==--

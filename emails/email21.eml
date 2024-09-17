@@ -1,99 +1,16 @@
-Delivered-To: sam.williamsbsi@gmail.com
-Received: by 2002:a05:7301:2397:b0:13d:85d4:e1db with SMTP id gw23csp327255dyb;
-        Sat, 14 Sep 2024 05:36:23 -0700 (PDT)
-X-Received: by 2002:a05:690c:3585:b0:6dc:c105:6d84 with SMTP id 00721157ae682-6dcc1056e49mr13048677b3.12.1726317383410;
-        Sat, 14 Sep 2024 05:36:23 -0700 (PDT)
-ARC-Seal: i=1; a=rsa-sha256; t=1726317383; cv=none;
-        d=google.com; s=arc-20160816;
-        b=S5VEHHZnnesogYMMOvgC1mTVSu8aFjETTDLtT8IdbO5FH4Biw7llDKg6ZYxHGeeW0o
-         g1oRFxzZI5m7L6iLTgcRzH0E+ZJJfXuUM8UwWkmfz98lkZepzsswNvIJN1G5AlxgAc55
-         I3w7mF1w3fAeWBWAx4mXnjphwgKojMUM2OUNNf9jNy+HT67wWtM6hHU6HxjrAchDot8A
-         KP/AAnBJX2LTuzZJcOpkHMK4FiLdSSscWHqUMla5HyVVHlzWwcJjSQu9w1eS0WyAyu5p
-         TGY6MBwWXTZlms8rHX1VH1rHsirlAcLulHnbwLl78IsHbo9zKNCuAqaZbp64tztO3OOj
-         j0mg==
-ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
-        h=to:subject:message-id:date:from:mime-version:dkim-signature;
-        bh=XArUSiRVPxX0UQR63xdLefZ0CZNkmk2sFXZqz+I3aOE=;
-        fh=qG/e26EHmaBLNnSpnP8yO9eC1aztOguMLtrUR+TQr3g=;
-        b=Ha3218HESjcg6q1j3xd5kJJ5yEgNgE1wSXCfNStwycjoMI3OWDIBkCbrQlK8xaFOKm
-         0H9eSuJI5konR2Z6zBdcWq/1xj6g4rk6m+1K3dNIqCTE87toqGLqO+nL5mUtm+yqgXEa
-         NQFmQHL8RpKQuQ/BERvwW+R8yPV+vhRrjenLd7V4nKqJlCloojNYudSJDPoWKQkcXa7b
-         Vu4hcTLLDYaexUZ1R5lhdGDQYImd28dkQYe/zzmFvSOtWfJeXb9By17pcyn3Af1XQ0IE
-         oho+CDcc5RbnK1GxYjItM/1hEev9yespQ5S5NRkb481TE6KwB7VUQ6U9WAvSOBpKfj4B
-         JLWQ==;
-        dara=google.com
-ARC-Authentication-Results: i=1; mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=LrPT7OIR;
-       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-Return-Path: <will.rogersbsi@gmail.com>
-Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
-        by mx.google.com with SMTPS id 00721157ae682-6dbe2f446fcsor5268107b3.18.2024.09.14.05.36.23
-        for <sam.williamsbsi@gmail.com>
-        (Google Transport Security);
-        Sat, 14 Sep 2024 05:36:23 -0700 (PDT)
-Received-SPF: pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
-Authentication-Results: mx.google.com;
-       dkim=pass header.i=@gmail.com header.s=20230601 header.b=LrPT7OIR;
-       spf=pass (google.com: domain of will.rogersbsi@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=will.rogersbsi@gmail.com;
-       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
-       dara=pass header.i=@gmail.com
-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=gmail.com; s=20230601; t=1726317382; x=1726922182; dara=google.com;
-        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
-         :date:message-id:reply-to;
-        bh=XArUSiRVPxX0UQR63xdLefZ0CZNkmk2sFXZqz+I3aOE=;
-        b=LrPT7OIRclx6iveDnwT/vAwokpb2kvOhS0XrCBY1HizmEgGeyPQvWxt2ytmiwD5fa/
-         n5+Q6L19UWCTERKc7b83fBGZ0w/CUwZFJHW4Ue2VSWRg9r2u8WegIDIDI56pYEYB/q5F
-         5oDwfAvJPrzmwhmVQgrXTaMSxTGA9qR3w8HGE+Oga2ZpGL2Zh0Ov0K6YW8jDuXLH1dLQ
-         EDAqKSoldJaQlt9F4uFS5rOUBgUMgHd4xm+Lc+pvPvwVahfMa6ojAtZEsYnoxEycrgOG
-         Y+DqlSAXY5xk3z1qZXcGXntqwmeAbrxe0d5MDKsNBTZm9REKxJvhfpubkHNVd+iYOfxh
-         uxDg==
-X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
-        d=1e100.net; s=20230601; t=1726317382; x=1726922182;
-        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
-         :from:to:cc:subject:date:message-id:reply-to;
-        bh=XArUSiRVPxX0UQR63xdLefZ0CZNkmk2sFXZqz+I3aOE=;
-        b=T4d2uf1TxQhLoNrdG7LLZ6xPPP2ZKq/ds2ERniZ0l7OW4zXH016DEOHDhBp+NHEpMM
-         gtkxrf5Ym7vkJo+WcZNTAEwTFWx0jKovCKdxhOxoDBEzFdJeBnLGT8JZ9nr16PvIsyS6
-         NrwOLCLXj3cqklZxg1GKBL4DqfObcAKsau2dP06NZRgPzEIs8DZ2GHNd5lPQFyRlSUbs
-         kpVyuC8wKU3EgBxPLckmxWOodRfaJRWv0ehBD0gmPmePhzRhDMSveDRcDL9Juj3bGiLi
-         sPPCgTPk6aOIlng4D++hj/rfJpiSiFBWELVJvcyrZN16ieBOV6XoD2sjwO2Upl/f6yBd
-         NLMQ==
-X-Gm-Message-State: AOJu0YxXBgtzIB7Crmq1eGuyM0O1C0aD/YUYnHoCNRnjP5pGUELOmO8U
-	Cfq/UX0p+tLibz0wbG/D1l4cAUYjg6qwnrtT8IO/z6pLZrumRQgfQQoNkkc7CsCPjVNIKYlAYUC
-	ArzA9R+RzbfvhXCryvesU+tBvRHIZ+bk7qP/UDg==
-X-Google-Smtp-Source: AGHT+IFA3Y4yzL8fFOrn6gZaIpOomCYzy2d6+rvmE0CcVfluMKpBn6u0heFcLg0xgKfYrmCRNa7Bwe3hkWFalEWVLZ4=
-X-Received: by 2002:a05:690c:7084:b0:6b2:7ff8:ca1 with SMTP id
- 00721157ae682-6dbb6b40200mr101041547b3.22.1726317382419; Sat, 14 Sep 2024
- 05:36:22 -0700 (PDT)
+Content-Type: multipart/mixed; boundary="===============3284614806638740454=="
 MIME-Version: 1.0
-From: Will Rogers <will.rogersbsi@gmail.com>
-Date: Sat, 14 Sep 2024 22:36:11 +1000
-Message-ID: <CAMYGh1OYZrThzH58OYNrAaoRzyRni7SJ_7UhdUZNALOpWxy1tg@mail.gmail.com>
-Subject: Payment Details
 To: sam.williamsbsi@gmail.com
-Content-Type: multipart/alternative; boundary="000000000000594f7d0622139634"
+From: john.rogersbsi@gmail.com
+Subject: Payment Details  
+Date: Tuesday, 03 Sep 2024 12:39:34 -0000
+X-Action-Status: pending
+X-Type: normal
 
---000000000000594f7d0622139634
-Content-Type: text/plain; charset="UTF-8"
+--===============3284614806638740454==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
 
-Hi,
-Please process the payment with the following credit card:
-Card Number: 1234 5678 9123 4567
-Expiry: 12/25
-Thanks,
-Will
-
---000000000000594f7d0622139634
-Content-Type: text/html; charset="UTF-8"
-Content-Transfer-Encoding: quoted-printable
-
-<div dir=3D"ltr"><div dir=3D"ltr"><div>Hi,=C2=A0=C2=A0<br></div><div>Please=
- process the payment with the following credit card:=C2=A0=C2=A0</div><div>=
-Card Number: 1234 5678 9123 4567=C2=A0=C2=A0</div><div>Expiry: 12/25=C2=A0=
-=C2=A0</div><div>Thanks,=C2=A0=C2=A0</div><div>Will</div><div><br></div></d=
-iv></div>
-
---000000000000594f7d0622139634--
+Hi,       Please process the payment with the following credit card:       Card Number: 1234 5678 9123 4567       Expiry: 12/25       Thanks,       John
+--===============3284614806638740454==--
