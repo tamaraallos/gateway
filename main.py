@@ -1,12 +1,12 @@
-from log_search import search_log, search_by_field
+from src.log_search import search_log, search_by_field
 import os
 from dotenv import load_dotenv
 from visual import cliVisual
 from getpass import getpass
 import time
-from email_handler import create_event_handler
+from src.email_handler import create_event_handler
 from watchdog.observers import Observer
-from email_processor import process_all_emails, print_log_file
+from src.email_processor import process_all_emails, print_log_file
 import threading 
 
 load_dotenv(".env")
