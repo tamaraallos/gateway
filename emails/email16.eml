@@ -1,11 +1,22 @@
-Content-Type: multipart/mixed; boundary="===============123456789000012=="
+Content-Type: multipart/mixed; boundary="===============123456789000021=="
 MIME-Version: 1.0
-To: management@company.com
-From: projectlead@company.com
-Subject: Project Proposal - Q4 2024
-Date: Friday, 13 Sep 2024 18:00:18 -0000
-X-Action-Status: reviewed
-X-Type: proposal
+To: client@company.com
+From: accountmanager@company.com
+Subject: Follow-up on Meeting - September 2024
+Date: Friday, 13 Sep 2024 22:30:18 -0000
+X-Action-Status: follow-up
+X-Type: meeting
 
---===============123456789000012==
-Content-Type: text/plain;
+--===============123456789000021==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Dear Client,
+
+Thank you for taking the time to meet with us today. Attached is a summary of our discussion and next steps. Please feel free to reach out if you have any questions.
+
+Best regards,
+Account Manager
+
+--===============123456789000021==--
