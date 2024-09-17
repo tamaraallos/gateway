@@ -1,5 +1,5 @@
 from watchdog.events import FileSystemEventHandler
-from email_processor import process_all_emails
+from src.email_processor import process_all_emails
 
 # handles the event which is when a new email file is created
 def on_created_email(event, email_dire, log_archive_path, log_email_processed_path):
