@@ -81,7 +81,7 @@ def search_log_menu():
             search_by_field(email_archived_log_path, 'action status', value)
         elif (search_by == 8):
             print('Returning to the menu...')
-            time.sleep(0.3)
+            time.sleep(0.2)
             break
             
 # this monitors the folder initially - it runs once and only once
