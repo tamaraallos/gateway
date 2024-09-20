@@ -62,7 +62,7 @@ def search_log_menu():
             search_log(email_archived_log_path, search_string)
             time.sleep(5)
         elif (search_by == 2):
-            value = input('Enter the date you want to search for (e.g., "Wed, 10 Jul 2024 12:39:34 -0000"): ')
+            value = input('Enter the date you want to search for (e.g., "Wed, 10 Jul 2024 12:39:34 -0000", "14 Sep 2024"): ')
             search_by_field(email_archived_log_path, 'date', value)
         elif (search_by == 3):
             value = input('Enter a keyword to search in the email subject: ')
@@ -71,7 +71,7 @@ def search_log_menu():
             value = input("Enter the sender's email address to search for: ") 
             search_by_field(email_archived_log_path, 'from', value)
         elif (search_by == 5):
-            value = input("Enter the reciever's email address to search for: ") 
+            value = input("Enter the receiver's email address to search for: ") 
             search_by_field(email_archived_log_path, 'to', value)
         elif (search_by == 6):
             value = input('Enter the type of email to search for (e.g., phishing, spam, DLP Violation): ') # later add more
