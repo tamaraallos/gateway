@@ -151,7 +151,7 @@ We would like to express our gratitude to the following team members for their d
 - **Tamara Allos**
 - **Bhuvan Virmani** 
 - **Nelchael Kenshi Turija** 
-- **Sai Veera Venkat Rahul Chagant** 
+- **Sai Veera Venkat Rahul Chaganti** 
 - **Nehal Rahuja** 
 - **Saksham**
 
