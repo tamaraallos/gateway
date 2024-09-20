@@ -41,7 +41,7 @@ def display_options():
 
 # displays search by log options 
 def display_search_log_by():
-    print("\n Search By: \n 1.String \n 2.Date \n 3.Subject \n 4.Sender \n 5.Reciver \n 6.Type \n 7.Action \n 8.Back to menu")
+    print("\n Search By: \n 1.String \n 2.Date \n 3.Subject \n 4.Sender \n 5.Receiver \n 6.Type \n 7.Action \n 8.Back to menu")
     while True:
         try:
             search_by = int(input("Please enter the option you want: "))
